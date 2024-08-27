@@ -1,0 +1,159 @@
+\providecommand{\bysame}{\leavevmode\hbox to3em{\hrulefill}\thinspace}
+\providecommand{\MR}{\relax\ifhmode\unskip\space\fi MR }
+% \MRhref is called by the amsart/book/proc definition of \MR.
+\providecommand{\MRhref}[2]{%
+  \href{http://www.ams.org/mathscinet-getitem?mr=#1}{#2}
+}
+\providecommand{\href}[2]{#2}
+\begin{thebibliography}{FvdP04}
+
+\bibitem[Alp23]{Alper-Stacks-and-Moduli}
+Jarod Alper, \emph{Stacks and moduli working draft},
+  \url{https://sites.math.washington.edu/~jarod/moduli.pdf}, 2023.
+
+\bibitem[AOV07]{Abramovich-Olsson-Vistoli-tame-stacks-pos-characteristic}
+Dan Abramovich, Martin Olsson, and Angelo Vistoli, \emph{Tame stacks in
+  positive characteristic}, 2007, \url{https://arxiv.org/abs/math/0703310}.
+
+\bibitem[AOV10]{Abramovich-Olsson-Vistoli-twisted-stable-maps-tame-Artin-stacks}
+\bysame, \emph{Twisted stable maps to tame artin stacks}, 2010,
+  \url{https://arxiv.org/abs/0801.3040}.
+
+\bibitem[Arm08]{Armana-thesis}
+C{\'e}cile Armana, \emph{{Torsion rationnelle des modules de {D}rinfeld}},
+  Theses, {Universit{\'e} Paris-Diderot - Paris VII}, November 2008.
+
+\bibitem[Art74]{Artin-versal-deformations-algebraic-stacks}
+Michael Artin, \emph{Versal deformations and algebraic stacks}, Invent. Math.
+  \textbf{27} (1974), 165--189.
+
+\bibitem[BBP18]{Basson-Breuer-Pink-part2}
+Dirk Basson, Florian Breuer, and Richard Pink, \emph{{D}rinfeld modular forms
+  of arbitrary rank, part ii: Comparison with algebraic theory}, 2018.
+
+\bibitem[Bre16]{Breuer-Gekeler-h-function}
+Florian Breuer, \emph{A note on {G}ekeler's {$h$}-function}, Arch. Math.
+  (Basel) \textbf{107} (2016), no.~4, 305--313. \MR{3552209}
+
+\bibitem[Car38]{Carlitz-class-of-poly}
+Leonard Carlitz, \emph{A class of polynomials}, Trans. Amer. Math. Soc.
+  \textbf{43} (1938), no.~2, 167--182. \MR{1501937}
+
+\bibitem[CFO24]{Cerchia-Franklin-ODorney-Qdiv-Ell-curves}
+Michael Cerchia, Jesse Franklin, and Evan O'Dorney, \emph{Section rings of
+  $\mathbb{Q}$-divisors on genus $1$ curves}, 2024,
+  \url{https://arxiv.org/abs/2312.15128}.
+
+\bibitem[Con06]{Conrad-ampleness-rigid-geom}
+Brian Conrad, \emph{Relative ampleness in rigid geometry}, Annales de
+  \'Institut Fourier \textbf{56} (2006), no.~4, 1049--1126 (eng).
+
+\bibitem[Cor97a]{Cornelissen-lvlT}
+Gunther Cornelissen, \emph{{D}rinfeld modular forms of level {$T$}}, {D}rinfeld
+  modules, modular schemes and applications ({A}lden-{B}iesen, 1996), World
+  Sci. Publ., River Edge, NJ, 1997, pp.~272--281. \MR{1630608}
+
+\bibitem[Cor97b]{Cornelissen-wt1}
+Gunther Cornelissen, \emph{{D}rinfeld modular forms of weight one}, Journal of
+  Number Theory \textbf{67} (1997), no.~2, 215--228.
+
+\bibitem[CT07]{Conrad-Temkin-nonarhimedean-analytification-alg-spaces}
+Brian Conrad and Michael Temkin, \emph{Non-archimedean analytification of
+  algebraic spaces}, 2007,
+  \url{https://math.stanford.edu/~conrad/papers/analgpaper.pdf}.
+
+\bibitem[DK23]{Dalal-Kumar-Gamma_0(T)-structure}
+Tarun Dalal and Narasimha Kumar, \emph{The structure of {D}rinfeld modular
+  forms of level {$\Gamma_0(T)$} and applications}, Journal of Algebra
+  \textbf{619} (2023), 778--798.
+
+\bibitem[Dri74]{Drinfeld-elliptic-modules}
+V~G Drinfel'd, \emph{Elliptic modules}, Mathematics of the USSR-Sbornik
+  \textbf{23} (1974), no.~4, 561.
+
+\bibitem[EGH23]{Emerton-Gee-Hellman-categorical-p-adic-langlands}
+Matthew Emerton, Toby Gee, and Eugen Hellmann, \emph{An introduction to the
+  categorical p-adic {L}anglands program}, 2023.
+
+\bibitem[FvdP04]{Frensel-vanderPut-Rigid-Analytic_Geom}
+Jean Fresnel and Marius van~der Put, \emph{Rigid analytic geometry and its
+  applications}, Progress in Mathematics, vol. 218, Birkh\"{a}user Boston,
+  Inc., Boston, MA, 2004. \MR{2014891}
+
+\bibitem[Gek86]{Gekeler-Curves}
+Ernst-Ulrich Gekeler, \emph{{D}rinfeld modular curves}, Lecture Notes in
+  Mathematics, vol. 1231, Springer-Verlag, Berlin, 1986. \MR{874338}
+
+\bibitem[Gek88]{Gekeler-Coeff}
+\bysame, \emph{On the coefficients of {D}rinfeld modular forms}, Invent. Math.
+  \textbf{93} (1988), no.~3, 667--700. \MR{952287}
+
+\bibitem[Gek99]{Gekeler-survey-Drinfeld-modular-forms}
+\bysame, \emph{A survey on {D}rinfeld modular forms}, Turkish J. Math.
+  \textbf{23} (1999), no.~4, 485--518. \MR{1780937}
+
+\bibitem[Gek01]{Gekeler-Invariants}
+\bysame, \emph{Invariants of some algebraic curves related to {D}rinfeld
+  modular curves}, J. Number Theory \textbf{90} (2001), no.~1, 166--183.
+  \MR{1850880}
+
+\bibitem[Gos80]{Goss-upper-halfplane}
+David Goss, \emph{The algebraist's upper half-plane}, Bull. Amer. Math. Soc.
+  (N.S.) \textbf{2} (1980), no.~3, 391--415. \MR{561525}
+
+\bibitem[GR96]{Gekeler-jacobians}
+E.-U. Gekeler and M.~Reversat, \emph{Jacobians of {D}rinfeld modular curves},
+  J. Reine Angew. Math. \textbf{476} (1996), 27--93. \MR{1401696}
+
+\bibitem[Lau96]{Laumon-cohomology-Drinfeld-modular-varieties}
+G\'{e}rard Laumon, \emph{Cohomology of {D}rinfeld modular varieties. {P}art
+  {I}}, Cambridge Studies in Advanced Mathematics, vol.~41, Cambridge
+  University Press, Cambridge, 1996, Geometry, counting of points and local
+  harmonic analysis. \MR{1381898}
+
+\bibitem[LRZ16]{Landesman-Ruhm-Zhang-Spin-canonical-rings}
+Aaron Landesman, Peter Ruhm, and Robin Zhang, \emph{Spin canonical rings of log
+  stacky curves}, Ann. Inst. Fourier (Grenoble) \textbf{66} (2016), no.~6,
+  2339--2383. \MR{3580174}
+
+\bibitem[MS15]{Mason-Schweizer-elliptic-pts-Drinfeld-modular-grps}
+A.~W. Mason and Andreas Schweizer, \emph{Elliptic points of the {D}rinfeld
+  modular groups}, Math. Z. \textbf{279} (2015), no.~3-4, 1007--1028.
+  \MR{3318257}
+
+\bibitem[O'D15]{ODorney-canonical-rings-Q-divisors-on-P1}
+Evan O'Dorney, \emph{Canonical rings of $\mathbb{Q}$-divisors on
+  $\mathbb{P}^1$}, Annals of Combinatorics \textbf{19} (2015), no.~4, 765--784.
+
+\bibitem[Pap23]{Papikian-Drinfeld-modules}
+Mihran Papikian, \emph{{D}rinfeld modules}, Graduate Texts in Mathematics,
+  vol.~66, Springer Cham, 2023.
+
+\bibitem[Pin12]{Pink-compactification-Drinfeld-modular-varieties-2012}
+Richard Pink, \emph{Compactification of {D}rinfeld modular varieties and
+  {D}rinfeld modular forms of arbitrary rank}, 2012.
+
+\bibitem[Poo22]{Poonen-DrinfeldIntro}
+Bjorn Poonen, \emph{Introduction to {D}rinfeld modules}, Arithmetic, geometry,
+  cryptography, and coding theory 2021, Contemp. Math., vol. 779, Amer. Math.
+  Soc., [Providence], RI, [2022] \copyright 2022, pp.~167--186. \MR{4445776}
+
+\bibitem[PY16]{Porta-Yu-Higher-analytic-stacks-GAGA}
+Mauro Porta and Tony~Yue Yu, \emph{Higher analytic stacks and {GAGA} theorems},
+  Adv. Math. \textbf{302} (2016), 351--409. \MR{3545934}
+
+\bibitem[VZB22]{VZB}
+John Voight and David Zureick-Brown, \emph{The canonical ring of a stacky
+  curve}, Mem. Amer. Math. Soc. \textbf{277} (2022), no.~1362, v+144.
+  \MR{4403928}
+
+\bibitem[War17]{Warner-thesis-adic-moduli-spaces}
+Evan Warner, \emph{Adic moduli spaces}, Thesis, Stanford University, August
+  2017.
+
+\bibitem[Wat79]{Waterhouse-into-aff-grp-schemes}
+William~C. Waterhouse, \emph{Introduction to affine group schemes}, Graduate
+  Texts in Mathematics, vol.~66, Springer-Verlag, New York-Berlin, 1979.
+  \MR{547117}
+
+\end{thebibliography}

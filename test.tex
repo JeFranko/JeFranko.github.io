@@ -1,0 +1,533 @@
+\documentclass{article}
+
+\usepackage{epic}
+
+% For diagrams
+\setlength{\unitlength}{0.5cm}
+\newcommand{\solid}[1]{\put#1{\circle*{0.25}}}
+\newcommand{\open}[1]{\put#1{\circle{0.25}}}
+\newcommand{\xdot}[1]{\put#1{\makebox(0,0){\small +}}}
+
+\begin{document}
+  
+%Figure 1
+\begin{figure}[bhtp]
+  \centering
+  \begin{picture} (4.8,4.8) (-0.3,-0.3) % Total dimensions, then lower left corner
+    
+    % Axes
+    \drawline(0,0)(4.8,0)
+    \drawline(0,0)(0,4.8)
+    
+    % Boundary line
+    \drawline(0,0)(4.5,4.5)
+    
+    % Solid dots
+    \solid{(1,0)}\solid{(2,2)}\solid{(3,3)}
+    % Dot labels
+    \put(1.2,0.1){\makebox(0,0)[bl]{\small $u$}}
+    \put(2.2,1.9){\makebox(0,0)[ul]{\small $x$}}
+    \put(3.2,2.9){\makebox(0,0)[ul]{\small $y$}}
+    % +'s
+    \xdot{(1,1)}\xdot{(2,1)}\xdot{(3,1)}\xdot{(4,1)}
+    % Open dots
+    \open{(0,0)}
+    \open{(2,0)}
+    \open{(3,0)}\open{(3,2)}
+    \open{(4,0)}\open{(4,2)}\open{(4,3)}\open{(4,4)}
+  \end{picture}
+  \caption{The section ring of $D = (P)$, which has three generators and one relation}
+  \label{fig:Wei}
+\end{figure}
+
+
+
+%Figure 2
+\begin{figure}[bhtp]
+\centering
+\begin{picture}(4.5,7.7)(-0.3,-1)
+	% Axes
+	\drawline(0,0)(4.5,0)
+	\drawline(0,0)(0,6.3)
+	
+	% Boundary line
+	\drawline(0,0)(4.5,6.3)
+	
+	% Solid dots
+	\solid{(1,0)}\solid{(2,2)}\solid{(3,3)}\solid{(3,4)}\solid{(4,5)}
+	% Dot labels
+	\put(1.2,0.1){\makebox(0,0)[bl]{\small $a$}}
+	\put(2.2,1.9){\makebox(0,0)[ul]{\small $b$}}
+	\put(3.2,2.9){\makebox(0,0)[ul]{\small $c$}}
+	\put(3.2,3.9){\makebox(0,0)[ul]{\small $a$}}
+	\put(4.2,4.9){\makebox(0,0)[ul]{\small $d$}}
+	
+	% +'s
+	\xdot{(1,1)}\xdot{(2,1)}\xdot{(3,1)}\xdot{(4,1)}
+	
+	% Open dots
+	\open{(0,0)}
+	\open{(2,0)}
+	\open{(3,0)}\open{(3,2)}
+	\open{(4,0)}\open{(4,2)}\open{(4,3)}\open{(4,4)}
+	
+	%label
+	\put(0,-1){$4/3 \leq \alpha < 3/2$}
+\end{picture}\quad
+\begin{picture}(4.5,7.7)(-0.3,-1)
+	% Axes
+	\drawline(0,0)(4.5,0)
+	\drawline(0,0)(0,7.2)
+
+	% Boundary line
+	\drawline(0,0)(4.5,7.2)
+	
+	% Solid dots (1,0)(2,2)(2,3)(3,4)
+	\solid{(1,0)}\solid{(2,2)}\solid{(2,3)}\solid{(3,4)}
+	% Dot labels
+	\put(1.2,0.1){\makebox(0,0)[bl]{\small $a$}} %(1.2,0.1){\small \textbf a}
+	\put(2.2,1.9){\makebox(0,0)[ul]{\small $b$}} %(2.2,1.9){\small \textbf b}
+	\put(2.2,2.9){\makebox(0,0)[ul]{\small $a$}} %(2.2,2.9){\small \textbf a}
+	\put(3.2,3.9){\makebox(0,0)[ul]{\small $d$}} %(3.2,3.9){\small \textbf d}
+
+	% +'s 
+	\xdot{(1,1)}\xdot{(2,1)}\xdot{(3,1)}\xdot{(4,1)}
+	
+	% Open dots
+	\open{(0,0)}
+	\open{(2,0)}
+	\open{(3,0)}\open{(3,2)}\open{(3,3)}
+	\open{(4,0)}\open{(4,2)}\open{(4,3)}\open{(4,4)}\open{(4,5)}\open{(4,6)}
+	
+	%label
+	\put(0,-1){$3/2 \leq \alpha < 5/3$}
+\end{picture}\quad
+\begin{picture}(4.5,7.7)(-0.3,-1)
+	% Axes
+	\drawline(0,0)(4.5,0)
+	\drawline(0,0)(0,7.7)
+	
+	% Boundary line
+	\drawline(0,0)(4.5,7.7)
+	
+	% Solid dots  (1,0)(2,2)(2,3)(3,4)(3,5)
+	\solid{(1,0)}\solid{(2,2)}\solid{(2,3)}\solid{(3,4)}\solid{(3,5)}
+	% Dot labels
+	\put(1.2,0.1){\makebox(0,0)[bl]{\small $a$}} 
+	\put(2.2,1.9){\makebox(0,0)[ul]{\small $b$}}
+	\put(2.2,2.9){\makebox(0,0)[ul]{\small $a$}}
+	\put(3.2,3.9){\makebox(0,0)[ul]{\small $d$}}
+	\put(3.2,4.9){\makebox(0,0)[ul]{\small $a$}}
+	
+	% +'s 
+	\xdot{(1,1)}\xdot{(2,1)}\xdot{(3,1)}\xdot{(4,1)}
+	
+	% Open dots
+	\open{(0,0)}
+	\open{(2,0)}
+	\open{(3,0)}\open{(3,2)}\open{(3,3)}
+	\open{(4,0)}\open{(4,2)}\open{(4,3)}\open{(4,4)}\open{(4,5)}\open{(4,6)}
+	
+	%label
+	\put(0,-1){$5/3 \leq \alpha < 2$}
+\end{picture}\\[5ex]
+\begin{picture}(4.5,9)(-0.3,-1)
+	% Axes
+	\drawline(0,0)(4.5,0)
+	\drawline(0,0)(0,9)
+	
+	% Boundary line
+	\drawline(0,0)(3.7,8.5)
+	
+	% Solid dots  (1,0)(1,2)(2,3)
+	\solid{(1,0)}\solid{(1,2)}\solid{(2,3)}
+	% Dot labels
+	\put(1.2,0.1){\makebox(0,0)[bl]{\small $a$}} 
+	\put(1.2,1.9){\makebox(0,0)[ul]{\small $a$}}
+	\put(2.2,2.9){\makebox(0,0)[ul]{\small $c$}}
+	
+	% +'s 
+	\xdot{(1,1)}\xdot{(2,1)}\xdot{(3,1)}\xdot{(4,1)}
+	
+	% Open dots
+	\open{(0,0)}
+	\open{(2,0)}\open{(2,2)}\open{(2,4)}
+	\open{(3,0)}\open{(3,2)}\open{(3,3)}\open{(3,4)}\open{(3,5)}\open{(3,6)}
+	\open{(4,0)}\open{(4,2)}\open{(4,3)}\open{(4,4)}\open{(4,5)}\open{(4,6)}\open{(4,7)}\open{(4,8)}
+	
+	%label
+	\put(0,-1){$2 \leq \alpha < 5/2$}
+\end{picture}\quad
+\begin{picture}(4.5,9)(-0.3,-1)
+	% Axes
+	\drawline(0,0)(4.5,0)
+	\drawline(0,0)(0,8.5)
+	
+	% Boundary line
+	\drawline(0,0)(3.1,8.5)
+	
+	% Solid dots  (1,0)(1,2)(2,3)(2,5)
+	\solid{(1,0)}\solid{(1,2)}\solid{(2,3)}\solid{(2,5)}
+	% Dot labels
+	\put(1.2,0.1){\makebox(0,0)[bl]{\small $a$}} 
+	\put(1.2,1.9){\makebox(0,0)[ul]{\small $a$}}
+	\put(2.2,2.9){\makebox(0,0)[ul]{\small $c$}}
+	\put(2.2,4.9){\makebox(0,0)[ul]{\small $a$}} 
+	
+	% +'s 
+	\xdot{(1,1)}\xdot{(2,1)}\xdot{(3,1)}\xdot{(4,1)}
+	
+	% Open dots
+	\open{(0,0)}
+	\open{(2,0)}\open{(2,2)}\open{(2,4)}
+	\open{(3,0)}\open{(3,2)}\open{(3,3)}\open{(3,4)}\open{(3,5)}\open{(3,6)}\open{(3,7)}\open{(3,8)}
+	\open{(4,0)}\open{(4,2)}\open{(4,3)}\open{(4,4)}\open{(4,5)}\open{(4,6)}\open{(4,7)}\open{(4,8)}
+	
+	%label
+	\put(0,-1){$5/2 \leq \alpha < 3$}
+\end{picture}\quad
+\begin{picture}(4.5,9)(-0.3,-1)
+	% Axes
+	\drawline(0,0)(4.5,0)
+	\drawline(0,0)(0,8.5)
+	
+	% Boundary line
+	\drawline(0,0)(1.8,8.5)
+	
+	% Solid dots  (1,0)(1,2)(1,3)(1,4)
+	\solid{(1,0)}\solid{(1,2)}\solid{(1,3)}\solid{(1,4)}
+	% Dot labels
+	\put(1.2,0.1){\makebox(0,0)[bl]{\small $a$}} 
+	\put(1.2,1.9){\makebox(0,0)[ul]{\small $a$}}
+	\put(1.2,3.1){\makebox(0,0)[ul]{\small $\vdots$}}
+	\put(1.2,3.9){\makebox(0,0)[ul]{\small $a$}} 
+	
+	% +'s 
+	\xdot{(1,1)}\xdot{(2,1)}\xdot{(3,1)}\xdot{(4,1)}
+	
+	% Open dots
+	\open{(0,0)}
+	\open{(2,0)}\open{(2,2)}\open{(2,3)}\open{(2,4)}\open{(2,5)}\open{(2,6)}\open{(2,6)}\open{(2,7)}\open{(2,8)}
+	\open{(3,0)}\open{(3,2)}\open{(3,3)}\open{(3,4)}\open{(3,5)}\open{(3,6)}\open{(3,7)}\open{(3,8)}
+	\open{(4,0)}\open{(4,2)}\open{(4,3)}\open{(4,4)}\open{(4,5)}\open{(4,6)}\open{(4,7)}\open{(4,8)}
+	
+	%label
+	\put(0,-1){$\alpha \geq 3$}
+\end{picture}
+\caption{Cases covered by Lemma \ref{lem:unique}, where a generator of $M$ has a point of $M$ directly above it. The bullets indicate generators, annotated with their type (\textbf{a}--\textbf{d} of Theorem \ref{thm:1point_gens}).}
+\label{fig:unique}
+\end{figure}
+
+
+%Figure 3
+\begin{figure}[ht]
+\centering
+\begin{picture}(2,6)(-0.5,-0.5)
+	% Axes
+	\drawline(0,0)(2,0)
+	\drawline(0,0)(0,6)
+	
+	% Boundary line
+	\drawline(0,0)(1.2,6)
+	
+	% Solid dots  (1,0)(1,2)(1,3)(1,4)(1,5)
+	\solid{(1,0)}\solid{(1,2)}\solid{(1,3)}\solid{(1,4)}\solid{(1,5)}
+	
+	% +'s 
+	\xdot{(1,1)}\xdot{(2,1)}
+	
+	% Open dots
+	\open{(0,0)}
+	\open{(2,0)}\open{(2,2)}\open{(2,3)}\open{(2,4)}\open{(2,5)}
+	
+	%label
+	\put(0,-1){$D=5P^{(1)}$}
+\end{picture}\quad\quad
+\begin{picture}(2,6)(-0.5,-0.5)
+	% Axes
+	\drawline(0,0)(2,0)
+	\drawline(0,0)(0,6)
+	
+	% Boundary lines
+	\drawline(0,0)(1.2,6)
+	\drawline(0,0)(2.2,2.2)
+	
+	% Solid dots (1,2)(1,3)(1,4)(1,5)
+	\solid{(1,2)}\solid{(1,3)}\solid{(1,4)}\solid{(1,5)}
+	
+	% +'s 
+	\xdot{(1,1)}\xdot{(2,2)}
+	
+	% Open dots
+	\open{(2,3)}\open{(2,4)}\open{(2,5)}
+	
+	%label
+	\put(0,-1){$D=5P^{(1)}-P^{(2)}$}
+\end{picture}\quad\quad\quad\quad\quad
+\begin{picture}(2,6)(-0.5,-0.5)
+	% Axes
+	\drawline(0,0)(2,0)
+	\drawline(0,0)(0,6)
+	
+	% Boundary lines
+	\drawline(0,0)(1.2,6)
+	\drawline(0,0)(1.2,2.4)
+	
+	% Solid dots (1,3)(1,4)(1,5)
+	\solid{(1,3)}\solid{(1,4)}\solid{(1,5)}
+	
+	% +'s 
+	\xdot{(1,2)}
+	
+	% Open dots
+	\open{(2,3)}\open{(2,4)}\open{(2,5)}
+	
+	%label
+	\put(0,-1){$D=5P^{(1)}-2P^{(2)}$}
+\end{picture}\quad\quad\quad\quad\quad\quad
+\begin{picture}(2,10)(-0.5,-0.5)
+	% Axes
+	\drawline(0,0)(2,0)
+	\drawline(0,0)(0,10)
+	
+	% Boundary lines
+	\drawline(0,0)(2,10)
+	\drawline(0,0)(2,6)
+	
+	% Solid dots (1,4)(1,5)(2,7)
+	\solid{(1,4)}\solid{(1,5)}\solid{(2,7)}
+	
+	% +'s 
+	\xdot{(1,3)}\xdot{(2,6)}
+	
+	% Open dots
+	\open{(2,8)}\open{(2,9)}\open{(2,10)}
+	
+	%label
+	\put(0,-1){$D=5P^{(1)}-3P^{(2)}$}
+\end{picture}\quad\quad\quad\quad\quad
+\begin{picture}(3,15)(-0.5,-0.5)
+	% Axes
+	\drawline(0,0)(3,0)
+	\drawline(0,0)(0,15)
+	
+	% Boundary lines
+	\drawline(0,0)(3,15)
+	\drawline(0,0)(3,12)
+	
+	% Solid dots (1,5)(2,9)(3,13)
+	\solid{(1,5)}\solid{(2,9)}\solid{(3,13)}
+	
+	% +'s  (1,4)(2,8)(3,12)
+	\xdot{(1,4)}\xdot{(2,8)}\xdot{(3,12)}
+	
+	% Open dots (2,10)(3,14)(3,15)
+	\open{(2,10)}
+	\open{(3,14)}\open{(3,15)}
+	
+	%\label
+	\put(0.5,-1){$D=5P^{(1)}-4P^{(2)}$}
+\end{picture}
+\caption{Example bases for $S_D$ with $D$ as in Lemma \ref{lemma: Z-basis for ineffective 2pt case}}
+\label{fig:2pt ineffective Z-basis}
+\end{figure}
+
+%Figure 4
+\begin{figure}[htbp]
+\centering
+\begin{picture}(7,19)(-0.5,-0.5)
+	% Axes
+	\drawline(0,0)(7,0)
+	\drawline(0,0)(0,19)
+	
+	% Boundary lines
+	\drawline(0,0)(7.1,18.3)
+	\drawline(0,0)(7,1)
+	
+	% Solid dots (1,2)(2,3)(2,5)(5,13)(2,2)(3,2)(4,2)(5,2)   (6,2)(7,2)(3,3)
+	\solid{(1,2)}\solid{(2,3)}\solid{(2,5)}\solid{(5,13)}\solid{(2,2)}\solid{(3,2)}\solid{(4,2)}\solid{(5,2)}\solid{(6,2)}\solid{(7,2)}\solid{(3,3)}
+	% Dot labels
+	\put(1.2,2.1){\makebox(0,0)[bl]{\small $a$}} 
+	\put(2.2,3.1){\makebox(0,0)[bl]{\small $c$}} 
+	\put(2.2,5.1){\makebox(0,0)[bl]{\small $a$}} 
+	\put(4.4,13.1){\makebox(0,0)[ul]{\small $a$}} 
+	\put(2.2,2.1){\makebox(0,0)[bl]{\small $b$}} 
+	\put(3.2,2.1){\makebox(0,0)[bl]{\small $b$}}
+	\put(4.2,2.1){\makebox(0,0)[bl]{\small $b$}} 
+	\put(5.2,2.1){\makebox(0,0)[bl]{\small $b$}}  
+	\put(6.2,2.1){\makebox(0,0)[bl]{\small $b$}} 
+	\put(7.2,2.1){\makebox(0,0)[bl]{\small $b$}} 
+	\put(3.2,3.1){\makebox(0,0)[bl]{\small $c$}} 
+	
+	% +'s  (1,1)(2,1)(3,1)(4,1)(5,1)(6,1)(7,1)
+	\xdot{(1,1)}\xdot{(2,1)}\xdot{(3,1)}\xdot{(4,1)}\xdot{(5,1)}\xdot{(6,1)}\xdot{(7,1)}
+	
+	% Open dots 
+	\open{(4,3)}\open{(5,3)}\open{(6,3)}\open{(7,3)}
+	\open{(2,4)}\open{(3,4)}\open{(4,4)}\open{(5,4)}\open{(6,4)}\open{(7,4)}
+	\open{(3,5)}\open{(4,5)}\open{(5,5)}\open{(6,5)}\open{(7,5)}
+	\open{(3,6)}\open{(4,6)}\open{(5,6)}\open{(6,6)}\open{(7,6)}
+	\open{(3,7)}\open{(4,7)}\open{(5,7)}\open{(6,7)}\open{(7,7)}
+	\open{(4,8)}\open{(5,8)}\open{(6,8)}\open{(7,8)}
+	\open{(4,9)}\open{(5,9)}\open{(6,9)}\open{(7,9)}
+	\open{(4,10)}\open{(5,10)}\open{(6,10)}\open{(7,10)}
+	\open{(5,11)}\open{(6,11)}\open{(7,11)}
+	\open{(5,12)}\open{(6,12)}\open{(7,12)}
+	\open{(6,13)}\open{(7,13)}
+	\open{(6,14)}\open{(7,14)}
+	\open{(6,15)}\open{(7,15)}
+	\open{(7,16)}
+	\open{(7,17)}
+	\open{(7,18)}
+\end{picture}
+\caption{Labeled generators for $S_D$ according to Conjecture \ref{conj:2point ineffective} when $D=\frac{13}{5}P^{(1)}-\frac{1}{7}P^{(2)}.$}
+\end{figure}
+
+
+%Figure 5
+\begin{figure}[htbp]
+\begin{picture}(37,25)(-0.5,-0.5)
+	% Axes
+	\drawline(0,0)(37,0)
+	\drawline(0,0)(0,25)
+	
+	% Boundary lines
+	\drawline(0,0)(37,24.67)
+	\drawline(0,0)(37,22.2)
+	
+	% Solid dots 
+	\solid{(15,10)}\solid{(18,12)}\solid{(20,13)}\solid{(21,14)}\solid{(23,15)}\solid{(24,16)}\solid{(25,16)}\solid{(26,17)}\solid{(27,18)}\solid{(28,18)}\solid{(29,19)}\solid{(30,19)}\solid{(31,20)}\solid{(32,21)}\solid{(33,21)}\solid{(34,22)}\solid{(35,22)}\solid{(37,24)}
+	%Dot labels
+	\put(15.2,10.1){\makebox(0,0)[bl]{\small \textbf a}}
+	\put(18.2,12.1){\makebox(0,0)[bl]{\small \textbf b}}
+	\put(20.2,13.1){\makebox(0,0)[bl]{\small \textbf b}}
+	\put(21.2,14.1){\makebox(0,0)[bl]{\small \textbf b}}
+	\put(23.2,15.1){\makebox(0,0)[bl]{\small \textbf b}}
+	\put(24.2,16.1){\makebox(0,0)[bl]{\small \textbf b}}
+	\put(25.2,16.1){\makebox(0,0)[bl]{\small \textbf b}}
+	\put(26.2,17.1){\makebox(0,0)[bl]{\small \textbf b}}
+	\put(27.2,18.1){\makebox(0,0)[bl]{\small \textbf b}}
+	\put(28.2,18.1){\makebox(0,0)[bl]{\small \textbf b}}
+	\put(29.2,19.1){\makebox(0,0)[bl]{\small \textbf b}}
+	\put(30.2,19.1){\makebox(0,0)[bl]{\small \textbf b}}
+	\put(31.2,20.1){\makebox(0,0)[bl]{\small \textbf b}}
+	\put(32.2,21.1){\makebox(0,0)[bl]{\small \textbf b}}
+	\put(33.2,21.1){\makebox(0,0)[bl]{\small \textbf b}}
+	\put(34.2,22.1){\makebox(0,0)[bl]{\small \textbf b}}
+	\put(35.2,22.1){\makebox(0,0)[bl]{\small \textbf b}}
+	\put(37.2,24.1){\makebox(0,0)[bl]{\small \textbf b}}
+	
+	% +'s  
+	\xdot{(3,2)  }\xdot{(5,3)  }\xdot{(6,4)  }\xdot{(8,5)  }\xdot{(10,6) }\xdot{(11,7) }\xdot{(12,8) }\xdot{(13,8) }\xdot{(14,9) }\xdot{(15,9) }\xdot{(16,10)}\xdot{(17,11)}\xdot{(18,11)}\xdot{(19,12)}\xdot{(20,12)}\xdot{(21,13)}\xdot{(22,14)}\xdot{(23,14)}\xdot{(24,15)}\xdot{(25,15)}\xdot{(26,16)}\xdot{(27,17)}\xdot{(28,17)}\xdot{(29,18)}\xdot{(30,18)}\xdot{(31,19)}\xdot{(32,20)}\xdot{(33,20)}\xdot{(34,21)}\xdot{(35,21)}\xdot{(36,22)}\xdot{(37,23)}
+	
+	% Open dots(36,24)
+	\open{(30,20)}\open{(33,22)}\open{(35,23)}\open{(36,23)}\open{(36,24)}
+\end{picture}	
+\caption{Labeled generators for $S_D$ according to Conjecture \ref{conj:2point ineffective} where $D=\frac{2}{3}P^{(1)}-\frac{3}{5}P^{(2)}.$}
+\end{figure} 
+
+
+\end{document}  
+  
+
+Figure 5:
+\psset{unit=0.4cm,linewidth=0.05}
+\begin{figure}[htbp]
+	%\centering
+	\begin{pspicture}(-0.5,-0.5)(37,25)
+		\psaxes[dy=1,Dy=1,dx=1,Dx=1,ticksize=0pt](37,25)
+		\psline(0,0)(37,24.67)
+		\psline(0,0)(37,22.2)
+		\psdots*[dotstyle=*,dotsize=5pt]
+		(15,10)
+		(18,12)
+		(20,13)
+		(21,14)
+		(23,15)
+		(24,16)
+		(25,16)
+		(26,17)
+		(27,18)
+		(28,18)
+		(29,19)
+		(30,19)
+		(31,20)
+		(32,21)
+		(33,21)
+		(34,22)
+		(35,22)
+		(37,24)
+		\psdots[dotstyle=+,dotsize=6pt](3,2)(5,3)(6,4)(8,5)(10,6)(11,7)(12,8)(13,8)(14,9)(15,9)(16,10)(17,11)(18,11)(19,12)(20,12)(21,13)(22,14)(23,14)(24,15)(25,15)(26,16)(27,17)(28,17)(29,18)(30,18)(31,19)(32,20)(33,20)(34,21)(35,21)(36,22)(37,23)
+		\psdots*[dotstyle=o,dotsize=5pt](30,20)(33,22)(35,23)(36,23)(36,24)
+		
+		\rput[bl](15.2,10.1){\small \textbf a}
+		\rput[bl](18.2,12.1){\small \textbf b}
+		\rput[bl](20.2,13.1){\small \textbf b}
+		\rput[bl](21.2,14.1){\small \textbf b}
+		\rput[bl](23.2,15.1){\small \textbf b}
+		\rput[bl](24.2,16.1){\small \textbf b}
+		\rput[bl](25.2,16.1){\small \textbf b}
+		\rput[bl](26.2,17.1){\small \textbf b}
+		\rput[bl](27.2,18.1){\small \textbf b}
+		\rput[bl](28.2,18.1){\small \textbf b}
+		\rput[bl](29.2,19.1){\small \textbf b}
+		\rput[bl](30.2,19.1){\small \textbf b}
+		\rput[bl](31.2,20.1){\small \textbf b}
+		\rput[bl](32.2,21.1){\small \textbf b}
+		\rput[bl](33.2,21.1){\small \textbf b}
+		\rput[bl](34.2,22.1){\small \textbf b}
+		\rput[bl](35.2,22.1){\small \textbf b}
+		\rput[bl](37.2,24.1){\small \textbf b}
+	\end{pspicture}
+	\caption{Labeled generators for $S_D$ according to Conjecture \ref{conj:2point ineffective} where $D=\frac{2}{3}P^{(1)}-\frac{3}{5}P^{(2)}.$}
+\end{figure}  
+  
+Figure 4:
+\begin{figure}[htbp]
+	\centering
+	\begin{pspicture}(-0.5,-0.5)(7,19)
+		\psaxes[dy=1,Dy=1,dx=1,Dx=1,ticksize=0pt](7,19)
+		\psline(0,0)(7.1,18.3)
+		\psline(0,0)(7,1)
+		\psdots*[dotstyle=*,dotsize=5pt](1,2)(2,3)(2,5)(5,13)(2,2)(3,2)(4,2)(5,2)   (6,2)(7,2)(3,3)
+		\rput[bl](1.2,2.1){\small \textbf a}
+		\rput[bl](2.2,3.1){\small \textbf c}
+		\rput[bl](2.2,5.1){\small \textbf a}
+		\rput[bl](1.2,2.1){\small \textbf a}
+		\rput[ul](4.4,13.1){\small \textbf a}
+		\rput[bl](2.2,2.1){\small \textbf b}
+		\rput[bl](3.2,2.1){\small \textbf b}
+		\rput[bl](4.2,2.1){\small \textbf b}
+		\rput[bl](5.2,2.1){\small \textbf b}
+		\rput[bl](6.2,2.1){\small \textbf b}
+		\rput[bl](7.2,2.1){\small \textbf b}
+		\rput[bl](3.2,3.1){\small \textbf c}
+		
+		\psdots[dotstyle=+,dotsize=6pt](1,1)(2,1)(3,1)(4,1)(5,1)(6,1)(7,1)
+		\psdots*[dotstyle=o,dotsize=5pt](4,3)(5,3)(6,3)(7,3)(2,4)(3,4)(4,4)(5,4)(6,4)(7,4)(3,5)(4,5)(5,5)(6,5)(7,5)(3,6)(4,6)(5,6)(6,6)(7,6)(3,7)(4,7)(5,7)(6,7)    (7,7)(4,8)(5,8)(6,8)(7,8)(4,9)(5,9)(6,9)(7,9)(4,10)(5,10)(6,10)(7,10)(5,11)(6,11)(7,11)(5,12)(6,12)(7,12)(6,13)(7,13)(6,14)(7,14)(6,15)(7,15)(7,16) (7,17)(7,18)
+		%\rput(2.25,-1.5){$D=\frac{13}{5}P^{(1)}-\frac{1}{7}P^{(2)}$}
+	\end{pspicture}
+	\caption{Labeled generators for $S_D$ according to Conjecture \ref{conj:2point ineffective} when $D=\frac{13}{5}P^{(1)}-\frac{1}{7}P^{(2)}.$}
+\end{figure}   
+  
+  
+Original:
+\begin{figure}[bhtp]
+  \centering
+  \begin{pspicture} (-0.3,-0.3) (4.5,4.5)
+    \psaxes[ticks=none,labels=none](4.5,4.5)
+    \psline(0,0)(4.5,4.5)
+    \psdots*[dotstyle=*,dotsize=4pt](1,0)(2,2)(3,3)
+    \rput[bl](1.2,0.1){\small $u$}
+    \rput[ul](2.2,1.9){\small $x$}
+    \rput[ul](3.2,2.9){\small $y$}
+    \psdots[dotstyle=+,dotsize=6pt](1,1)(2,1)(3,1)(4,1)
+    \psdots*[dotstyle=o,dotsize=5pt]
+    (0,0)
+    (2,0)
+    (3,0)(3,2)
+    (4,0)(4,2)(4,3)(4,4)
+  \end{pspicture}
+  \caption{The section ring of $D = (P)$, which has three generators and one relation}
+  \label{fig:Wei}
+\end{figure}
