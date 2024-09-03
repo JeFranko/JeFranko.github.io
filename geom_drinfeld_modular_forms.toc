@@ -10,8 +10,8 @@
 \contentsline {section}{\tocsection {}{3}{Drinfeld Modular Forms}}{9}{section.3}
 \contentsline {section}{\tocsection {}{4}{Drinfeld Modular Curves}}{11}{section.4}
 \contentsline {section}{\tocsection {}{5}{Rigid Stacky GAGA}}{13}{section.5}
-\contentsline {section}{\tocsection {}{6}{Proof of the Main Theorems}}{13}{section.6}
-\contentsline {subsection}{\tocsubsection {}{6.1}{Properties of $\Gamma _2$}}{14}{subsection.6.1}
+\contentsline {section}{\tocsection {}{6}{Proof of the Main Theorems}}{14}{section.6}
+\contentsline {subsection}{\tocsubsection {}{6.1}{Properties of $\Gamma _2$}}{15}{subsection.6.1}
 \contentsline {subsection}{\tocsubsection {}{6.2}{Cusps and Elliptic Points}}{15}{subsection.6.2}
 \contentsline {subsection}{\tocsubsection {}{6.3}{Modularity and Series Expansions at Cusps}}{17}{subsection.6.3}
 \contentsline {subsection}{\tocsubsection {}{6.4}{Generalization}}{18}{subsection.6.4}

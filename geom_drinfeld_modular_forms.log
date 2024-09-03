@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  27 AUG 2024 17:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  3 SEP 2024 06:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1542,125 +1542,120 @@ Underfull \hbox (badness 10000) in paragraph at lines 353--354
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 364--366
+Underfull \hbox (badness 10000) in paragraph at lines 365--367
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 372--373
+Underfull \hbox (badness 10000) in paragraph at lines 373--374
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 374--376
+Underfull \hbox (badness 10000) in paragraph at lines 375--377
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 377--378
+Underfull \hbox (badness 10000) in paragraph at lines 378--379
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 389--390
+Underfull \hbox (badness 10000) in paragraph at lines 390--391
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 408--409
+Underfull \hbox (badness 10000) in paragraph at lines 409--410
 
  []
 
 [8] [9]
-Underfull \hbox (badness 10000) in paragraph at lines 523--524
+Underfull \hbox (badness 10000) in paragraph at lines 525--526
 
  []
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 552--554
+Underfull \hbox (badness 10000) in paragraph at lines 556--558
 
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 578--580
+Underfull \hbox (badness 10000) in paragraph at lines 582--584
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 595--596
+Underfull \hbox (badness 10000) in paragraph at lines 599--600
 
  []
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 629--630
+Underfull \hbox (badness 10000) in paragraph at lines 635--636
 
  []
 
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 672--675
+Underfull \hbox (badness 10000) in paragraph at lines 678--681
+
+ []
+
+[14]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 715.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\Gamma' on input line 715.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 715.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 715.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 720--721
+
+ []
+
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 837--838
 
  []
 
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 709.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\Gamma' on input line 709.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 709.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 709.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 714--715
-
- []
-
-[14] [15]
-Underfull \hbox (badness 10000) in paragraph at lines 830--831
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 843--846
+Underfull \hbox (badness 10000) in paragraph at lines 850--853
 
  []
 
 [16]
-Underfull \hbox (badness 10000) in paragraph at lines 964--966
+Underfull \hbox (badness 10000) in paragraph at lines 971--973
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 969--970
+Underfull \hbox (badness 10000) in paragraph at lines 976--977
 
  []
 
-[17]
-
-LaTeX Warning: Reference `cor: generalized cusps comparison' on page 18 undefin
-ed on input line 1021.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1021--1022
-
- []
-
-[18]
+[17] [18]
 
 LaTeX Warning: Reference `cor: generalized cusps comparison' on page 19 undefin
-ed on input line 1025.
+ed on input line 1028.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1037--1038
+Underfull \hbox (badness 10000) in paragraph at lines 1028--1029
 
  []
+
+
+LaTeX Warning: Reference `cor: generalized cusps comparison' on page 19 undefin
+ed on input line 1032.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 1044--1045
@@ -1668,88 +1663,96 @@ Underfull \hbox (badness 10000) in paragraph at lines 1044--1045
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1046--1047
+Underfull \hbox (badness 10000) in paragraph at lines 1051--1052
 
  []
 
 [19]
-Underfull \hbox (badness 10000) in paragraph at lines 1049--1051
+Underfull \hbox (badness 10000) in paragraph at lines 1053--1054
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1052--1056
+Underfull \hbox (badness 10000) in paragraph at lines 1056--1058
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1057--1059
+Underfull \hbox (badness 10000) in paragraph at lines 1059--1063
 
  []
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 1061.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 1061.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1060--1062
+Underfull \hbox (badness 10000) in paragraph at lines 1064--1066
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1079--1080
+LaTeX Warning: Command \j invalid in math mode on input line 1068.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 1068.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1067--1069
 
  []
 
-[20]
-Underfull \hbox (badness 10000) in paragraph at lines 1087--1088
+
+Underfull \vbox (badness 1348) has occurred while \output is active []
+
+ [20]
+Underfull \hbox (badness 10000) in paragraph at lines 1086--1087
 
  []
 
 
-Overfull \hbox (54.27516pt too wide) detected at line 1105
+Underfull \hbox (badness 10000) in paragraph at lines 1094--1095
+
+ []
+
+
+Overfull \hbox (54.27516pt too wide) detected at line 1112
 []
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 1110--1111
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 1117--1118
 
  []
 
-[21]
-Underfull \hbox (badness 10000) in paragraph at lines 1126--1127
+
+Underfull \hbox (badness 10000) in paragraph at lines 1133--1134
 
  []
 
 [22]
-Underfull \hbox (badness 10000) in paragraph at lines 1159--1161
+Underfull \hbox (badness 10000) in paragraph at lines 1166--1168
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1163--1164
+Underfull \hbox (badness 10000) in paragraph at lines 1170--1171
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1167--1168
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1181--1183
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1184--1185
+Underfull \hbox (badness 10000) in paragraph at lines 1174--1175
 
  []
 
 [23]
-Underfull \hbox (badness 10000) in paragraph at lines 1213--1214
+Underfull \hbox (badness 10000) in paragraph at lines 1188--1190
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1191--1192
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1220--1221
 
  []
 
@@ -1767,11 +1770,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [25])
 [26]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1224.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1224.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1231.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1231.
  (./geom_drinfeld_modular_forms.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1224.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1224.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1231.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1231.
 
 Package rerunfilecheck Info: File `geom_drinfeld_modular_forms.out' has not cha
 nged.
@@ -1780,12 +1783,12 @@ nged.
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1224.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1231.
  ) 
 Here is how much of TeX's memory you used:
- 34260 strings out of 492995
- 789615 string characters out of 6132704
- 990889 words of memory out of 5000000
+ 34259 strings out of 492995
+ 789603 string characters out of 6132704
+ 990886 words of memory out of 5000000
  36801 multiletter control sequences out of 15000+600000
  23117 words of font info for 88 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
@@ -1821,10 +1824,10 @@ xlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/loca
 l/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/
 local/texlive/2017/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/te
 xlive/2017/texmf-dist/fonts/type1/public/rsfs/rsfs5.pfb>
-Output written on geom_drinfeld_modular_forms.pdf (26 pages, 466334 bytes).
+Output written on geom_drinfeld_modular_forms.pdf (26 pages, 468217 bytes).
 PDF statistics:
- 685 PDF objects out of 1000 (max. 8388607)
- 596 compressed objects within 6 object streams
- 161 named destinations out of 1000 (max. 500000)
+ 686 PDF objects out of 1000 (max. 8388607)
+ 597 compressed objects within 6 object streams
+ 160 named destinations out of 1000 (max. 500000)
  157 words of extra memory for PDF output out of 10000 (max. 10000000)
 

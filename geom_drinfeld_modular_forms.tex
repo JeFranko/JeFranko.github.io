@@ -352,11 +352,12 @@
 		\begin{example}\cite{Carlitz-class-of-poly}\label{ex: Carlitz module}
 			The \textbf{Carlitz module} is the rank $1$ Drinfeld module defined by \[\varphi(T)=TX+X^q,\] and corresponds to the lattice $\overline{\pi}A\subset \Omega.$ Here, $\overline{\pi}\in K_{\infty}(\sqrt[q-1]{-T})$ is the \textbf{Carlitz period}, defined up to a $(q-1)$st root of unity. We fix one such $\overline{\pi}$ once and for all.\\
 			
-			As an algebraic Drinfeld module, the Carlitz module is the image of the ring homomorphism \begin{align*}
+			As an algebraic Drinfeld module, the Carlitz module is the ring homomorphism 
+			\begin{align*}
 				\varphi: &A\to C\{X^q\}\\
 				&T\mapsto TX+X^q 
 			\end{align*}
-			which is a rank $1$ module since $\deg \varphi=q=|T|_{\infty}^1,$ over the $A$-scheme $\Spec C.$ 
+			which is a rank $1$ module since $\deg (TX+X^q)=q=|T|_{\infty}^1,$ over the $A$-scheme $\Spec C.$ 
 		\end{example}
 		
 		\begin{example}
@@ -364,7 +365,7 @@
 			\[\varphi^z(T)=TX+g(z)X^q+\Delta(z)X^{q^2},\]
 			where $g$ and $\Delta$ are Drinfeld modular forms of type $0$ and weights $q-1$ and $q^2-1$ respectively. We will define Drinfeld modular forms in the next section. This is analogous to defining an elliptic curve by a short Weierstrass equation whose coefficients are values of Eisenstein series.\\
 			
-			Here, once again this is an algebraic Drinfeld module over an affine $A$-scheme, we have written down in particular the image of a degree $2$ ring homomorphism $\varphi: A\to C\{X^q\}.$ The Carlitz period $\overline{\pi}$ serves to normalize the coefficients of the series expansion of $g$ and $\Delta$ at the cusps of $\GL_2(A)$ so that those coefficients are elements of $A.$
+			Here we have written an algebraic Drinfeld module over an affine $A$-scheme by describing just the image of a degree $2$ ring homomorphism $\varphi: A\to C\{X^q\}$ given similarly to Example \ref{ex: Carlitz module}. The Carlitz period $\overline{\pi}$ serves to normalize the coefficients of the series expansion of $g$ and $\Delta$ at the cusps of $\GL_2(A)$ so that those coefficients are elements of $A.$
 		\end{example}
 		
 		\subsection{Stacks and Section Rings}
@@ -381,16 +382,16 @@
 		where \[\lfloor D\rfloor=\Big\lfloor\sum_ia_iP_i\Big\rfloor\overset{def}{=}\sum_i\Big\lfloor\frac{a_i}{\#G_{P_i}}\Big\rfloor\pi(P_i).\]
 		
 		\begin{example}\label{ex: sheaf of differentials}
-			Let $f:\sX\to \sY$ be a morphism of stacky curves with coarse spaces $X$ and $Y=\Spec k$ for $k$ some field respectively. The \textbf{sheaf of differentials} $\Omega^1_{\sX}=\Omega^1_{\sX/\Spec k}$ is the sheafification (see \cite[Section $2.2.9$]{Alper-Stacks-and-Moduli} for sheafification) of the presheaf on $\sX_{\text{\'et}}$ given by 
+			Let $f:\sX\to \sY$ be a morphism of stacky curves with coarse spaces $X$ and $Y=\Spec k$ for $k$ some field respectively. The \textbf{sheaf of differentials} $\Omega^1_{\sX}=\Omega^1_{\sX/\Spec k}$ is the sheafification (see \cite[Section $2.2.9$]{Alper-Stacks-and-Moduli} for sheafification) of the presheaf on $\sX_{\text{\'et}},$ the small \'etale site on $\sX,$ i.e.\ the category of schemes which are \'etale over $\sX$, given by 
 			\[ (U\to \sX)\mapsto \Omega^1_{\cO_{\sX}(U)/f^{-1}\cO_{\sY}(U)},\]
 			where $\cO_{\sX}$ and $\cO_{\sY}$ denote the structure sheaves on $\sX$ and $\sY$ respectively (see e.g.\ \cite[Example $4.1.2$]{Alper-Stacks-and-Moduli} for more details on structure sheaves for Deligne-Mumford stacks). 
 		\end{example}
 		
 		Every smooth, projective curve $X$ may be treated as a stacky curve with nothing stacky about it. On the other hand the stack quotient $[X/G]$ for a finite group $G\leq \Aut(X)$ is a stacky curve. We know from e.g.\ \cite[Remark $5.2.8$]{VZB} that Zariski locally, every stacky curve is the quotient of a smooth, affine curve by a finite group, so locally, stacky curves have a quotient description $[X/G]$ as above. Recall from \cite[Lemma $5.3.10.(b)$]{VZB} that the stabilizer groups of a tame stacky curve are isomorphic to the group of roots of unity $\mu_n$ for some $n.$ In order to discuss Drinfeld moduli stacks, we introduce two more stacky notions.\\
 		
-		We say a \textbf{gerbe} over a stacky curve is a smooth, proper, geometrically connected Deligne-Mumford stack of dimension $1$ over its base field. Note that a gerbe is almost a stacky curve, except that it does not contain a dense open subscheme. Let $\sX$ denote a geometrically integral Deligne-Mumford stack of relative dimension $1$ over a base scheme $S$ whose generic point has stabilizer $\mu_n$ for some $n.$ There exists a stack, denoted $\sX/\!/\mu_n,$ called the \textbf{rigidification} of $\sX,$ and a factorization 
+		Let us consider $\sX$ a stacky curve as above and $x:\Spec \bbK\to\sX$ a point on $\sX$ with stabilizer $G_x.$ A \textbf{residue gerbe} at $x$ is the unique monomorphism $G_x\hookrightarrow \sX$ through which $x$ factors. As in \cite{VZB} we treat residue gerbes as fractional points on a stacky curve. We will say a \textbf{gerbe} over the stacky curve $\sX$ is a smooth, proper, geometrically connected Deligne-Mumford stack of dimension $1$ where every point has a stabilizer containing some nontrivial group. Note that a gerbe is almost a stacky curve, except that it does not contain a dense open subscheme and indeed, each point is fractional in the sense above. Let $\sX$ denote a geometrically integral Deligne-Mumford stack of relative dimension $1$ over a base scheme $S$ whose generic point has stabilizer $\mu_n$ for some $n.$ There exists a stack, denoted $\sX/\!/\mu_n,$ called the \textbf{rigidification} of $\sX,$ and a factorization 
 		\[\sX\overset{\pi}{\to}\sX/\!/\mu_n\to S\] 
-		such that $\pi$ is a $\mu_n$-gerbe and the stabilizer of any point in $\sX/\!/\mu_n$ is the quotient of the stabilizer of the corresponding point in $\sX$ by $\mu_n.$
+		such that $\pi$ is a $\mu_n$-gerbe (i.e.\ for each point $x$ of $\sX,$ the stabilizer $G_x$ contains $\mu_n$) and the stabilizer of any point in $\sX/\!/\mu_n$ is the quotient of the stabilizer of the corresponding point in $\sX$ by $\mu_n.$
 		
 		\begin{remark}
 			In the factorization above, since $\pi$ is a gerbe and furthermore is \'etale, the sheaf of relative differentials $\sX\to \sX/\!/\mu_n$ is $0,$ i.e.\ the gerbe does not affect sections of relative differentials (over the base scheme), nor the canonical ring which we define for stacks below. In particular, we can identify canonical divisors $K_{\sX}\sim \pi^*K_{\sX/\!/\mu_n},$ and the corresponding canonical rings are isomorphic. 
@@ -421,7 +422,7 @@
 			\[u(z)\overset{def}{=}\frac{1}{e_{\overline{\pi}A}(\bar{\pi}z)}=\frac{1}{\bar{\pi}e_A(z)}=\bar{\pi}^{-1}\sum_{a\in A}\frac{1}{z+a}.\]
 		\end{definition}
 		\begin{remark}
-			In the Drinfeld setting, $\overline{\pi}$ plays the role of the constant $2\pi i\in \bbC$ in the parameter $q=e^{2\pi i z}$ at infinity from the classical setting. That is, it is a normalization  factor so that the series expansion coefficients for modular forms at cusps are elements of $A.$ 
+			In the Drinfeld setting, $\overline{\pi}$ plays the role of the constant $2\pi i\in \bbC$ in the parameter $q=e^{2\pi i z}$ at infinity from the classical setting. That is, it is a normalization  factor so that the series expansion coefficients for certain generating modular forms at cusps are elements of $A.$ 
 		\end{remark}
 		
 		One fact about this parameter which we will use later in our consideration of modular forms is the following. 
@@ -433,19 +434,24 @@
 		\end{proof}
 		
 		Now we are able to define a fundamental object of study for this article. 
+		%\begin{definition}
+		%	We say a function $f:\Omega\to C$ such that $f(\gamma z)=\det(\gamma)^{-l}(cz+d)^kf(z)$ for all $\displaystyle{\gamma=\begin{psmallmatrix}a&b\\c&b\end{psmallmatrix}\in \Gamma},$ where $k\in \bbZ_{\geq 0},$ $l\in \bbZ/(q-1)\bbZ$ and $\Gamma\leq \GL_2(A)$ is a congruence subgroup, is \textbf{weakly modular of weight $k$ and type $l$ for $\Gamma.$}
+		%\end{definition}
+		
 		\begin{definition}\cite[Definition $(3.1)$]{Gekeler-Curves}
 		\label{def: Drinfeld modular form}
-			Let $\Gamma\leq \GL_2(A)$ be a congruence subgroup. A \textbf{modular form} of \textbf{weight} $k\in \bbZ_{\geq0}$ and \textbf{type} $l\in \bbZ/((q-1) \bbZ)$ is a holomorphic function $f:\Omega\to C$ such that 
+			Let $\Gamma\leq \GL_2(A)$ be a congruence subgroup. A \textbf{modular form} of \textbf{weight} $k\in \bbZ_{\geq0}$ and \textbf{type} $l\in \bbZ/((q-1) \bbZ)$ for $\Gamma$ is a holomorphic function $f:\Omega\to C$ such that 
 			\begin{enumerate}
 				\item $f(\gamma z)=\det(\gamma)^{-l}(cz+d)^kf(z)$ for all $\displaystyle{\gamma=\begin{psmallmatrix}a&b\\c&b\end{psmallmatrix}\in \Gamma},$ and
 				\item $f$ is holomorphic at the cusps of $\Gamma.$
 			\end{enumerate}
+			If such an $f$ satisfies only condition $(1),$ we say $f$ is simply \textbf{weakly modular} (of weight $k,$ type $l,$ for $\Gamma$).
 		\end{definition}
 		
 		\begin{remark}
-			There are several interpretations of the second condition about holomorphy at $\infty,$ two of which are particularly helpful for intuition and for the proof the main theorem respectively:
+			There are several interpretations of the second condition when $\Gamma$ has a single cusp, or generally about the condition of holomorphy at the cusp $\infty$:
 			\begin{enumerate}
-				\item \cite[$(2.2.\mathrm{iii})$]{Gekeler-Invariants} The condition is equivalent to $f$ being bounded on $\{z\in \Omega:|z|_{\infty}\geq 1\},$ where $|\cdot|_{\infty}$ is the $\infty$-adic absolute value, in any case when $\Gamma$ has a single cusp;
+				\item \cite[$(2.2.\mathrm{iii})$]{Gekeler-Invariants} The condition is equivalent to $f$ being bounded on $\{z\in \Omega:|z|_{\infty}\geq 1\},$ where $|\cdot|_{\infty}$ is the $\infty$-adic absolute value; 
 				\item \cite[Definition $3.5.(\mathrm{iii})$]{Gekeler-survey-Drinfeld-modular-forms} $f$ has a series expansion at cusps: 
 				\[f(z)=\sum_{n\in \bbZ}a_nu(z)^n, ~a_n\in C,\]
 				where $u$ is the parameter at $\infty,$ with a positive radius of convergence. The second condition means that $a_n=0$ for all $n<0.$
@@ -455,11 +461,6 @@
 		\begin{remark}
 			The observation from \cite[Definition $(5.7)$]{Gekeler-Coeff} that if $f$ is Drinfeld modular form, then $f(z+b)=f(z)$ for any $b\in A$ means that although not literally a Fourier series, the series expansion of a modular form at the cusps of some congruence subgroup is ``morally'' the Drinfeld setting equivalent to a Fourier series.   
 		\end{remark}
-		
-		Finally, we mention some further terminology which is part of the definition of a Drinfeld modular form.
-		\begin{definition}
-			We say a function $f:\Omega\to C$ such that $f(\gamma z)=\det(\gamma)^{-l}(cz+d)^kf(z)$ for all $\displaystyle{\gamma=\begin{psmallmatrix}a&b\\c&b\end{psmallmatrix}\in \Gamma},$ where $k\in \bbZ_{\geq 0},$ $l\in \bbZ/(q-1)\bbZ$ and $\Gamma\leq \GL_2(A)$ is a congruence subgroup, is \textbf{weakly modular of weight $k$ and type $l$ for $\Gamma.$}
-		\end{definition}
 		
 		We introduce some terminology and notation respectively in the next definition.
 		%\begin{definition}
@@ -487,8 +488,9 @@
 			If $M_{k,l}(\Gamma)\neq 0,$ then $k\equiv 2l\pmod{q-1}.$
 		\end{lemma}
 		\begin{proof}
-			Let $\displaystyle{\gamma=\begin{psmallmatrix}\alpha&0\\0&\alpha\end{psmallmatrix}}$ for some $\alpha\in \bbF_q^{\times}.$ By assumption $\Gamma$ contains the matrices of form $\displaystyle{\begin{psmallmatrix}\alpha&0\\0&\alpha'\end{psmallmatrix}}$ for all $\alpha,\alpha'\in \bbF_q^{\times},$ therefore $\gamma\in \Gamma.$ If $f$ is non-zero modular for $\Gamma$ of weight $k$ and type $l$ then \[f(\gamma z)=f\left(\frac{\alpha z}{\alpha}\right)=f(z)=\alpha^k\alpha^{-2l}f(z), \]
-			so $\alpha^k=\alpha^{2l}$ in $\bbF_q^{\times}$ and we conclude $k\equiv 2l\pmod{q-1}.$ 
+			See \cite[Remark $(5.8.\mathrm{iii})$]{Gekeler-Coeff}
+			%Let $\displaystyle{\gamma=\begin{psmallmatrix}\alpha&0\\0&\alpha\end{psmallmatrix}}$ for some $\alpha\in \bbF_q^{\times}.$ By assumption $\Gamma$ contains the matrices of form $\displaystyle{\begin{psmallmatrix}\alpha&0\\0&\alpha'\end{psmallmatrix}}$ for all $\alpha,\alpha'\in \bbF_q^{\times},$ therefore $\gamma\in \Gamma.$ If $f$ is non-zero modular for $\Gamma$ of weight $k$ and type $l$ then \[f(\gamma z)=f\left(\frac{\alpha z}{\alpha}\right)=f(z)=\alpha^k\alpha^{-2l}f(z), \]
+			%so $\alpha^k=\alpha^{2l}$ in $\bbF_q^{\times}$ and we conclude $k\equiv 2l\pmod{q-1}.$ 
 		\end{proof}
 		
 		\begin{example}
@@ -522,12 +524,14 @@
 		%\end{example}
 		Let us consider the moduli space of rank $2$ Drinfeld modules, first as a rigid analytic space, then as moduli schemes, and finally as log stacky curves. We recall some definitions we need to discuss rigid anaytic spaces, which are a natural means to discuss the affine Drinfeld modular curves as quotients of the Drinfeld ``upper half-plane'' $\Omega$ by congruence subgroups. A more thorough treatment and reference for rigid analytic geometry is \cite{Frensel-vanderPut-Rigid-Analytic_Geom}. We will specialize to rigid analytic spaces over $C$ for readability.\\
 		
-		We need the following two intermediate definitions to define a rigid analytic space. 
+		We need the following intermediate definitions to define a rigid analytic space. 
 		\begin{definition}%\cite[Page $46$]{Frensel-vanderPut-Rigid-Analytic_Geom}
 			Let $z_1,\cdots, z_n$ denote some variables and let $\bbK$ denote a non-archemedean, valued field. Let $T_n=\bbK\langle z_1,\cdots, z_n\rangle$ be the $n$-dimensional $\bbK$-algebra which is the subring of the ring of formal power series $\bbK[\![z_1,\cdots, z_n]\!]$ 
 			\[T_n=\left\{\sum_{\alpha} c_{\alpha}z_1^{\alpha_1}\cdots z_n^{\alpha_n}\in \bbK[\![z_1,\cdots, z_n]\!] :\lim c_{\alpha}=0\right\},\] 
 			where $\alpha = (\alpha_1,\cdots,\alpha_n).$ An \textbf{affinoid algebra} $A$ over $\bbK$ is a $\bbK$-algebra which is a finite extension of $T_n$ for some $n\geq 0.$
 		\end{definition} 
+		
+		Associated to an affinoid algebra $A$ over a field $\bbK$ is a corresponding \textbf{affinoid space} $\operatorname{Sp}(A),$ the set of its maximal ideals. 
 		
 		\begin{definition}\cite[Definition $2.4.1$]{Frensel-vanderPut-Rigid-Analytic_Geom}
 			Let $X$ be a set. A \textbf{G-topology} on $X$ consists of the data:
@@ -611,10 +615,12 @@
 			Note that for $\Gamma\leq \GL_2(A)$ any congruence subgroup, the Drinfeld modular curves $\sX_{\Gamma},$ are \textbf{tame} over $C$ in the sense of \cite[Example $5.2.7$]{VZB}. We may describe $\sX_{\Gamma}$ by the stack quotient $[X_{\Gamma}/Z(\GL_2(A))],$ and since $\gcd(\operatorname{char}(C),\#Z(\GL_2(A)))=1$ the quotient is tame. 
 		\end{remark}
 		
+		Recall that $\bbP_{\bbK}^1(a_0,\ldots, a_n)$ denotes the \textbf{weighted projective line} over a field $\bbK$ defined by $\displaystyle{\bbP^1(a_1,\ldots, a_n)=\Proj(\bbK[x_0,\ldots, x_n])},$ where each $x_i$ is an indeterminant of degree $a_i.$
+		
 		\begin{example}[The $j$-line]
-			Let $X(1)=\GL_2(A)\setminus(\Omega\cup\bbP^1(K))$ be the ``usual'' $j$-line. Let $\cM^2_A$ be (Laumon's) Deligne-Mumford stack representing the corresponding moduli problem. The stack $\cM^2_A$ is a $\mu_{q-1}$ gerbe over $\sX(1)=[X(1)/Z(\GL_2(A))].$ In other words, $\sX(1)$ is a rigidification $\cM^2_A/\!/\mu_{q-1}$: 
+			Let $X(1)=\GL_2(A)\setminus(\Omega\cup\bbP^1(K))$ be the ``usual'' $j$-line. Let $\overline{\cM^2_{\Gamma}}$ be the Deligne-Mumford stack representing the corresponding stable moduli problem (including cusps). The stack $\overline{\cM^2_{\Gamma}}$ is a $\mu_{q-1}$ gerbe over $\sX(1)=[X(1)/Z(\GL_2(A))].$ In other words, $\sX(1)$ is a rigidification $\overline{\cM^2_{\Gamma}}/\!/\mu_{q-1}$: 
 			\[\begin{array}{cccl}
-				\cM^2_A&\overset{\pi}{\to}&\sX(1)&\to X(1)\\
+				\overline{\cM^2_{\Gamma}}&\overset{\pi}{\to}&\sX(1)&\to X(1)\\
 				\bbP^1((q-1)^2,q^2-1)&\overset{\pi}{\to}&\bbP^1(q-1,q+1)&\to\bbP^1(C).
 			\end{array}\]
 		\end{example}
@@ -647,11 +653,11 @@
 			A \textbf{rigid analytic Deligne-Mumford stack} is a rigid analytic Artin stack $\sX$ such that the diagonal $\Delta_{\sX}:\sX\to \sX\times_C\sX$ is representable by a rigid analytic space, quasi-compact and separated for the Tate-fpqc topology. 
 		\end{definition}
 		
-		We will use the following rigid stacky GAGA theorem.
+		We will use the following rigid stacky GAGA theorem once we have introduced the necessary terminology. For $X$ a stack, we write $\operatorname{Coh}^{\heartsuit}(X)$ for the full subcategory of coherent sheaves on $X$ spanned by objects cohomologically concentrated in degree $0.$ That is, coherent sheaves all of whose non-trivial cohomology groups are only in the degree $0$ position.
 		
 		\begin{theorem}\cite[$7.4$]{Porta-Yu-Higher-analytic-stacks-GAGA}
 			Let $A$ be a $\bbK$-affinoid algebra, for $\bbK$ some non-achimedean field. Let $\sX$ be a proper algebraic stack over $\Spec(A).$ The analytification functor on coherent sheaves induces an equivalence of $1$-categories
-			\[\operatorname{Coh}(\sX)\overset{\cong}{\to} \operatorname{Coh}(\sX^{\text{an}}).\] 
+			\[\operatorname{Coh}^{\heartsuit}(\sX)\overset{\cong}{\to} \operatorname{Coh}^{\heartsuit}(\sX^{\text{an}}).\] 
 		\end{theorem}
 		
 		\section{Proof of the Main Theorems}
@@ -673,7 +679,7 @@
 			and therefore $f(z)(dz)^{\otimes k/2}$ is a global section of the twist by $2\Delta$ of sheaf of holomorphic differentials on the rigid analytic space $X_{\Gamma}^{\text{an}}=\Gamma\setminus(\Omega\cup\bbP^1(K)).$
 			We claim this is a global section of (a twist by $2\Delta$ of) the sheaf of differentials on the algebraic stack $\sX.$\\
 			
-			By rigid analytic GAGA, \cite[Theorem $4.10.5$]{Frensel-vanderPut-Rigid-Analytic_Geom}, we know that the categories of coherent sheaves on the rigid space $\bbP^{n,\text{an}}_C$ and coherent sheaves on $\bbP^n_C$ are equivalent and every closed analytic subspace of $\bbP^{n,\text{an}}_C$ is the analytification of some closed subspace of $\bbP^n_C.$ So, the sheaf $\Omega_{X_{\Gamma}^{\text{an}}}^1(2\Delta)$ corresponds to the sheaf $\Omega^1_{X_{\Gamma}}(2\Delta)$ on the algebraic curve $X_{\Gamma}$ which is the coarse space of $\sX.$ Finally, by \cite[Theorem $7.4$]{Porta-Yu-Higher-analytic-stacks-GAGA}, we know the sheaves $\Omega_{\sX_{\Gamma}^{\text{an}}}^1(2\Delta)$ and $\Omega^1_{\sX_{\Gamma}}(2\Delta)$ on the rigid analytic stacky curve and algebraic stacky curves $\sX_{\Gamma}^{\text{an}}$ and $\sX_{\Gamma}$ respectively are equivalent. 
+			By rigid analytic GAGA, \cite[Theorem $4.10.5$]{Frensel-vanderPut-Rigid-Analytic_Geom}, we know that the categories of coherent sheaves on the rigid space $\bbP^{n,\text{an}}_C$ and coherent sheaves on $\bbP^n_C$ are equivalent for $n\geq 1$ any integer. Furthermore, every closed analytic subspace of $\bbP^{n,\text{an}}_C$ is the analytification of some closed subspace of $\bbP^n_C.$ So, the sheaf $\Omega_{X_{\Gamma}^{\text{an}}}^1(2\Delta)$ corresponds to the sheaf $\Omega^1_{X_{\Gamma}}(2\Delta)$ on the algebraic curve $X_{\Gamma}$ which is the coarse space of $\sX.$ Finally, by \cite[Theorem $7.4$]{Porta-Yu-Higher-analytic-stacks-GAGA}, we know the sheaves $\Omega_{\sX_{\Gamma}^{\text{an}}}^1(2\Delta)$ and $\Omega^1_{\sX_{\Gamma}}(2\Delta)$ on the rigid analytic stacky curve and algebraic stacky curves $\sX_{\Gamma}^{\text{an}}$ and $\sX_{\Gamma}$ respectively are equivalent. 
 			
 			
 			%Finally, since there is an isomorphism of sheaves $\pi_*\cO_{\sX}(D)\cong \cO_X(\lfloor D\rfloor)$ for $D$ a Weil divisor on $\sX$ and $\pi:\sX\to X$ a coarse space morphism, we may take the pullback of $\Omega^1_{X_{\Gamma}}(2\Delta)$ to $\Omega^1_{\sX_{\Gamma}}(2\Delta)$ by the coarse space morphism to lift the differential to a section of a line bundle on $\sX_{\Gamma_2}$ as claimed, where we make note of the twist by $2\Delta$ simply to distinguish this divisor of cusps of $\Gamma.$
@@ -754,11 +760,12 @@
 				If $e_1$ and $e_2$ are elliptic points for $\Gamma,$ then the stabilizers $\Gamma_{e_1}$ and $\Gamma_{e_2}$ are $\GL_2(A)$-conjugate. 
 		\end{lemma}
 		\begin{proof}
-			Both $\Gamma_{e_1}$ and $\Gamma_{e_2}$ stricty contain $\bbF_q^{\times}$ by definition of an elliptic point, and each stabilizer is a subgroup of $\GL_2(A)_{e_i},$ for $i=1$ or $2.$ So, both elliptic points for $\Gamma$ are also elliptic points on $\Omega$ and $e_1$ and $e_2$ are $\GL_2(A)$-equivalent to each other. If $\gamma e_1=e_2$ for $\gamma\in \GL_2(A)$ and $\gamma'\in \Gamma_{e_1},$ then 
-			\[\begin{array}{rl}
-				\gamma\gamma'\gamma^{-1}e_2&=\gamma\gamma'\gamma^{-1}(\gamma e_1)\\&=\gamma e_1\\
-				&=e_2.
-			\end{array} \] 
+			Both $\Gamma_{e_1}$ and $\Gamma_{e_2}$ stricty contain $\bbF_q^{\times}$ by definition of an elliptic point, and each stabilizer is a subgroup of $\GL_2(A)_{e_i},$ for $i=1$ or $2.$ So, both elliptic points for $\Gamma$ are also elliptic points on $\Omega,$ i.e.\ they are lie in the same $\GL_2(A)$-orbit. It is well-known that stabilizers of any two elements in the same orbit are conjugate subgroups.
+			%and $e_1$ and $e_2$ are $\GL_2(A)$-equivalent to each other. If $\gamma e_1=e_2$ for $\gamma\in \GL_2(A)$ and $\gamma'\in \Gamma_{e_1},$ then 
+			%\[\begin{array}{rl}
+			%	\gamma\gamma'\gamma^{-1}e_2&=\gamma\gamma'\gamma^{-1}(\gamma e_1)\\&=\gamma e_1\\
+			%	&=e_2.
+			%\end{array} \] 
 		\end{proof}
 		
 		\begin{lemma}\label{l: stabilizer index}
@@ -809,8 +816,8 @@
 		%	Suppose that $e\in \operatorname{Ell}(\Gamma).$ Then $(\Gamma_2)_e$ is a normal subgroup of $\Gamma_e$ with $[\Gamma_e: (\Gamma_2)_e]=2.$
 		%\end{corollary}
 		\begin{proof}
-			By definition, the stabilizer $\Gamma_e$ strictly contains $\bbF_q^{\times}$ and as this is a subgroup of the stabilizer $\GL_2(A)_e,$ we see that $e$ is an elliptic point for $\GL_2(A),$ i.e.\ an elliptic point on $\Omega,$ so we know $\GL_2(A)_e\cong \bbF_{q^2}^{\times}.$ This means $(\Gamma_2)_e\unlhd \Gamma_e\unlhd \GL_2(A)_e\cong \bbF_{q^2}^{\times}$ and in particular since 
-			\[(\Gamma_2)_e=\ker((\det)^{\frac{q-1}{2}}:\Gamma_e\to \bbF_q^{\times}),\] the result is immediate according to whether $\displaystyle{(\det)^{\frac{q-1}{2}}}$ is surjective onto $\{\pm 1\}.$ By Lemma \ref{l: stabilizers are conjugate}, we need only check whether $\Gamma_e$ contains some $\gamma$ with $\det\gamma\in \bbF_q^{\times}\setminus (\bbF_q^{\times})^2$ to determine the index of the stabilizer $(\Gamma_2)_e$ for all elliptic points $e.$
+			By definition, the stabilizer $\Gamma_e$ strictly contains $\bbF_q^{\times}$ and as this is a subgroup of the stabilizer $\GL_2(A)_e,$ we see that $e$ is an elliptic point for $\GL_2(A),$ i.e.\ an elliptic point on $\Omega.$ So, we know $\GL_2(A)_e\cong \bbF_{q^2}^{\times},$ which means $(\Gamma_2)_e\unlhd \Gamma_e\unlhd \GL_2(A)_e\cong \bbF_{q^2}^{\times}.$ Since 
+			\[(\Gamma_2)_e=\ker((\det)^{\frac{q-1}{2}}:\Gamma_e\to \bbF_q^{\times}),\] the result is immediate according to whether $\displaystyle{(\det)^{\frac{q-1}{2}}}$ is surjective onto $\{\pm 1\}.$ That is, we need only check the ``parity'' of $\Gamma,$ i.e.\ whether $\Gamma_e$ contains some $\gamma$ with $\det\gamma\in \bbF_q^{\times}\setminus (\bbF_q^{\times})^2$ to determine the index of the stabilizer $(\Gamma_2)_e$ for all elliptic points $e.$
 		\end{proof}
 		
 		The main idea for this step of the proof of Theorem \ref{thm: decomp of mod forms} is the following comparison between elliptic points and cusps for $\Gamma$ and $\Gamma_2.$
