@@ -206,8 +206,8 @@
 	
 \title{The Geometry of Drinfeld Modular Forms}
 \author{Jesse Franklin}
-\address{Department of Mathematics and Statistics, University of Vermont, Burlington VT 05405}
-\email{jesse.franklin@uvm.edu; jfranklin1185@gmail.com}
+%\address{Department of Mathematics and Statistics, University of Vermont, Burlington VT 05405}
+\email{\href{mailto:jfranklin1185@gmail.com}{jfranklin1185@gmail.com}}%; jesse.franklin@uvm.edu}
 	
 	\begin{abstract}
 			We give a geometric perspective on the algebra of Drinfeld modular forms for congruence subgroups $\Gamma\leq \GL_2(\bbF_q[T])$ by means of $\Gamma_2\leq\Gamma$ the subgroup of matrices which have square determinants. First, we find an isomorphism between the section ring of a line bundle on the stacky modular curve for $\Gamma_2$ and the algebra of Drinfeld modular forms for $\Gamma_2,$ which allows one to compute the latter ring by geometric invariants using the techniques of Voight, Zureick-Brown. We show how to decompose the algebra of modular forms for $\Gamma_2$ into a direct sum of two algebras of modular forms for $\Gamma$ and generalize this result to a larger class of congruence subgroups. 
@@ -222,16 +222,17 @@
 		
 		In his $1986$ monograph \cite[Page $\mathrm{XIII}$]{Gekeler-Curves} asks for a description of algebras of Drinfeld modular forms in terms of generators and relations. The main results of this note describe the geometry of those modular forms, which allows one to employ techniques such as those in \cite{VZB} to find the desired generators and relations by considering the geometry of the corresponding Drinfeld modular curve. That is, we provide a means to address Gekeler's problem via geometric invariants.\\
 		
-		Until now, the closest analogy in the Drinfeld setting for the isomorphism $f\mapsto f(z)(dz)^{\otimes k/2}$ between modular forms of weight $k$ and sections of a line bundle on the modular curve in the classical setting is based on e.g.\ \cite[Page $52$]{Gekeler-Curves} in the case of $\GL_2(\bbF_q[T]),$ and \cite[Definition $(10.1)$]{Basson-Breuer-Pink-part2}. In \cite[Lemma $(10.7)$]{Basson-Breuer-Pink-part2} there is an isomorphism between a ring of modular forms and a section ring of form $f(z)\mapsto f(z)dz^{\otimes k/2}.$ Note that a manuscript version of the three preprints by Basson-Breuer-Pink on Drinfeld modular forms of arbitrary rank is due to appear in Memoirs of the AMS, so our citation here will soon not be the most recent version of their theory.\\ 
+		Until now, the closest analogies in the Drinfeld setting for the isomorphism $f\mapsto f(z)(dz)^{\otimes k/2}$ between modular forms of weight $k$ and sections of a line bundle on the modular curve from the classical setting are \cite[Proposition $5.6$]{Bockle-EichlerShimura} and \cite[Theorem $5.4$]{Gekeler-Curves} for rank $2$ Drinfeld modules, and \cite[Definition $(10.1)$]{Basson-Breuer-Pink-part2} for the more difficult case of Drinfeld modules of general rank. In \cite[Lemma $(10.7)$]{Basson-Breuer-Pink-part2} there is an isomorphism between a ring of modular forms and a section ring of form $f(z)\mapsto f(z)dz^{\otimes k/2}.$ Note that a manuscript version of the three preprints by Basson-Breuer-Pink on Drinfeld modular forms of arbitrary rank is due to appear in Memoirs of the AMS, so our citation here will soon not be the most recent version of their theory.\\ 
 		
-		There is a collection of results which is similar to our work in comparing modular forms for various congruence subgroups to each other as in our second main result Theorem \ref{thm: decomp of mod forms}. Pink finds isomorphisms between algebras of Drinfeld modular forms for open compact subgroups $K\leq \GL_r(\widehat{\bbF_q[T]}),$ where the hat symbol denotes the pro-finite completion $\widehat{\bbF_q[T]}=\prod_{\mathfrak{p}} (\bbF_q[T])_{\mathfrak{p}},$ and normal subgroups $K'\lhd K$ in e.g.\ \cite[Proposition $5.5$]{Pink-compactification-Drinfeld-modular-varieties-2012}. Pink also describes Drinfeld modular forms as sections of an invertible sheaf in \cite[Section $5$]{Pink-compactification-Drinfeld-modular-varieties-2012} which is similar to Theorem \ref{thm: forms to differentials}. However, Pink needs the dual of the relative Lie algebra over a line bundle, rather than the bundle itself, to describe Drinfeld modular forms, which is a major difference between our work.\\
+		There is a collection of results which is similar to our work in comparing modular forms for various congruence subgroups to each other as in our second main result Theorem \ref{thm: decomp of mod forms}. Pink finds isomorphisms between algebras of Drinfeld modular forms for open compact subgroups $K\leq \GL_r(\widehat{\bbF_q[T]}),$ where the hat symbol denotes the pro-finite completion $\widehat{\bbF_q[T]}=\prod_{\mathfrak{p}} (\bbF_q[T])_{\mathfrak{p}},$ and normal subgroups $K'\lhd K$ in e.g.\ \cite[Proposition $5.5$]{Pink-compactification-Drinfeld-modular-varieties-2012}. Pink also describes Drinfeld modular forms as sections of an invertible sheaf in \cite[Section $5$]{Pink-compactification-Drinfeld-modular-varieties-2012} which is similar to Theorem \ref{thm: forms to differentials}. However, Pink needs the dual of the relative Lie algebra over a line bundle, rather than the bundle itself, to describe Drinfeld modular forms, which is a major difference between our work. Pink also deals with Drinfeld modules of arbitrary rank while we focus on rank $2$ only, which explains this difference in machinery.\\
 		
 		There are also some existing results which approach Gekeler's problem, such as Cornelissen's papers \cite{Cornelissen-lvlT} and \cite{Cornelissen-wt1} which deal with linear level (\cite[Theorem $(3.3)$]{Cornelissen-wt1}), i.e.\ the algebra of modular forms for $\Gamma(\alpha T+\beta),$ and include some results for quadratic level (\cite[Proposition $(3.4)$]{Cornelissen-wt1}). 
-		Another example, \cite[Theorem $(4.4)$]{Dalal-Kumar-Gamma_0(T)-structure}, computes the algebra of Drinfeld modular forms for $\Gamma_0(T).$ The best known result for general level $N$ is \cite[Proposition $4.16$]{Armana-thesis} which demonstrates that for any level, $M^2_{2,1}(\Gamma_0(N)),$ the double cusp forms of weight $2$ and type $1$ are (analytic) holomorphic differentials on a (rigid analytic) Drinfeld modular curve $\Gamma_0(N)\setminus(\Omega\cup \bbP^1(\bbF_q[T])).$\\
+		Another example, \cite[Theorem $(4.4)$]{Dalal-Kumar-Gamma_0(T)-structure}, computes the algebra of Drinfeld modular forms for $\Gamma_0(T).$ There is also a well-known correspondence between $M^2_{2,1}(\Gamma(N))$ and holomorphic differentials on $X_0(N)$ found in \cite[Section $2.10$]{Gekeler-jacobians}.\\
+		%The best known result for general level $N$ is \cite[Proposition $4.16$]{Armana-thesis} which demonstrates that for any level, $M^2_{2,1}(\Gamma_0(N)),$ the double cusp forms of weight $2$ and type $1$ are (analytic) holomorphic differentials on a (rigid analytic) Drinfeld modular curve $\Gamma_0(N)\setminus(\Omega\cup \bbP^1(\bbF_q[T])).$\\
 		
 		Several ideas in \cite{Breuer-Gekeler-h-function} are central to our argument, as well as being an exposition on aspects of Gekeler's problem in general. In particular, \cite{Breuer-Gekeler-h-function} introduces the subgroup $\Gamma_2$ of a given congruence subgroup $\Gamma\leq\GL_2(A)$ and gives a moduli interpretation of the corresponding Drinfeld modular curve. Even by the date of these most recent papers, the generalization to the algebra of modular forms for $\Gamma_0(N)$ for any level $N,$ all $\Gamma_1(N),$ and high level (i.e.\ $\deg(N)\geq 2$) $\Gamma(N)$ examples seem to be wide open.\\
 		
-		Our work differs considerably from the papers from Armana, Breuer, Cornelissen, Dalal-Kumar, and Gerritzen-van der Put cited above in that we work with Drinfeld moduli stacks as opposed to schemes. As early as \cite{Gekeler-Curves} and \cite{Laumon-cohomology-Drinfeld-modular-varieties} it was known that moduli of Drinfeld modules of fixed rank are Deligne-Mumford stacks, but it is the more recent results of \cite{VZB} for computing log canonical rings of stacky curves, and \cite{Porta-Yu-Higher-analytic-stacks-GAGA} which provides a crucial principle of rigid analytic GAGA (short for ``g\'eom\'etrie alg\'ebrique et g\'eom\'etrie analytique'') for stacks, that makes our work possible.\\
+		Our work differs considerably from the papers from Basson, B\"ockle, Breuer, Cornelissen, Dalal-Kumar, Gekeler, Pink and Reversat cited above in that we work with Drinfeld moduli stacks as opposed to schemes. As early as \cite{Gekeler-Curves} and \cite{Laumon-cohomology-Drinfeld-modular-varieties} it was known that moduli of Drinfeld modules of fixed rank are Deligne-Mumford stacks, but it is the more recent results of \cite{VZB} for computing log canonical rings of stacky curves, and \cite{Porta-Yu-Higher-analytic-stacks-GAGA} which provides a crucial principle of rigid analytic GAGA (short for ``g\'eom\'etrie alg\'ebrique et g\'eom\'etrie analytique'') for stacks, that makes our work possible.\\
 		
 		There is some historical reason to work with rigid analytic spaces as opposed to the more general adic or Berkovich spaces, namely the original analytic theory of the Drinfeld setting was developed in that language in e.g.\ Goss's paper \cite{Goss-upper-halfplane}. Though there is for example a more general or modern theory of adic stacks (see e.g.\ \cite{Warner-thesis-adic-moduli-spaces}) we will find it more convenient to phrase things in terms of rigid analytic spaces.
 		
@@ -240,13 +241,15 @@
 		This article describes the geometry of Drinfeld modular forms: we associate to each Drinfeld modular form a section of a particular line bundle on a specified stacky modular curve.
 		We also give a decomposition of the algebra of modular forms, which allows one to compute all of the section rings in the papers above by means of the geometric techniques of \cite{VZB}. This means we have Gekeler's elementary interpretation of the generating modular forms in terms of Drinfeld modules viewed as points of the moduli space. We make no restrictions on the level, and insist that our congruence subgroup in question contains diagonal matrices mainly to simplify the proofs. We expect that this theory works without this restriction, so we have a means to compute graded rings of modular forms in great generality, and which makes the problem reliant only on the geometry of the modular curve.\\   
 		
-		Let $\Gamma$ be a congruence subgroup of $\GL_2(\bbF_q[T]).$ Suppose that $\Gamma$ contains the diagonal matrices of $\GL_2(\bbF_q[T])$ and $\det(\gamma)\in (\bbF_q^{\times})^2$ for every $\gamma\in \Gamma.$ First, we show that the Drinfeld modular forms for such $\Gamma$ are sections of a log canonical bundle on the associated stacky Drinfeld modular curve $\sX_{\Gamma}.$ Under the assumption that $q$ is odd, we know that $k/2$ is an integer when $M_{k,l}(\Gamma)\neq 0,$ i.e.\ when we have non-zero modular forms of weight $k$ and type $l.$ This solves Gekeler's problem for groups satisfying our hypotheses, assuming we can compute the generators and relations of the log canonical ring of the stacky curve.
+		Let $\Gamma$ be a congruence subgroup of $\GL_2(\bbF_q[T]).$ Suppose that 
+		$\displaystyle{\det(\Gamma)= \{\det(\gamma):\gamma\in \Gamma\}=(\bbF_q^{\times})^2}.$ First, we show that the Drinfeld modular forms for such $\Gamma$ are sections of a log canonical bundle on the associated stacky Drinfeld modular curve $\sX_{\Gamma}.$ Under the assumption that $q$ is odd, we know that $k/2$ is an integer when $M_{k,l}(\Gamma)\neq 0,$ i.e.\ when we have non-zero modular forms of weight $k$ and type $l.$ This solves Gekeler's problem for groups satisfying our hypotheses, assuming we can compute the generators and relations of the log canonical ring of the stacky curve.
 		\begin{theorem}[Theorem \ref{thm: forms to differentials} in the text]
-			Let $q$ be an odd prime and let $\Gamma\leq \GL_2(\bbF_q[T])$ be a congruence subgroup containing the diagonal matrices of $\GL_2(\bbF_q[T])$ and such that $\det(\gamma)\in (\bbF_q^{\times})^2$ for every $\gamma\in \Gamma.$ Let $\Delta$ be the divisor supported at the cusps of the stacky modular curve $\sX_{\Gamma}$ with the rigid analytic coarse space $X_{\Gamma}^{\text{an}}=\Gamma\setminus(\Omega\cup \bbP^1(\bbF_q(T))).$ 
+			Let $q$ be an odd prime and let $\Gamma\leq \GL_2(\bbF_q[T])$ be a congruence subgroup of $\GL_2(\bbF_q[T])$ such that $\det(\Gamma)=(\bbF_q^{\times})^2.$ 
+			Let $\Delta$ be the divisor supported at the cusps of the stacky modular curve $\sX_{\Gamma}$ with the rigid analytic coarse space $X_{\Gamma}^{\text{an}}=\Gamma\setminus(\Omega\cup \bbP^1(\bbF_q(T))).$ 
 			There is an isomorphism of graded rings \[M(\Gamma)\cong R(\sX_{\Gamma},\Omega^1_{\sX_{\Gamma}}(2\Delta)),\] where $\Omega^1_{\sX_{\Gamma}}$ is the sheaf of differentials on $\sX_{\Gamma}.$ The isomorphism of algebras is given by the isomorphisms of components $M_{k,l}(\Gamma)\to H^0(\sX_{\Gamma},\Omega^1_{\sX_{\Gamma}}(2\Delta)^{\otimes k/2})$ given by $f\mapsto f(z)(dz)^{\otimes k/2}.$ 
 		\end{theorem}
 		
-		To handle the more general case of congruence subgroup $\Gamma$ which contains the diagonal matrices of $\GL_2(\bbF_q[T])$ but which may not contain only square-determinant matrices, we consider the normal subgroup $\Gamma_2=\{\gamma\in \Gamma: \det(\gamma)\in (\bbF_q^{\times})^2\}$ of $\Gamma.$ We compare the algebras of Drinfeld modular forms for $\Gamma$ and $\Gamma_2$ and arrive at the following result. Note that this reduces giving an answer to Gekeler for the congruence subgroups $\Gamma$ to computing log canonical rings of stacky Drinfeld modular curves.
+		To handle the more general case of congruence subgroup $\Gamma$ which may contain matrices with non-square determinants, we consider the normal subgroup $\Gamma_2=\{\gamma\in \Gamma: \det(\gamma)\in (\bbF_q^{\times})^2\}$ of $\Gamma.$ We compare the algebras of Drinfeld modular forms for $\Gamma$ and $\Gamma_2$ and arrive at the following result. Note that this reduces giving an answer to Gekeler for the congruence subgroups $\Gamma$ to computing log canonical rings of stacky Drinfeld modular curves.
 		\begin{theorem}[Theorem \ref{thm: decomp of mod forms} in the text]
 			Let $q$ be a power of an odd prime. Let $\Gamma\leq \GL_2(\bbF_q[T])$ be a congruence subgroup containing the diagonal matrices in $\GL_2(\bbF_q[T]).$ Let $\Gamma_2=\{\gamma\in \Gamma: \det(\gamma)\in (\bbF_q^{\times})^2\}.$ As rings, we have
 			$M(\Gamma)\cong M(\Gamma_2),$
@@ -255,8 +258,8 @@
 		
 		Finally, we generalize the previous comparison theorem to a larger class of subgroups $\Gamma'\leq \Gamma,$ where $\Gamma$ is some chosen or distinguished congruence subgroup as above. This idea was proposed in correspondence by Gebhard B\"ockle, as was the proof technique which we execute. This result is similar to classical results about nebentypes of modular forms. 
 		\begin{theorem}[Theorem \ref{thm: generalized decomp} in the text]
-			Let $q$ be a power of an odd prime. Let $\Gamma\leq \GL_2(\bbF_q[T])$ be a congruence subgroup. Let $\Gamma_1=\{\gamma\in \Gamma: \det(\gamma)=1\}.$ Suppose that $\Gamma'$ is such that $\Gamma_1\leq \Gamma'\leq \Gamma.$ As algebras
-			\[M(\Gamma)=M(\Gamma'),\] and each component $M_{k,l}(\Gamma')$ is some direct sum of components $M_{k,l'}(\Gamma)$ for some nontrivial $l'.$
+			Let $q$ be a power of an odd prime. Let $\Gamma\leq \GL_2(\bbF_q[T])$ be a congruence subgroup. Let $\Gamma_1=\{\gamma\in \Gamma: \det(\gamma)=1\}.$ Suppose that $\Gamma'$ is a congruence subgroup such that $\Gamma_1\leq \Gamma'\leq \Gamma.$ As algebras
+			\[M(\Gamma)=M(\Gamma'),\] and each component $M_{k,l}(\Gamma')$ is some direct sum of components $M_{k,l'}(\Gamma)$ for some nontrivial $l',$ the distinct solutions to $k\equiv [\Gamma:\Gamma']l'\pmod{q-1}.$
 		\end{theorem}
 		
 		\section{Background} %Notation and the Drinfeld Setting
@@ -277,8 +280,8 @@
 		Let $\bbF_q$ be the finite field of order $q$ a power of an odd prime. As function-field analogs of $\bbZ,~\bbQ,~\bbR$ and $\bbC$ define the rings $\displaystyle{A=\bbF_q[T], ~K=\operatorname{Frac}(A)=\bbF_q(T), ~K_{\infty}=\bbF_q\left(\!\left(\frac{1}{T}\right)\!\right)},$ the completion of $K$ at the place at $\infty,$ and let $C=\widehat{\overline{K_{\infty}}}$ be the completion of the algebraic closure of $K_{\infty}$ respectively. So, $C$ is an algebraically closed, complete, and non-archimedean field. The Drinfeld-setting version of the upper half-plane $\cH\subset \bbC$ is $\Omega\overset{def}{=}C-K_{\infty}.$ \\
 		
 		We have the usual discrete valuation $v: K^{\times}\to \bbZ$ given by 
-		\[v\left(\frac{\sum_0^n a_iT^i}{\sum_0^m b_iT^i}\right)=m-n\] which we extend to the Laurent series $K_{\infty}$ by 
-		\[v\left(\sum_{i\geq n}a_iT^i\right)=-n\quad\text{and}\quad v(0)=\infty.\] The corresponding metric, which we extend to $C,$ is the non-archimedean norm defined by $|f|_{\infty}=q^{-v(f)}.$ This $|\cdot|$ is the extension of the $\infty$-adic absolute value to $C,$ see e.g.\ \cite[Section $(2.2)$]{Poonen-DrinfeldIntro}. We say $0\neq a\in A$ has $|a|_{\infty}=q^{\deg a}$ and $|0|_{\infty}=0.$ \\
+		\[v\left(\frac{\sum_0^n a_iT^i}{\sum_0^m b_iT^i}\right)=m-n,\] where we have assumed $a_n\neq 0$ and $b_m\neq 0,$ and which we extend to the Laurent series $K_{\infty}$ by 
+		\[v\left(\sum_{i\geq n}a_iT^i\right)=-n\quad\text{and}\quad v(0)=\infty,\] again with $a_n\neq 0.$ The corresponding metric, which we extend to $C,$ is the non-archimedean norm defined by $|f|_{\infty}=q^{-v(f)}.$ This $|\cdot|$ is the extension of the $\infty$-adic absolute value to $C,$ see e.g.\ \cite[Section $(2.2)$]{Poonen-DrinfeldIntro}. We say $0\neq a\in A$ has $|a|_{\infty}=q^{\deg a}$ and $|0|_{\infty}=0.$ \\
 		
 		%remark: this is not the most general way to do Drinfeld setting, but provides an initial-object analog to the integers in the function field setting; ref Laumon for more generality
 		
@@ -287,9 +290,9 @@
 		We establish an important assumption for this work:
 		throughout, $\Gamma\leq \GL_2(A)$ is some congruence subgroup such that 
 		for every $\alpha,\alpha'\in \bbF_q^{\times},~\Gamma$ contains the matrices of form $\displaystyle{\begin{psmallmatrix}\alpha&0\\0&\alpha'\end{psmallmatrix}},$ that is, the diagonal matrices in $\GL_2(A).$ This means we have
-		$\det\Gamma=\{\det(\gamma):\gamma\in \Gamma\}=\bbF_q^{\times}.$ In general $\det\Gamma$ is a subgroup of $\bbF_q^{\times}.$\\
+		$\det\Gamma=\{\det(\gamma):\gamma\in \Gamma\}=\bbF_q^{\times}.$ In general $\det\Gamma$ is a subgroup of $\bbF_q^{\times},$ such as for example in the class of congruence subgroups we describe with Theorem \ref{thm: forms to differentials}.\\
 		
-		Let $(\det\Gamma)^2$ be the set of squares of elements in $\det\Gamma:$ $(\det\Gamma)^2=\{x^2: x\in \det\Gamma\}.$ Let \[\Gamma_2\overset{def}{=}\{\gamma\in \Gamma:\det(\gamma)\in (\det\Gamma)^2\}.\]
+		Let $(\det\Gamma)^2$ be the set of squares of elements in $\det\Gamma,$ that is, let $(\det\Gamma)^2=\{x^2: x\in \det\Gamma\}.$ Let \[\Gamma_2\overset{def}{=}\{\gamma\in \Gamma:\det(\gamma)\in (\det\Gamma)^2\}=\{\gamma\in \Gamma:\det(\gamma)\in (\bbF_q^{\times})^2\}.\]
 		When we write $\Gamma\leq \GL_2(A),$ we mean $\Gamma$ satisfying the conditions above, so $\det\Gamma_2=(\bbF_q^{\times})^2.$\\
 		
 		The condition that $\Gamma$ has all possible determinants is simply for ease of notation, as it is more pleasant to compute congruences modulo $q-1$ rather than $\#\det\Gamma.$ Our emphasis on the case when $q$ is odd is essential as we make repeated use of the fact that $q-1$ is even.\\ 
@@ -297,7 +300,7 @@
 		We will make use of a kind of  ``parity'' for congruence subgroups for which we introduce the following terminology:
 		\begin{definition}
 			We say that a congruence subgroup $\Gamma$ is \textbf{square} if there is some $z\in \Omega$ such that the stabilizer $\Gamma_z=\{\gamma\in \Gamma: \gamma z=z\}$ strictly contains 
-			$\displaystyle{\bbF_q^{\times}\cong \left\{\begin{psmallmatrix}\alpha&0\\0&\alpha\end{psmallmatrix}:\alpha\in \bbF_q^{\times}\right\}}$ and every $\gamma\in \Gamma_z\setminus \bbF_q^{\times}$ has a square determinant in $\bbF_q^{\times}.$ Likewise, $\Gamma$ is \textbf{non-square} if it contains a stabilizer $\Gamma_z$ for some $z\in \Omega$ strictly larger than $\bbF_q^{\times}$ and some $\gamma$ with $\det\gamma\in \bbF_q^{\times}\setminus (\bbF_q^{\times})^2.$
+			$\displaystyle{\bbF_q^{\times}\cong \left\{\begin{psmallmatrix}\alpha&0\\0&\alpha\end{psmallmatrix}:\alpha\in \bbF_q^{\times}\right\}}$ and every $\gamma\in \Gamma_z\setminus \bbF_q^{\times}$ has a square determinant in $\bbF_q^{\times}.$ Likewise, $\Gamma$ is \textbf{non-square} if it contains a stabilizer $\Gamma_z$ for some $z\in \Omega$ strictly larger than $\bbF_q^{\times}$ and that stabilizer $\Gamma_z$ contains some $\gamma$ with $\det\gamma\in \bbF_q^{\times}\setminus (\bbF_q^{\times})^2.$
 		\end{definition}
 		
 		This idea will help distinguish the geometric invariants involved in the computations at the end of this manuscript into two cases. In our application stabilizers are all $\GL_2(A)$-conjugate subgroups of $\bbF_{q^2}^{\times}$ so that one only needs to check for a single point $z\in \Omega$ with a stabilizer $\Gamma_z\supsetneq \bbF_q^{\times}$ whether $\Gamma_z$ contains some matrix with a non-square determinant.   
@@ -325,7 +328,7 @@
 		
 		\subsubsection{Algebraic Approach}
 		
-		We recall, without any proofs, some facts concerning the algebraic theory which corresponds to the definition above. A more complete discussion of these next facts is found in \cite[Definition $3.1.4$]{Papikian-Drinfeld-modules} and \cite[Lemma $3.1.4$]{Papikian-Drinfeld-modules}. We are mostly interested in the notation. \\ 
+		We recall, without any proofs, some facts concerning the algebraic theory which corresponds to the definition above. A more complete discussion of these next facts is found in \cite[Definition $3.1.3$]{Papikian-Drinfeld-modules} and \cite[Lemma $3.1.4$]{Papikian-Drinfeld-modules}. We are mostly interested in the notation.\\ 
 		
 		We state the following result so that when we define a moduli space of Drinfeld modules, we can make sense of Drinfeld modules over an arbitrary base scheme and therefore eventually have a well-defined category fibered in groupoids when we consider moduli stacks later. 
 		
@@ -375,14 +378,14 @@
 		It is shown in e.g.\ \cite[Corollary $1.4.3$]{Laumon-cohomology-Drinfeld-modular-varieties} that the moduli space of rank $r$ Drinfeld modules over the category of schemes of characteristic $p$ is representable by a Deligne-Mumford algebraic stack of finite type over $\bbF_p.$ 
 		One is able to compute the graded rings of global sections of line bundles on stacks which represent the Drinfeld moduli problems by means of geometric invariants with results that are slight variants on the theory in \cite{VZB}. We will follow \cite{VZB} in describing this computation, stating only select facts that we will need.\\
 		
-		Recall from \cite[Definition $5.2.1$]{VZB}, a \textbf{stacky curve} $\sX$ over a field $\bbK$ is a smooth, proper, geometrically connected Deligne-Mumford stack of dimension $1$ over $\bbK$ that contains a dense open subscheme. Every stacky curve $\sX$ over a field $\bbK$ has a unique \textbf{coarse space morphism} $\pi:\sX\to X$ with $X$ a smooth scheme over $\bbK$ (called the coarse space). Here $\pi$ is universal for morphisms from $\sX$ to schemes, and the set of isomorphism classes of $F$-points on $\sX$ and $X$ are in bijection for any algebraically closed field $F$ containing $\bbK.$ Note that \'etale locally on the coarse space $X,$ a stacky curve $\sX$ is the quotient of an affine scheme by a finite (constant) group $G\leq \Aut(X).$ For $x\in X$ some point, let $G_x$ denote the stabilizer of $x$ under the action by $G.$\\
+		Recall from \cite[Sections $5.2$ and $5.3$]{VZB}, a \textbf{stacky curve} $\sX$ over a field $\bbK$ is a smooth, proper, geometrically connected Deligne-Mumford stack of dimension $1$ over $\bbK$ that contains a dense open subscheme. We need no assumptions about this base field to define a stacky curve. Every stacky curve $\sX$ over a field $\bbK$ has a \textbf{coarse space morphism} $\pi:\sX\to X$ with $X$ a smooth scheme over $\bbK$ (called the coarse space), and this map $\pi$ is unique up to unique isomorphism. Indeed, $\pi$ is universal for morphisms from $\sX$ to schemes. What is more, for any algebraically closed field $F$ containing $\bbK,$ the set of isomorphism classes of $F$-points on $\sX$ and the $F$-points of $X$ are in bijection. Note that \'etale locally on the coarse space $X,$ a stacky curve $\sX$ is the quotient of an affine scheme by a finite (constant) group $G\leq \Aut(X).$ For $x\in X$ some point, let $G_x$ denote the stabilizer of $x$ under the action by $G.$\\
 		
 		Continuing the notation in the last paragraph, let $\pi:\sX\to X$ be a coarse space morphism. A \textbf{Weil divisor} is a finite formal sum of irreducible closed substacks of codimension $1$ over $\bbK.$ On a smooth Deligne-Mumford stack, every Weil divisor is Cartier. Any line bundle $\sL$ on $\sX$ is isomorphic to $\cO_{\sX}(D)$ for some Cartier divisor $D.$ Finally, there is an isomorphism of sheaves on the Zariski site of $X:$
 		\[ \cO_X(\lfloor D \rfloor)\overset{\sim}{\to}\pi_*\cO_{\sX}(D), \]
 		where \[\lfloor D\rfloor=\Big\lfloor\sum_ia_iP_i\Big\rfloor\overset{def}{=}\sum_i\Big\lfloor\frac{a_i}{\#G_{P_i}}\Big\rfloor\pi(P_i).\]
 		
 		\begin{example}\label{ex: sheaf of differentials}
-			Let $f:\sX\to \sY$ be a morphism of stacky curves with coarse spaces $X$ and $Y=\Spec k$ for $k$ some field respectively. The \textbf{sheaf of differentials} $\Omega^1_{\sX}=\Omega^1_{\sX/\Spec k}$ is the sheafification (see \cite[Section $2.2.9$]{Alper-Stacks-and-Moduli} for sheafification) of the presheaf on $\sX_{\text{\'et}},$ the small \'etale site on $\sX,$ i.e.\ the category of schemes which are \'etale over $\sX$, given by 
+			Let $f:\sX\to \sY$ be a morphism of stacky curves with coarse spaces $X$ and $Y=\Spec k$ for $k$ some field respectively. The \textbf{sheaf of differentials} $\Omega^1_{\sX}=\Omega^1_{\sX/\Spec k}$ is the sheafification (see \cite[Section $2.2.3$]{Alper-Stacks-and-Moduli} for sheafification) of the presheaf on $\sX_{\text{\'et}},$ the small \'etale site on $\sX,$ i.e.\ the category of schemes which are \'etale over $\sX$, given by 
 			\[ (U\to \sX)\mapsto \Omega^1_{\cO_{\sX}(U)/f^{-1}\cO_{\sY}(U)},\]
 			where $\cO_{\sX}$ and $\cO_{\sY}$ denote the structure sheaves on $\sX$ and $\sY$ respectively (see e.g.\ \cite[Example $4.1.2$]{Alper-Stacks-and-Moduli} for more details on structure sheaves for Deligne-Mumford stacks). 
 		\end{example}
@@ -408,8 +411,10 @@
 		
 		Recall from \cite[Chapter $5.1$]{VZB} that a \textbf{point} of a stack $\sX$ is a map $\Spec F\to \sX$ for $F$ some field, and to a point $x,$ we associate its stabilizer $G_x\overset{def}{=}\underline{\Isom}(x,x),$ a functor which is a representable by an algebraic space. If $G_x$ is a finite group scheme, say that $\sX$ is \textbf{tame} if $\deg G_x$ is not divisible by $\operatorname{char}(F)$ for any $x\in \sX.$ We say a point $x$ with $G_x\neq \{1\}$ is a \textbf{stacky point}.\\
 		
-		Finally, for readability of our main results, we introduce some terminology inspired by \cite[Definition $5.6.2$]{VZB} and \cite[Proposition $5.5.6$]{VZB}. Let $\sX$ be a tame stacky curve over an algebraically closed field $\bbK$ with coarse space $X.$ A Weil divisor $\Delta$ on $\sX$ is a \textbf{log divisor} if $\Delta=\sum_i P_i$ is an effective divisor given as a sum of distinct points (stacky or otherwise) on $\sX.$ By \cite[Proposition $5.5.6$]{VZB} if $K_{\sX}$ and $K_X$ are canonical divisors on $\sX$ and its coarse space $X$ respectively, then there is a linear equivalence
-		\[K_{\sX}\sim K_X+R=K_X+\sum_x \left(1-\frac{1}{\deg G_x}\right)x,\]
+		Finally, for readability of our main results, we introduce some terminology inspired by \cite[Definition $5.6.2$]{VZB} and \cite[Proposition $5.5.6$]{VZB}. Let $\sX$ be a tame stacky curve over an algebraically closed field $\bbK$ with coarse space $X.$ A Weil divisor $\Delta$ on $\sX$ is a \textbf{log divisor} if $\Delta=\sum_i P_i$ is an effective divisor given as a sum of distinct points (stacky or otherwise) on $\sX.$ We have slightly generalized Voight and Zureick-Brown's notion of log divisor for a reason which we discuss in Sections \ref{s: Drinfeld modular curves} and \ref{s: Proof of main thm}. This generalization only means more involved calculations, and at worst less aesthetic results, when computing log canonical rings, which is why in \cite[Remark $5.4.6$]{VZB} the authors restrict their log divisors more than in this article.\\ 
+		
+		By \cite[Proposition $5.5.6$]{VZB} if $K_{\sX}$ and $K_X$ are canonical divisors on $\sX$ and its coarse space $X$ respectively, then there is a linear equivalence
+		\[K_{\sX}\sim K_X+R=K_X+\sum_x \left(\deg G_x-1\right)x,\]
 		where $G_x$ is the stabilizer of a closed substack $x\in \sX,$ and the sum above is taken over closed substacks of $\sX$ of codimension $1.$
 
 		
@@ -426,11 +431,13 @@
 		\end{remark}
 		
 		One fact about this parameter which we will use later in our consideration of modular forms is the following. 
-		\begin{lemma}\cite[Page $10$]{Gekeler-survey-Drinfeld-modular-forms}\label{l: u(a/d)=d/au}
+		\begin{lemma}\cite[Page $494$]{Gekeler-survey-Drinfeld-modular-forms}\label{l: u(a/d)=d/au}
 			For each $\alpha\in \bbF_q^{\times}$ we have $\displaystyle{u\left(\alpha z\right)=\alpha^{-1}u(z)}.$
 		\end{lemma}	
 		\begin{proof}
-			For any $\alpha \in \bbF_q^{\times},$ the lattices $\Lambda = A\omega_1+A\omega_2\subset C$ and $\alpha\cdot \Lambda$ are similar. Furthermore, $\Lambda$ is similar to $(\omega_1/\omega_2)A+A,$ where $z=\omega_1/\omega_2\in \Omega.$ So the exponential functions $e_{\bar{\pi}\alpha A}(\bar{\pi}\alpha z)$ and $e_A(z)$ for $z\in \Omega$ differ by a factor of $\bar{\pi}\alpha^{-1}.$
+			For any $\alpha \in \bbF_q^{\times},$ the lattices $\Lambda = A\omega_1+A\omega_2\subset C$ and $\alpha\cdot \Lambda$ are similar. We know (see e.g.\ \cite[$(2.2.\mathrm{iv})$]{Gekeler-Curves}) that the exponentials of the similar lattices $\Lambda$ and $\alpha\cdot \Lambda$ are related by $e_{\alpha\cdot\Lambda}(\alpha z)=e_{\Lambda}(z)$ and are $\bbF_q$-linear power series, from which the relation about their reciprocal $u$'s follows. 
+			
+			%Furthermore, $\Lambda$ is similar to $(\omega_1/\omega_2)A+A,$ where $z=\omega_1/\omega_2\in \Omega.$ So the exponential functions $e_{\bar{\pi}\alpha A}(\bar{\pi}\alpha z)$ and $e_A(z)$ for $z\in \Omega$ differ by a factor of $\bar{\pi}\alpha^{-1}.$
 		\end{proof}
 		
 		Now we are able to define a fundamental object of study for this article. 
@@ -507,6 +514,7 @@
 		\end{example}
 		
 		\section{Drinfeld Modular Curves}
+		\label{s: Drinfeld modular curves}
 		
 		%\begin{definition}
 		%	A \underline{modular function} of type $l$ for $\Gamma\leq \GL_2(A)$ is a meromorphic function $f:\Omega\to C$ such that 
@@ -542,7 +550,7 @@
 			such that the following conditions are met:
 			\begin{itemize}
 				\item $\{U\}\in \operatorname{Cov}(U)$
-				\item For each $U,V\in \sF$ with $V\subset U$ and $U\in \operatorname{Cov}(U),$ the covering $\displaystyle{U\cap V\overset{def}{=}\{U'\cap V: U'\in U\}}$ belongs to $\operatorname{Cov}(U)$
+				\item For each $\cU,V\in \sF$ with $V\subset \cU$ and $\cU\in \operatorname{Cov}(U),$ the covering $\displaystyle{\cU\cap V\overset{def}{=}\{U'\cap V: U'\in \cU\}}$ belongs to $\operatorname{Cov}(V)$
 				\item Let $U\in \sF,$ let $\{U_i\}_{i\in I}\in \operatorname{Cov}(U)$ and let $\cU_i\in \operatorname{Cov}(U_i).$ The union \[\bigcup_{i\in I} \cU_i\overset{def}{=}\{U':U'\text{ belongs to some }\cU_i \}\] is an element of $\operatorname{Cov}(U).$
 			\end{itemize}
 			We say the $U\in \sF$ are \textbf{admissible sets} and the elements of $\operatorname{Cov}(U)$ are \textbf{admissible coverings}.
@@ -554,7 +562,7 @@
 		\end{definition}
 		
 		For the well-definedness of Drinfeld modular curves, we recall some analytic properties of $\Omega.$
-		Since $\Omega=\bbP^1(C)-\bbP^1(K_{\infty}),$ and $\bbP^1(K_{\infty})$ is compact in the rigid analytic topology, we know from \cite[Section $1.2$]{Gekeler-jacobians} that $\Omega$ is a rigid analytic space. The action by  a congruence subgroup $\Gamma\leq \GL_2(A)$ on $\Omega$ by M\"obius transformations has finite stabilizer for each $z\in \Omega,$ and as in \cite[Sections $(2.5)$ and $(2.6)$]{Gekeler-jacobians}, $\Gamma\setminus \Omega$ is a rigid analytic space.\\
+		Since $\Omega=\bbP^1(C)-\bbP^1(K_{\infty}),$ and $\bbP^1(K_{\infty})$ is compact in the rigid analytic topology, we know from \cite[Section $1.2$]{Gekeler-jacobians} that $\Omega$ is a rigid analytic space. The action by  a congruence subgroup $\Gamma\leq \GL_2(A)$ on $\Omega$ by M\"obius transformations has finite stabilizer for each $z\in \Omega,$ and as in \cite[Section  $(2.2)$]{Gekeler-jacobians}, $\Gamma\setminus \Omega$ is a rigid analytic space.\\
 		
 		Recall that for any scheme $S$ of locally finite type over a complete, non-archimedean field of finite characteristic $p,$ there is a rigid analytic space $S^{\text{an}}$ whose points coincide with those of $S$ as sets. In fact, there is an \textbf{analytification functor} from the category of schemes over $C$ to the category of rigid analytic spaces, so if $X$ is a smooth algebraic curve over $C,$ then there is a rigid analytic space $X^{\text{an}}$ whose points are in bijection with the $C$-points of $X.$ 
 		
@@ -655,21 +663,22 @@
 		
 		We will use the following rigid stacky GAGA theorem once we have introduced the necessary terminology. For $X$ a stack, we write $\operatorname{Coh}^{\heartsuit}(X)$ for the full subcategory of coherent sheaves on $X$ spanned by objects cohomologically concentrated in degree $0.$ That is, coherent sheaves all of whose non-trivial cohomology groups are only in the degree $0$ position.
 		
-		\begin{theorem}\cite[$7.4$]{Porta-Yu-Higher-analytic-stacks-GAGA}
+		\begin{theorem}\cite[$7.4$]{Porta-Yu-Higher-analytic-stacks-GAGA}\label{t: rigid stacky GAGA}
 			Let $A$ be a $\bbK$-affinoid algebra, for $\bbK$ some non-achimedean field. Let $\sX$ be a proper algebraic stack over $\Spec(A).$ The analytification functor on coherent sheaves induces an equivalence of $1$-categories
 			\[\operatorname{Coh}^{\heartsuit}(\sX)\overset{\cong}{\to} \operatorname{Coh}^{\heartsuit}(\sX^{\text{an}}).\] 
 		\end{theorem}
 		
 		\section{Proof of the Main Theorems}
+		\label{s: Proof of main thm}
 		
 		We prove our first main result:
 		
 		\begin{theorem}\label{thm: forms to differentials}
-			Let $q$ be an odd prime and let $\Gamma\leq \GL_2(A)$ be a congruence subgroup containing the diagonal matrices of $\GL_2(A)$ such that $\det(\gamma)\in (\bbF_q^{\times})^2$ for every $\gamma\in \Gamma.$ Let $\Delta$ be the divisor of cusps of the modular curve $\sX_{\Gamma}$ with the rigid analytic coarse space $X_{\Gamma}^{\text{an}}=\Gamma\setminus(\Omega\cup \bbP^1(K)).$ 
-			There is an isomorphism of graded rings $M(\Gamma)\cong R(\sX_{\Gamma},\Omega^1_{\sX_{\Gamma}}(2\Delta)),$ where $\Omega^1_{\sX_{\Gamma}}$ is the sheaf of differentials on $\sX_{\Gamma}.$ The isomorphism of algebras is given by the isomorphisms of components $M_{k,l}(\Gamma)\to H^0(\sX_{\Gamma},\Omega^1_{\sX_{\Gamma}}(2\Delta)^{\otimes k/2})$ given by $f\mapsto f(z)(dz)^{\otimes k/2}.$ 
+			Let $q$ be an odd prime and let $\Gamma\leq \GL_2(A)$ be a congruence subgroup of $\GL_2(A)$ such that $\det(\Gamma)= (\bbF_q^{\times})^2.$ Let $\Delta$ be the divisor of cusps of the modular curve $\sX_{\Gamma}$ with the rigid analytic coarse space $X_{\Gamma}^{\text{an}}=\Gamma\setminus(\Omega\cup \bbP^1(K)).$ 
+			There is an isomorphism of graded rings $M(\Gamma)\cong R(\sX_{\Gamma},\Omega^1_{\sX_{\Gamma}}(2\Delta)),$ where $\Omega^1_{\sX_{\Gamma}}$ is the sheaf of differentials on $\sX_{\Gamma}.$ The isomorphism of algebras is given by the isomorphisms of components $M_{k,l}(\Gamma)\to H^0(\sX_{\Gamma},\Omega^1_{\sX_{\Gamma}}(2\Delta)^{\otimes k/2})$ given by $f\mapsto f(z)(dz)^{\otimes k/2}$ for each $k\geq 2$ an even integer. 
 		\end{theorem}
 		\begin{proof}
-			Suppose $f\in M_{k,l}(\Gamma).$ For any $\displaystyle{\gamma=\begin{psmallmatrix}a&b\\c&d\end{psmallmatrix}\in \Gamma}$ we have \[
+			Suppose $f\in M_{k,l}(\Gamma)$ is some non-zero form. For any $\displaystyle{\gamma=\begin{psmallmatrix}a&b\\c&d\end{psmallmatrix}\in \Gamma}$ we have \[
 			f(\gamma z)d(\gamma z)^{\otimes k/2}= (cz+d)^k(\det\gamma)^{-l}\frac{\det\gamma^{k/2}}{(cz+d)^k} f(z)dz^{\otimes k/2},\] 
 			where $k\equiv 2l\pmod{\frac{q-1}{2}}.$ All of the factors of automorphy cancel and \[f(\gamma z)d(\gamma z)^{\otimes k/2}=f(z)dz^{\otimes k/2},\] so the differential form $f(z)(dz)^{\otimes k/2}\in H^0(\Omega,\Omega_{\Omega}^{\otimes k/2})$ on the upper half-plane $\Omega$ is $\Gamma$-invariant. As in \cite[Section $(2.10)$]{Gekeler-jacobians}, we know $f(z)(dz)^{\otimes k/2}$ is holomorphic on $\Gamma\setminus \Omega.$
 			Since $\displaystyle{\frac{de_A(z)}{dz}=1},$ we have 
@@ -679,9 +688,11 @@
 			and therefore $f(z)(dz)^{\otimes k/2}$ is a global section of the twist by $2\Delta$ of sheaf of holomorphic differentials on the rigid analytic space $X_{\Gamma}^{\text{an}}=\Gamma\setminus(\Omega\cup\bbP^1(K)).$
 			We claim this is a global section of (a twist by $2\Delta$ of) the sheaf of differentials on the algebraic stack $\sX.$\\
 			
-			By rigid analytic GAGA, \cite[Theorem $4.10.5$]{Frensel-vanderPut-Rigid-Analytic_Geom}, we know that the categories of coherent sheaves on the rigid space $\bbP^{n,\text{an}}_C$ and coherent sheaves on $\bbP^n_C$ are equivalent for $n\geq 1$ any integer. Furthermore, every closed analytic subspace of $\bbP^{n,\text{an}}_C$ is the analytification of some closed subspace of $\bbP^n_C.$ So, the sheaf $\Omega_{X_{\Gamma}^{\text{an}}}^1(2\Delta)$ corresponds to the sheaf $\Omega^1_{X_{\Gamma}}(2\Delta)$ on the algebraic curve $X_{\Gamma}$ which is the coarse space of $\sX.$ Finally, by \cite[Theorem $7.4$]{Porta-Yu-Higher-analytic-stacks-GAGA}, we know the sheaves $\Omega_{\sX_{\Gamma}^{\text{an}}}^1(2\Delta)$ and $\Omega^1_{\sX_{\Gamma}}(2\Delta)$ on the rigid analytic stacky curve and algebraic stacky curves $\sX_{\Gamma}^{\text{an}}$ and $\sX_{\Gamma}$ respectively are equivalent. 
+			By rigid analytic GAGA, \cite[Theorem $4.10.5$]{Frensel-vanderPut-Rigid-Analytic_Geom}, we know that the categories of coherent sheaves on the rigid space $\bbP^{n,\text{an}}_C$ and coherent sheaves on $\bbP^n_C$ are equivalent for $n\geq 1$ any integer. Furthermore, every closed analytic subspace of $\bbP^{n,\text{an}}_C$ is the analytification of some closed subspace of $\bbP^n_C.$ So, the sheaf $\Omega_{X_{\Gamma}^{\text{an}}}^1(2\Delta)$ corresponds to the sheaf $\Omega^1_{X_{\Gamma}}(2\Delta)$ on the algebraic curve $X_{\Gamma}$ which is the coarse space of $\sX.$ Finally, by 
+			%\cite[Theorem $7.4$]{Porta-Yu-Higher-analytic-stacks-GAGA}
+			Theorem \ref{t: rigid stacky GAGA}, we know the sheaves $\Omega_{\sX_{\Gamma}^{\text{an}}}^1(2\Delta)$ and $\Omega^1_{\sX_{\Gamma}}(2\Delta)$ on the rigid analytic stacky curve and algebraic stacky curves $\sX_{\Gamma}^{\text{an}}$ and $\sX_{\Gamma}$ respectively are equivalent.\\ 
 			
-			
+			We have shown that given a modular form of weight $k$ and type $l$ for $\Gamma,$ the differential form $f(z)(dz)^{\otimes k/2}$ on the stacky curve $\sX_{\Gamma}$ is $\Gamma$-invariant and holomorphic at cusps, so therefore is a global section of the sheaf of differentials on the stacky curve. It is well-known that the only such $\Gamma$-invariant differentials are in one-to-one correspondence with modular forms, or, one might observe that the kernel of our homomorphism of algebras is trivial, which completes the typical argument (as in e.g.\ \cite[Chapter $6.2$]{VZB}) for an isomorphism between an algebra of modular forms and a ring of global sections of some line bundle on a stacky curve.
 			%Finally, since there is an isomorphism of sheaves $\pi_*\cO_{\sX}(D)\cong \cO_X(\lfloor D\rfloor)$ for $D$ a Weil divisor on $\sX$ and $\pi:\sX\to X$ a coarse space morphism, we may take the pullback of $\Omega^1_{X_{\Gamma}}(2\Delta)$ to $\Omega^1_{\sX_{\Gamma}}(2\Delta)$ by the coarse space morphism to lift the differential to a section of a line bundle on $\sX_{\Gamma_2}$ as claimed, where we make note of the twist by $2\Delta$ simply to distinguish this divisor of cusps of $\Gamma.$
 		\end{proof}
 		%\begin{remark}
@@ -696,18 +707,6 @@
 			with \[M_{k,l}(\Gamma_2)=M_{k,l_1}(\Gamma)\oplus M_{k,l_2}(\Gamma)\] on each graded piece, where $l_1,l_2$ are the two solutions to $k\equiv 2l\pmod{q-1}.$ 
 		\end{theorem}
 		
-		\begin{remark}
-			 Let $\sX_{\Gamma}$ and $\sX_{\Gamma_2}$ be the (stacky) Drinfeld modular curves which are the algebraizations of $\Gamma\setminus(\Omega\cup \bbP^1(\bbF_q(T)))$ and $\Gamma_2\setminus(\Omega\cup \bbP^1(\bbF_q(T)))$ respectively.
-			Let $\displaystyle{D=K_{\sX_{\Gamma}}+\Delta\sim K_{X_{\Gamma}}+R+\Delta}$ and $\displaystyle{D_2=K_{\sX_{\Gamma_2}}+\Delta_2\sim K_{X_{\Gamma_2}}+R_2+\Delta_2}$ be log canonical divisors on $\sX_{\Gamma_2}$ and $\sX_{\Gamma_2},$ where
-			$K_{X_{\Gamma}}$ and $K_{X_{\Gamma_2}}$ are canonical divisors for the coarse spaces of $\sX_{\Gamma}$ and $\sX_{\Gamma_2}$ respectively, and $\Delta$ and $\Delta_2$ are the log divisors of $\sX_{\Gamma}$ and $\sX_{\Gamma_2}$ respectively.
-			\begin{enumerate}
-				\item If $\Gamma$ is ``non-square,'' then
-				$R=2R_2$ and each $s_2\in \operatorname{supp}(\Delta_2)$ has $\#(\Gamma_2)_{s_2}=\frac{1}{2}(\#\Gamma_s)$ for any $s\in \operatorname{supp}(\Delta).$
-				
-				\item If $\Gamma$ is ``square,'' then $M(\Gamma_2)=M(\Gamma),$ and $K_{\sX_{\Gamma_2}}+\Delta_2=K_{\sX_{\Gamma}}+\Delta.$ 
-			\end{enumerate}
-		\end{remark}
-		
 		Since there are many intermediate lemmata involved, we break the proof of Theorem \ref{thm: decomp of mod forms} up into the next few parts of this section. We state and prove the generalization afterwards.
 		
 		\subsection{Properties of $\Gamma_2$}
@@ -717,7 +716,7 @@
 			Let $\Gamma \leq GL_2(A)$ be a congruence subgroup containing the diagonal matrices in $\GL_2(A).$ Let $\Gamma_2=\{\gamma\in \Gamma: (\det \gamma)\in (\bbF_q^{\times})^2 \}.$ We know $\Gamma_2$ is a normal subgroup of $\Gamma$ with $[\Gamma:\Gamma_2]=2,$ and for any $\alpha\in \bbF_q^{\times}\setminus(\bbF_q^{\times})^2,$ the matrix $\begin{psmallmatrix}\alpha&0\\0&1\end{psmallmatrix}$ is a representative for the unique non-trivial left coset of $\Gamma_2$ in $\Gamma.$
 		\end{lemma}
 		\begin{proof}
-			Let $\varphi:\Gamma\to \bbF_q^{\times}$ be the map $\gamma\mapsto (\det\gamma)^{(q-1)/2}.$ Since $(\det\gamma)^{q-1}=1$ for all $\gamma\in \Gamma,$ we see $\ker\varphi=\Gamma_2.$ If $\gamma\in \Gamma\setminus\Gamma_2$ then $(\det\gamma)^{(q-1)/2}\equiv -1\pmod{q-1}$ so $\varphi(\Gamma)\cong \bbZ/2\bbZ$ as multiplicative groups and $[\Gamma:\Gamma_2]=2.$\\
+			Let $\varphi:\Gamma\to \bbF_q^{\times}$ be the map $\gamma\mapsto (\det\gamma)^{(q-1)/2}.$ Since $(\det\gamma)^{q-1}=1$ for all $\gamma\in \Gamma,$ we see $\ker\varphi=\Gamma_2.$ If $\gamma\in \Gamma\setminus\Gamma_2$ then $(\det\gamma)^{(q-1)/2}= -1$ so $\varphi(\Gamma)\cong \bbZ/2\bbZ$ as multiplicative groups and $[\Gamma:\Gamma_2]=2.$\\
 			
 			If $\gamma\in \Gamma\setminus \Gamma_2,$ i.e.\ $\det(\gamma)\in \bbF_q^{\times}\setminus(\bbF_q^{\times})^2,$ then for any $\alpha\in \bbF_q^{\times}\setminus(\bbF_q^{\times})^2$ there is some $\gamma_2\in \Gamma_2$ with 
 			\[\gamma=\begin{psmallmatrix}\alpha&0\\0&1\end{psmallmatrix}\gamma_2.\]
@@ -737,18 +736,17 @@
 			Suppose $q$ is odd. Integers $k,$ and $l$ satisfy $k\equiv 2l\pmod{q-1}$ if and only if \[l\equiv \begin{cases}\frac{k}{2}\pmod{q-1}, &\text{ or }\\ \frac{k}{2}+\frac{q-1}{2}\pmod{q-1}.\end{cases}\] 
 		\end{lemma}
 		\begin{proof}
-			We know that $2l\equiv k\pmod{q-1}$ if and only if $2l-m(q-1)=k$ for some integer $m.$ If $\gcd(2,q-1)$ does not divide $k$ then there are no solutions, and if it does then there are exactly $\gcd(2,q-1)=2$ distinct solutions modulo $q-1.$ %To be explicit, we illustrate this with computations:
-			%\begin{itemize}
-			%	\item[$(\Rightarrow)$] Suppose that $k=m(q-1)+2l$ for some integer $m.$ Since $q-1$ is even, $k$ is even and $l=-m(\frac{q-1}{2})+\frac{k}{2}$ so $l\equiv\frac{k}{2}\pmod{\frac{q-1}{2}}.$ If $m$ is even, $\frac{m}{2}$ is an integer, and otherwise $\frac{m-1}{2}$ is, so we have
-			%	\[
-			%	l = \begin{cases}
-				%		l_1\equiv \frac{k}{2}\pmod{q-1}, & m\text{ even}\\
-				%		l_2\equiv \frac{k}{2}+\frac{q-1}{2}\pmod{q-1}, & m\text{ odd.}
-				%	\end{cases}\]
-			%	
-			%	\item[$(\Leftarrow)$] Suppose $l=l_1\equiv \frac{k}{2}\pmod{q-1}.$ Then $l_1=n_1(q-1)+\frac{k}{2}$ for some $n_1,$ so $k=-2n_1(q-1)+2l_1.$ If $l=l_2\equiv \frac{k}{2}+\frac{q-1}{2}\pmod{q-1}$ then $l_2=n_2(q-1)+\frac{k}{2}+\frac{q-1}{2}$ for some $n_2$ and we have $k=-(2n_2+1)(q-1)+2l_2.$ In either case we conclude that $k\equiv 2l\pmod{q-1}.$
-			%\end{itemize}
-			%We know that $2l\equiv k\pmod{q-1}$ if and only if $2l-m(q-1)=k$ for some integer $m.$ If $\gcd(2,q-1)$ does not divide $k$ then there are no solutions, and if it does then there are exactly $\gcd(2,q-1)=2$ distinct solutions modulo $q-1.$
+			We know that $2l\equiv k\pmod{q-1}$ if and only if $2l-m(q-1)=k$ for some integer $m.$ If $\gcd(2,q-1)$ does not divide $k$ then there are no solutions, and if it does then there are exactly $\gcd(2,q-1)=2$ distinct solutions modulo $q-1.$ To be explicit, we illustrate this with computations:
+			\begin{itemize}
+				\item[$(\Rightarrow)$] Suppose that $k=m(q-1)+2l$ for some integer $m.$ Since $q-1$ is even, $k$ is even and $l=-m(\frac{q-1}{2})+\frac{k}{2}$ so $l\equiv\frac{k}{2}\pmod{\frac{q-1}{2}}.$ If $m$ is even, $\frac{m}{2}$ is an integer, and otherwise $\frac{m-1}{2}$ is, so we have
+				\[
+				l = \begin{cases}
+						l_1\equiv \frac{k}{2}\pmod{q-1}, & m\text{ even}\\
+						l_2\equiv \frac{k}{2}+\frac{q-1}{2}\pmod{q-1}, & m\text{ odd.}
+					\end{cases}\]
+				
+				\item[$(\Leftarrow)$] Suppose $l=l_1\equiv \frac{k}{2}\pmod{q-1}.$ We have $l_1=n_1(q-1)+\frac{k}{2}$ for some $n_1,$ so $k=-2n_1(q-1)+2l_1.$ If $l=l_2\equiv \frac{k}{2}+\frac{q-1}{2}\pmod{q-1}$ then $l_2=n_2(q-1)+\frac{k}{2}+\frac{q-1}{2}$ for some $n_2$ and we have $k=-(2n_2+1)(q-1)+2l_2.$ In either case we conclude that $k\equiv 2l\pmod{q-1}.$
+			\end{itemize}
 		\end{proof}
 		
 		
@@ -837,17 +835,28 @@
 			Suppose $e_2\in \operatorname{Ell}(\Gamma_2),$ so by definition the stabilizer $(\Gamma_2)_{e_2}$ is strictly larger than $\bbF_q^{\times}.$ Since $(\Gamma_2)_{e_2}$ is a subgroup of $\Gamma_{e_2},$ it must be that $\Gamma_{e_2}$ strictly contains $Z(\bbF_q),$ so $e_2\in \operatorname{Ell}(\Gamma).$\\
 			
 			For the same reason, if $e\in \operatorname{Ell}(\Gamma),$ then $e$ is an elliptic point on $\Omega,$ and we know $\GL_2(A)_e\cong \bbF_{q^2}^{\times}.$  In particular, as $\bbF_{q^2}^{\times}$ and $\bbF_q^{\times}$ are cyclic groups, we know $(\Gamma_2)_e$ and $\Gamma_e$ are cyclic and we have $1\unlhd Z(\bbF_q)\unlhd (\Gamma_2)_e\unlhd \Gamma_e\unlhd \GL_2(A)_e\cong \bbF_{q^2}^{\times}.$ 
-			Since $q-1\mid \#\Gamma_e,$ there is some $1<n\leq q+1$ such that $n\mid q-1$ and $\#\Gamma_e=n(q-1).$ 
-			Suppose that $\langle \gamma \rangle =\Gamma_e.$ The left cosets of $\bbF_q^{\times}$ in $\Gamma_e$ have representatives 
-			\[\gamma^j\left(\begin{array}{cc}\frac{1}{\alpha_i}&0\\0&\frac{1}{\alpha_i}\end{array}\right)\]
-			for $1\leq j \leq n(q-1)$ and $\alpha_i\in \bbF_q^{\times},$ so we can write 
-			\[\Gamma_e/\bbF_q^{\times}\cong \bbF_q^{\times}\oplus \frac{\gamma}{\alpha_0}\bbF_q^{\times}\oplus\cdots\oplus \frac{\gamma}{\alpha_{q-1}}\bbF_q^{\times}\oplus \frac{\gamma^2}{\alpha_0}\bbF_q^{\times}\oplus\cdots\oplus \frac{\gamma^{(n-1)(q-1)}}{\alpha_{q-1}}\bbF_q^{\times}.\]
 			
-			We claim that if $\Gamma$ is ``non-square,'' the cosets with representatives $\gamma^j/\alpha_i$ with $j$ even form a subgroup isomorphic to $(\Gamma_2)_e/\bbF_q^{\times}.$ 
+			Since $q-1\mid \#\Gamma_e,$ there is some $1<n\leq q+1$ such that $\#\Gamma_e=n(q-1).$ 
+			Suppose that $\langle \gamma \rangle =\Gamma_e.$ Since $Z(\bbF_q)\subset \Gamma_e,$ the subgroup $Z(\bbF_q),$ the unique subgroup of order $q-1$ in the cyclic group $\Gamma_e,$ is generated by $\gamma^n.$ So, a set of representatives of $\Gamma_e/\bbF_q^{\times}$ is $\{\gamma^0,\ldots, \gamma^n,\}$ and we write 
+			\[\Gamma_e/\bbF_q^{\times}\cong \bbF_q^{\times}\oplus \gamma\bbF_q^{\times}\oplus\cdots\oplus\gamma^n\bbF_q^{\times}.\]
+			
+			%The left cosets of $\bbF_q^{\times}$ in $\Gamma_e$ have representatives 
+			%\[\gamma^j\left(\begin{array}{cc}\frac{1}{\alpha_i}&0\\0&\frac{1}{\alpha_i}\end{array}\right)\]
+			%for $1\leq j \leq n(q-1)$ and $\alpha_i\in \bbF_q^{\times},$ so we can write 
+			%\[\Gamma_e/\bbF_q^{\times}\cong \bbF_q^{\times}\oplus \frac{\gamma}{\alpha_0}\bbF_q^{\times}\oplus\cdots\oplus \frac{\gamma}{\alpha_{q-1}}\bbF_q^{\times}\oplus \frac{\gamma^2}{\alpha_0}\bbF_q^{\times}\oplus\cdots\oplus \frac{\gamma^{(n-1)(q-1)}}{\alpha_{q-1}}\bbF_q^{\times}.\]
+			
+			We claim that if $\Gamma$ is ``non-square,'' the cosets with representatives 
+			%$\gamma^j/\alpha_i$
+			$\gamma^j$
+			with $j$ even form a subgroup isomorphic to $(\Gamma_2)_e/\bbF_q^{\times}.$ 
 			If $\Gamma$ is ``non-square'' then by Lemma \ref{l: stabilizer index} we know that $\Gamma_e$ contains some $\gamma'$ with $\det\gamma'$ a non-square, so $\det\gamma$ is non-square. Otherwise we would have $\gamma^n=\gamma'$ for some $n$ and with $\det\gamma\in (\bbF_q^{\times})^2,$ we would have $\det\gamma'$ a square which is a clear contradiction.
-			For any even $j$ we have
-			\[\det\left(\frac{\gamma^j}{\alpha}\right)=\frac{\det\gamma^j}{\alpha^2}\] is a quotient of squares so is a square. For odd $j,$ since $\det\gamma^j\in \bbF_q^{\times}\setminus(\bbF_q^{\times})^2$ then for any $\alpha'\in \bbF_q^{\times}$ non-square, there is some $\gamma_2\in \Gamma_2$ such that $\displaystyle{\gamma=\begin{psmallmatrix}\alpha&0\\0&1\end{psmallmatrix}\gamma_2},$ but whether a given $\alpha_i$ is a square or not, 
-			\[\det(\gamma^j/\alpha_i)=\frac{\alpha'\det\gamma_2}{\alpha_i^2},\] which is not a square. Otherwise if $\Gamma$ is ``square,'' by Lemma \ref{l: stabilizer index} we have $\Gamma_e=(\Gamma_2)_e.$  
+			For any even $j$ we have $\det(\gamma^j)$ a square.
+			%\[\det\left(\frac{\gamma^j}{\alpha}\right)=\frac{\det\gamma^j}{\alpha^2}\]
+			%is a quotient of squares so is a square. 
+			For odd $j,$ since $\det\gamma^j\in \bbF_q^{\times}\setminus(\bbF_q^{\times})^2$ then for any $\alpha'\in \bbF_q^{\times}$ non-square, there is some $\gamma_2\in \Gamma_2$ such that $\displaystyle{\gamma=\begin{psmallmatrix}\alpha&0\\0&1\end{psmallmatrix}\gamma_2},$ but whether a given $\alpha_i$ is a square or not, 
+			%\[\det(\gamma^j/\alpha_i)=\frac{\alpha'\det\gamma_2}{\alpha_i^2},\] 
+			\[\det(\gamma^j)=\alpha'\det\gamma_2,\]
+			which is not a square. Otherwise if $\Gamma$ is ``square,'' by Lemma \ref{l: stabilizer index} we have $\Gamma_e=(\Gamma_2)_e.$  
 			%$\alpha\in \bbF_q^{\times}\setminus(\bbF_q^{\times})^2$ there is some $\gamma_2\in \Gamma_2$ such that $\displaystyle{\gamma=\left(\begin{array}{cc}\alpha&0\\0&1\end{array}\right)\gamma_2},$ so for each non-square $\alpha_i$ and odd $j,$ the representative $\frac{\gamma^j}{\alpha_i}$ has a square determinant, and for $\alpha_i\in (\bbF_q^{\times})^2$ the representative has a non-square determinant. 
 			Whether $\Gamma$ is square or not, $(\Gamma_e)/\bbF_q^{\times}$ has a nontrivial subgroup isomorphic to $(\Gamma_2)_e/\bbF_q^{\times},$ so the stabilizer of $e$ in $\Gamma_2$ strictly contains $\bbF_q^{\times}$ and $e\in \operatorname{Ell}(\Gamma_2).$\\
 			
@@ -937,6 +946,18 @@
 	%The compactifications $X_{\Gamma_2}$ and $X_{\Gamma}$ are isomorphic to $\bbP^1(C)=C\cup \{\infty\}$ by their respective $j$-invariants, where the added cusps correspond to $j=\tilde{\j}^2=\infty,$ so $X_{\Gamma_2}\to X_{\Gamma}$ is also ramified at $\infty.$ In particular this means that there are the same cusps for each modular curve. 
 \end{proof}
 
+\begin{remark}
+	Let $\sX_{\Gamma}$ and $\sX_{\Gamma_2}$ be the (stacky) Drinfeld modular curves which are the algebraizations of $\Gamma\setminus(\Omega\cup \bbP^1(\bbF_q(T)))$ and $\Gamma_2\setminus(\Omega\cup \bbP^1(\bbF_q(T)))$ respectively.
+	Let $\displaystyle{D=K_{\sX_{\Gamma}}+\Delta\sim K_{X_{\Gamma}}+R+\Delta}$ and $\displaystyle{D_2=K_{\sX_{\Gamma_2}}+\Delta_2\sim K_{X_{\Gamma_2}}+R_2+\Delta_2}$ be log canonical divisors on $\sX_{\Gamma_2}$ and $\sX_{\Gamma_2},$ where
+	$K_{X_{\Gamma}}$ and $K_{X_{\Gamma_2}}$ are canonical divisors for the coarse spaces of $\sX_{\Gamma}$ and $\sX_{\Gamma_2}$ respectively, and $\Delta$ and $\Delta_2$ are the log divisors of $\sX_{\Gamma}$ and $\sX_{\Gamma_2}$ respectively. We have shown the following.
+	\begin{enumerate}
+		\item If $\Gamma$ is ``non-square,'' then
+		$R=2R_2$ and each $s_2\in \operatorname{supp}(\Delta_2)$ has $\#(\Gamma_2)_{s_2}=\frac{1}{2}(\#\Gamma_s)$ for any $s\in \operatorname{supp}(\Delta).$
+		
+		\item If $\Gamma$ is ``square,'' then $M(\Gamma_2)=M(\Gamma),$ and $K_{\sX_{\Gamma_2}}+\Delta_2=K_{\sX_{\Gamma}}+\Delta.$ 
+	\end{enumerate}
+\end{remark}
+
 %\begin{corollary}
 %	\label{cor: generalized cusps comparison}
 %	Let $q$ be a power of an odd prime. Let $\Gamma\leq GL_2(A)$ be a congruence subgroup. Let $\Gamma_1=\{\gamma\in \Gamma:\det(\gamma)=1\}.$ If $\Gamma_1\leq \Gamma'\leq\Gamma$ for some congruence subgroup $\Gamma',$ then $\cC_{\Gamma}\subseteq\cC_{\Gamma'},$ i.e.\ the cusps of $\Gamma$ are some subset of the cusps of $\Gamma'$
@@ -965,27 +986,29 @@
 
 Our next steps in the proof of Theorem \ref{thm: decomp of mod forms} deal with the $u$-series expansions of modular forms. 
 \begin{proposition}\label{p: generator trick}
-Let $f$ be holomorphic on $\Omega$ and at the cusps of $\Gamma_2,$ and let $\beta=\alpha^2\in \bbF_q^{\times},$ where $\alpha$ generates $\bbF_q^{\times}.$ If $f(\gamma z)=(\det\gamma)^{-l}(cz+d)^kf(z)$ for $\displaystyle{\gamma=\begin{psmallmatrix}a&b\\c&d\end{psmallmatrix}\in \Gamma_2},$ then \[f\left(\begin{psmallmatrix}\beta&0\\0&1\end{psmallmatrix}z \right) = f(\beta z)=\beta^{-k/2}f(z).\]
+Let $f$ be holomorphic on $\Omega$ and at the cusps of $\Gamma_2,$ and let $\beta=\alpha^2\in \bbF_q^{\times},$ where $\alpha$ generates $\bbF_q^{\times}.$ If $f(\gamma z)=(\det\gamma)^{-l}(cz+d)^kf(z)$ for $\displaystyle{\gamma=\begin{psmallmatrix}a&b\\c&d\end{psmallmatrix}\in \Gamma_2},$ where $k/2$ is an integer then \[f\left(\begin{psmallmatrix}\beta&0\\0&1\end{psmallmatrix}z \right) = f(\beta z)=\beta^{-k/2}f(z).\]
 \end{proposition}
 \begin{proof}
-Since $\displaystyle{\begin{psmallmatrix}\alpha&0\\0&\alpha\end{psmallmatrix}\in \Gamma_2}$ we have $\displaystyle{f\left(\frac{\alpha z}{\alpha}\right) = f(z)=\alpha^{-2l}\alpha^k f(z)},$ so 
+Since $\displaystyle{\begin{psmallmatrix}\alpha&0\\0&\alpha\end{psmallmatrix}\in \Gamma_2},$ for $f$ not identically zero we have $\displaystyle{f\left(\frac{\alpha z}{\alpha}\right) = f(z)=\alpha^{-2l}\alpha^k f(z)},$ and so 
 $\alpha^{k-2l}=1.$\\
 
-Suppose that $x$ generates the cyclic group $\bbF_q^{\times},$ so $\alpha = x^n$ for some $n.$
-If $\gcd(n,q-1)=1$ (i.e.\ $\alpha$ is a generator) we have $k\equiv 2l\pmod{q-1}.$ The order of $\alpha$ is \[\#\langle\alpha\rangle=\frac{q-1}{\gcd(n,q-1)}=q-1, \] and we can write $k\equiv 2l\pmod{\#\langle \alpha\rangle}$ so 
-\[\gcd(n,q-1)(k-2l)\equiv 0\pmod{q-1},\] but $\gcd(n,q-1)$ is coprime to $q-1,$ from which the claim follows.\\
+%Suppose that $x$ generates the cyclic group $\bbF_q^{\times},$ so $\alpha = x^n$ for some $n.$
+%If $\gcd(n,q-1)=1$ (i.e.\ $\alpha$ is a generator) we have $k\equiv 2l\pmod{q-1}.$ The order of $\alpha$ is \[\#\langle\alpha\rangle=\frac{q-1}{\gcd(n,q-1)}=q-1, \] and we can write $k\equiv 2l\pmod{\#\langle \alpha\rangle}$ so 
+%\[\gcd(n,q-1)(k-2l)\equiv 0\pmod{q-1},\] but $\gcd(n,q-1)$ is coprime to $q-1,$ from which the claim follows.\\
+%
+%Since $\beta=\alpha^2,$ we have $\beta^{2(k-2l)}=1,$ so \[2k=4l\Mod{q-1}.\] We have $k\equiv 2l\pmod{\frac{q-1}{2}},$ since if $2k=m(q-1)+4l$ for some $m,$ we can write 
+%\[k=m\left(\frac{q-1}{2}\right)+2l.\]
+%Because $\displaystyle{l\equiv \frac{k}{2}\pmod{\frac{q-1}{2}}}$ by Lemma \ref{l: elementary number theory}, we see  
+%\[f\left(\begin{psmallmatrix}\beta&0\\0&1\end{psmallmatrix}z\right) = f(\beta z) = \beta^{-k/2}f(z),\]
+%since $\begin{psmallmatrix}\beta&0\\0&1\end{psmallmatrix}\in \Gamma_2.$ This matrix has square determinant by assumption and is in $\Gamma$ by our assumption that $\Gamma$ contains all matrices of form $\displaystyle{\begin{psmallmatrix}\alpha&0\\0&\alpha'\end{psmallmatrix}},$ for any $\alpha,\alpha'\in \bbF_q^{\times}.$
 
-Since $\beta=\alpha^2,$ we have $\beta^{2(k-2l)}=1,$ so \[2k=4l\Mod{q-1}.\] We have $k\equiv 2l\pmod{\frac{q-1}{2}},$ since if $2k=m(q-1)+4l$ for some $m,$ we can write 
-\[k=m\left(\frac{q-1}{2}\right)+2l.\]
-Because $\displaystyle{l\equiv \frac{k}{2}\pmod{\frac{q-1}{2}}}$ by Lemma \ref{l: elementary number theory}, we see  
-\[f\left(\begin{psmallmatrix}\beta&0\\0&1\end{psmallmatrix}z\right) = f(\beta z) = \beta^{-k/2}f(z),\]
-since $\begin{psmallmatrix}\beta&0\\0&1\end{psmallmatrix}\in \Gamma_2.$ This matrix has square determinant by assumption and is in $\Gamma$ by our assumption that $\Gamma$ contains all matrices of form $\displaystyle{\begin{psmallmatrix}\alpha&0\\0&\alpha'\end{psmallmatrix}},$ for any $\alpha,\alpha'\in \bbF_q^{\times}.$
+By assumption on $\beta,$ we know $\begin{psmallmatrix}\beta&0\\0&1\end{psmallmatrix}\in \Gamma_2$ and therefore $f(\beta z)=\beta^{-l}f(z).$ It suffices to show that $\beta^{-l}=\beta^{-k/2},$ that is, $\alpha^{-k}=\alpha^{-2l}.$ But, by Lemma \ref{l: weight-type}, if $f$ is not identically zero this follows from $k\equiv 2l\pmod{q-1}.$ 
 \end{proof}
 
 We complete the proof of Theorem \ref{thm: decomp of mod forms} with the following result.
 \begin{proposition}
-	Suppose $\Gamma$ is ``non-square.''
-	Let $f$ be a modular form of weight $k$ and type $l$ for $\Gamma_2.$ 
+	Let $q$ be a power of an odd prime. Suppose $\Gamma$ is ``non-square.''
+	Let $f$ be a modular form of weight $k$ and type $l$ for $\Gamma_2,$ where $k/2$ is an integer. 
 	There are two modular forms $f_1$ and $f_2$ for $\Gamma$ of weight $k$ and types $l_1\equiv k/2\Mod{q-1}$ and $l_2\equiv k/2+(q-1)/2\Mod{q-1}$ respectively, such that $f=f_1+f_2.$
 \end{proposition}
 \begin{proof}
@@ -1005,7 +1028,9 @@ Write the $u$-series $f(z)=\sum_{n\geq 0}a_nu^n.$ Let $\beta = \alpha^2\in \bbF_
 %$\displaystyle{\gamma = \left(\begin{array}{cc}\alpha&0\\0&1\end{array}\right)\gamma_2}$ for some $\gamma_2\in \Gamma_2$ and $\alpha\in \bbF_q^{\times},$ we have 
 %\[f(\gamma z) =\alpha^{-l}f(\gamma_2 z)= (\alpha\det\gamma_2)^{-l}(cz+d)^kf(z)=(\det\gamma)^{-l}(cz+d)^kf(z). \]
 
-Let $\alpha\in \bbF_q^{\times}$ be some non-square, so by Lemma \ref{l: u(a/d)=d/au} we have $u(\alpha z)=\alpha^{-1}u(z).$ Let \[f_1=\sum_{n\equiv k/2\Mod{q-1}}a_nu^n\] and \[f_2=\sum_{n\equiv k/2+(q-1)/2\Mod{q-1}} a_nu^n\] be the modular forms for $\Gamma_2$ uniquely determined by their $u$-series by Lemma \ref{l: u-series coeffs determine form}. We have \[f_1(\alpha z)=\sum_{n\equiv k/2\Mod{q-1}}a_n\alpha^{-n}u^n=\alpha^{-l_1}\sum_{n\equiv k/2\Mod{q-1}}a_nu^n,\] where $\displaystyle{l_1\equiv \frac{k}{2}\pmod{q-1}}.$ Let $\gamma\in \Gamma\setminus \Gamma_2.$ For any $\alpha\in \bbF_q^{\times}\setminus(\bbF_q^{\times})^2$ there is some $\displaystyle{\gamma_2=\begin{psmallmatrix}a&b\\c&d\end{psmallmatrix}\in \Gamma_2}$ such that \[\gamma=\begin{psmallmatrix}\alpha&0\\0&1\end{psmallmatrix}\gamma_2,\] so 
+Let \[f_1\overset{def}{=}\sum_{n\equiv k/2\Mod{q-1}}a_nu^n\quad \text{ and }\quad f_2\overset{def}{=}\sum_{n\equiv k/2+(q-1)/2\Mod{q-1}} a_nu^n\] be the modular forms for $\Gamma_2$ uniquely determined by their $u$-series by Lemma \ref{l: u-series coeffs determine form}. Note that since $f(z)=(f_1+f_2)(z),$ we see immediately $f_1(z)$ and $f_2(z)$ are indeed modular forms for $\Gamma_2$: \[f(\gamma_2z)=(f_1+f_2)(\gamma_2 z)=(cz+d)^k\det\gamma_2^{-l}(f_1+f_2)(z);\] holomorphy follows since no holomorphic function ($f$ in this case) is the sum of non-holomorphic functions ($f_1$ and $f_2$); holomorphy at $\infty$ follows directly from Definition \ref{d: parameter at infty}.\\
+
+Let $\alpha\in \bbF_q^{\times}$ be some non-square, so by Lemma \ref{l: u(a/d)=d/au} we have $u(\alpha z)=\alpha^{-1}u(z).$ We have \[f_1(\alpha z)=\sum_{n\equiv k/2\Mod{q-1}}a_n\alpha^{-n}u^n=\alpha^{-l_1}\sum_{n\equiv k/2\Mod{q-1}}a_nu^n,\] where $\displaystyle{l_1\equiv \frac{k}{2}\pmod{q-1}}.$ Let $\gamma\in \Gamma\setminus \Gamma_2.$ For any $\alpha\in \bbF_q^{\times}\setminus(\bbF_q^{\times})^2$ there is some $\displaystyle{\gamma_2=\begin{psmallmatrix}a&b\\c&d\end{psmallmatrix}\in \Gamma_2}$ such that \[\gamma=\begin{psmallmatrix}\alpha&0\\0&1\end{psmallmatrix}\gamma_2,\] so 
 \[f_1(\gamma z)=f_1(\begin{psmallmatrix}\alpha&0\\0&1\end{psmallmatrix}\gamma_2 z)=\alpha^{-l}f_1(\gamma_2 z)=\alpha^{-l}\det(\gamma_2)^{-l}(cz+d)^kf_1(z)=\det(\gamma)^{-l}(cz+d)^kf_1(z)\] and $f_1$ is a modular form for $\Gamma.$ Likewise we have 
 \[f_2(\alpha z)=\sum_{n\equiv k/2+(q-1)/2\Mod{q-1}} a_n\alpha^{-n}u^n=\alpha^{-l_2}\sum_{n\equiv k/2+(q-1)/2\Mod{q-1}} a_nu^n,\]
 where now $\displaystyle{l_2\equiv \frac{k+q-1}{2}}\pmod{q-1},$ so for $\gamma,\alpha$ and $\gamma_2$ as above,
@@ -1019,17 +1044,17 @@ We will show that Theorem \ref{thm: decomp of mod forms} is actually a special c
 \begin{theorem}
 	\label{thm: generalized decomp}
 	Let $q$ be a power of an odd prime. Let $\Gamma\leq \GL_2(A)$ be a congruence subgroup. Let $\Gamma_1=\{\gamma\in \Gamma: \det(\gamma)=1\}.$ Suppose that $\Gamma_1\leq \Gamma'\leq \Gamma$ for some congruence subgroup $\Gamma'.$ As algebras
-	\[M(\Gamma)=M(\Gamma'),\] and each component $M_{k,l}(\Gamma')$ is some direct sum of components $M_{k,l'}(\Gamma)$ for some nontrivial $l'.$
+	\[M(\Gamma)=M(\Gamma'),\] and each component $M_{k,l}(\Gamma')$ is some direct sum of components $M_{k,l'}(\Gamma)$ for some nontrivial $l',$ the distinct solutions to $k\equiv [\Gamma:\Gamma']l'\pmod{q-1},$ where $k/2$ is an integer.
 \end{theorem}
 \begin{remark}
-	The subgroups $\Gamma'$ which appear in the statement of Theorem \ref{thm: generalized decomp} may be thought of as the inverse image under $\det:\Gamma\to \bbF_q^{\times}$ of some subgroup of $\bbF_q^{\times}.$
+	The subgroups $\Gamma'$ which appear in the statement of Theorem \ref{thm: generalized decomp} may be thought of as the inverse image under $\det:\Gamma\to \bbF_q^{\times}$ of some subgroup of $\bbF_q^{\times}.$ As $\bbF_q^{\times}$ is cyclic every subgroup $H\leq \bbF_q^{\times}$ is normal, and hence each $\Gamma'=\det^{-1}(H)$ is normal in $\Gamma.$
 \end{remark}
 \begin{proof}(Theorem \ref{thm: generalized decomp})
-	Write $f|_{\gamma}$ for the (Petersson) \textbf{slash operator} of weight $k$ and type $l$ for $\displaystyle{\gamma=\begin{psmallmatrix}a&b\\c&d\end{psmallmatrix}\in \GL_2(K)}$ defined by \[f|_{\gamma}\overset{def}{=}\det(\gamma)^l(cz+d)^{-k}f(\gamma z).\] If $f\in M_{k,l}(\Gamma'),$ by normality $\Gamma'\unlhd \Gamma$ we have that $f|_{\gamma}$ is weakly modular of weight $k$ and type $l$ for any $\gamma\in \Gamma.$ By Corollary \ref{cor: generalized cusps comparison} we see that $f|_{\gamma}$ is holomorphic at the cusps of $\Gamma$ since $f$ is holomorphic at the cusps of $\Gamma',$ indeed the $u$-series of expansions of $f|_{\gamma}$ and $f$ agree at the cusps of $\Gamma'.$\\
+	Write $f|_{\gamma}$ for the (Petersson) \textbf{slash operator} of weight $k$ and type $l$ for $\displaystyle{\gamma=\begin{psmallmatrix}a&b\\c&d\end{psmallmatrix}\in \GL_2(K)}$ defined by \[f|_{\gamma}\overset{def}{=}\det(\gamma)^l(cz+d)^{-k}f(\gamma z).\] If $f\in M_{k,l}(\Gamma'),$ by normality $\Gamma'\unlhd \Gamma$ we have that $f|_{\gamma}$ is weakly modular of weight $k$ and type $l$ for $\Gamma,$ that is, for any $\gamma\in \Gamma.$ By Proposition \ref{p: elliptic points and cusps} we see that $f|_{\gamma}$ is holomorphic at the cusps of $\Gamma$ since $f$ is holomorphic at the cusps of $\Gamma',$ indeed we claim the $u$-series of expansions of $f|_{\gamma}$ and $f$ agree at the cusps of $\Gamma'.$\\
 	
-	The action of $\Gamma'$ is trivial, so we have an action of the finite group \[\Gamma/\Gamma'=\det(\Gamma)/\det(\Gamma'),\] which has order some divisor of $q-1$ since $\{1\}\leq \det\Gamma'\leq \det\Gamma\leq \bbF_q^{\times}.$ We may describe the group ring $\bbF_q[\Gamma/\Gamma']$ via idempotents as follows. Let $n'\overset{def}{=}\#(\det\Gamma')$ and let $n\overset{def}{=}\#(\det\Gamma).$ This means 
+	We consider the $u$-expansions in a small neighborhood of each cusp. The action of $\Gamma'$ on a neighrborhood of a cusp is trivial, so by the Third Isomorphism Theorem for Groups since $\Gamma_1\leq \Gamma'$ we have an action of the finite group \[\Gamma/\Gamma'=\det(\Gamma)/\det(\Gamma'),\] which has order some divisor of $q-1$ since $\{1\}=\det \Gamma_1\leq \det\Gamma'\leq \det\Gamma\leq \bbF_q^{\times}.$ We may describe the group ring $\bbF_q[\Gamma/\Gamma']$ via idempotents as follows. Let $n'\overset{def}{=}\#(\det\Gamma')$ and let $n\overset{def}{=}\#(\det\Gamma).$ This means 
 	\[\bbF_q[\Gamma/\Gamma']=\bigoplus_{i=0}^{n/n'-1}\bbF_qe_i,\]
-	where $\Gamma$ acts on the $e_i$ via maps $\gamma\mapsto (\det\gamma)^{in'}.$ So as $\Gamma$-modules, we have \[M_{k,l}(\Gamma')=\bigoplus_i M_{k,l}(\Gamma')e_i,\] where \[M_{k,l}(\Gamma')e_i=M_{k,l+in'}(\Gamma).\] Finally, since modular forms for $\Gamma'$ are holomorphic at the cusps of $\Gamma',$ and by Corollary \ref{cor: generalized cusps comparison} the cusps of $\Gamma$ are a subset of the cusps of $\Gamma',$ we know $\Gamma'$-modular forms are holomorphic at the cusps of $\Gamma.$
+	where $\Gamma$ acts on the $e_i$ via maps $\gamma\mapsto (\det\gamma)^{in'}.$ So as $\Gamma$-modules, we have \[M_{k,l}(\Gamma')=\bigoplus_i M_{k,l}(\Gamma')e_i,\] where \[M_{k,l}(\Gamma')e_i=M_{k,l+in'}(\Gamma).\] Finally, since modular forms for $\Gamma'$ are holomorphic at the cusps of $\Gamma',$ and by Proposition \ref{p: elliptic points and cusps} the cusps of $\Gamma$ are a subset of the cusps of $\Gamma',$ we know $\Gamma'$-modular forms are holomorphic at the cusps of $\Gamma.$
 \end{proof}
 
 \begin{remark}
@@ -1052,7 +1077,7 @@ We have seen some relationships between the modular forms for $\Gamma$ and $\Gam
 
 As a first example, we will recall the computation of canonical rings for classical modular curves in \cite{VZB}, and see how this differs from the case of a Drinfeld modular curve, as we demonstrate that $M((\GL_2(A))_2)=C[g,h].$ Since $\GL_2(A)$ is ``non-square,'' we first reduce to $\GL_2(A)_2$ according to Theorem \ref{thm: decomp of mod forms}. We use the geometry of modular forms for this smaller group, Theorem \ref{thm: forms to differentials}, and geometric invariants of the modular curve for $\GL_2(A)_2$ to compute a canonical ring as in \cite{VZB}.\\
 
-In the classical setting, modular curves are tame stacky curves, and likewise in the Drinfeld setting, as we will explain next. As in \cite[Definition $(3.5)$]{Gekeler-survey-Drinfeld-modular-forms}, for some Drinfeld modular form $f$, we let $v_z(f)$ denote the vanishing order of $f$ at $z\in \Omega$ and $v_{\infty}(f)$ denote the vanishing order of $f$ at $\infty.$ From \cite[Equation $(3.10)$]{Gekeler-survey-Drinfeld-modular-forms}: 
+In the classical setting, modular curves are tame stacky curves, and likewise in the Drinfeld setting, as we will explain next. As in \cite[Definition $(3.5)$]{Gekeler-survey-Drinfeld-modular-forms}, for some non-zero Drinfeld modular form $f$ of weight $k$ and type $l$ for $\GL_2(A),$ we let $v_z(f)$ denote the vanishing order of $f$ at $z\in \Omega$ and $v_{\infty}(f)$ denote the vanishing order of $f$ at $\infty.$ From \cite[Equation $(3.10)$]{Gekeler-survey-Drinfeld-modular-forms}: 
 \[\sideset{}{^*}\sum_{z\in GL_2(A)\setminus \Omega}v_z(f)+\frac{v_e(f)}{q+1}+\frac{v_{\infty}(f)}{q-1}=\frac{k}{q^2-1},\]
 where $\sum^*$ denotes a sum over non-ellitic classes of $\GL_2(A)\setminus \Omega.$ In particular, the characteristic of $C$ does not divide the degree of the stabilizer of any point on a Drinfeld modular curve, as $\deg G_x$ divides $q^2-1$ for all points $x.$\\
 
@@ -1065,7 +1090,7 @@ We can compute section rings for general $\bbQ$-divisors on genus $0$ curves usi
 we will consider the coefficients of log canonical divisors for Drinfeld modular curves in more detail. In particular, we compare the stabilizers of stacky points for $\GL_2(A)$ and $\GL_2(A)_2,$ since we use these to write down log canonical divisors for the stacky curves associated with these groups.\\ 
 
 Recall the parameter at $\infty$ in the Drinfeld setting, introduced in Definition \ref{d: parameter at infty}. Since $\displaystyle{\frac{de_A(z)}{dz}=1},$ we have 
-$du = -\overline{\pi}u^2 dz,$ so the differential $dz$ in this case has a double pole at $\infty.$ But, $\infty$ is stabilized by upper triangular matrices in $\GL_2(A).$ As the group of upper triangular matrices is strictly larger than $\displaystyle{\#\left\{\begin{psmallmatrix}\alpha&0\\0&\alpha\end{psmallmatrix}:\alpha\in \bbF_q^{\times} \right\}}=q-1,$ the point $\infty$ is an elliptic point of $\GL_2(A)$ and hence a stacky point for $\sX.$ In fact, both stacky points on $\sX_{\GL_2(A)_2}$, the unique $e$ on $\Omega$ from Definition \ref{d: elliptic pt} and $\infty$ have stabilizers half the order of their stabilizers in $\GL_2(A),$ which comes from the double cover $\Spec C[\tilde{\j}]\to \Spec C[j]$ (see \cite[Page $7$]{Breuer-Gekeler-h-function}) which is ramified above $j=0$ and $\infty$ and the fact that $\GL_2(A)$ is ``non-square'' so that $[\GL_2(A)_e:(\GL_2(A)_2)_e]=2$ by Lemma \ref{l: stabilizer index}.\\
+$du = -\overline{\pi}u^2 dz,$ so the differential $dz$ in this case has a double pole at $\infty.$ But, $\infty$ is stabilized by upper triangular matrices in $\GL_2(A).$ As the group of upper triangular matrices is strictly larger than $\displaystyle{\#\left\{\begin{psmallmatrix}\alpha&0\\0&\alpha\end{psmallmatrix}:\alpha\in \bbF_q^{\times} \right\}}=q-1,$ the point $\infty$ is an elliptic point of $\GL_2(A)$ and hence a stacky point for $\sX.$ In fact, both stacky points on $\sX_{\GL_2(A)_2}$, the unique $e$ on $\Omega$ from Definition \ref{d: elliptic pt} and $\infty$ have stabilizers half the order of their stabilizers in $\GL_2(A),$ which comes from the double cover $\Spec C[\tilde{\j}]\to \Spec C[j]$ (see \cite[Page $312$]{Breuer-Gekeler-h-function}) which is ramified above $j=0$ and $\infty$ and the fact that $\GL_2(A)$ is ``non-square'' so that $[\GL_2(A)_e:(\GL_2(A)_2)_e]=2$ by Lemma \ref{l: stabilizer index}.\\
 
 %We recall from \cite[Proposition $5.5.6$]{VZB} that for $K_{\sX}$ a canonical divisor on a tame stacky curve $\sX$ with coarse space $X$ and canonical divisor $K_X,$ if $x$ is a geometric point of $\sX$ with non-trivial stabilizer, there is a linear equivalence 
 %\[K_{\sX}\sim K_X+\sum_x \left(1-\frac{1}{\deg G_x}\right)x.\] Our main object of interest is defined in \cite[Definitions $5.6.1$ and $5.6.2$]{VZB} which we generalize slightly to allow for stacky points in a log divisor: the canonical ring of a log stacky curve is the ring 
@@ -1080,8 +1105,17 @@ Let $\sX$ be the Drinfeld modular curve with coarse space $X$ whose analytificat
 	\item a cusp, denoted $\infty,$ with a stabilizer of order $\displaystyle{\frac{q-1}{2}}.$
 \end{itemize} 
 
-Let \[D=K_{\sX}+2\Delta\sim K_{\bbP^1}+\left(1-\frac{1}{\frac{q+1}{2}} \right)P_e + \left(1+\frac{1}{\frac{q-1}{2}}\right)\infty+2\infty\] be a log stacky canonical divisor on $\sX.$ By \cite[Theorem $6$]{ODorney-canonical-rings-Q-divisors-on-P1} we have \[R_D\cong C[g,h]\cong M(\GL_2(A)_2).\]
+Let \[D=K_{\sX}+2\Delta\sim K_{\bbP^1}+\left(1-\frac{1}{\frac{q+1}{2}} \right)P_e + \left(1+\frac{1}{\frac{q-1}{2}}\right)\infty+2\infty\] be a log stacky canonical divisor on $\sX.$ By \cite[Theorem $6$]{ODorney-canonical-rings-Q-divisors-on-P1} we may construct generators for our canonical ring by using best upper and lower approximations to the coefficients of our log canonical divisor, and laboriously doing so we have \[R_D\cong C[g,h]\cong M(\GL_2(A)_2).\]
 \end{example}
+
+\begin{remark}\label{r: how we compute canonical rings in our examples}
+	Our example computations of presentations for algebras of Drinfeld modular forms here and below are not the most direct means of obtaining such presentations, nor are our examples new. We simply show a solution to Gekeler's problem by using geometric invariants. We turn the problem of presenting an algebra of modular forms into a study of Riemann-Roch spaces where we find our example generators and relations by considering best approximations to coefficients of a log canonical divisor as in \cite{ODorney-canonical-rings-Q-divisors-on-P1}. We defer a thorough description of the technique to O'Dorney's article and content ourselves with the remarks:
+	\begin{enumerate}
+		\item we can determine a presentation for the section ring of any $\bbQ$-divisor on a curve of genus $g\leq 1$ using \cite{ODorney-canonical-rings-Q-divisors-on-P1}, its generalization \cite{Cerchia-Franklin-ODorney-Qdiv-Ell-curves}, and \cite{VZB};
+		\item constructive theories of log canonical rings for other curves are found in \cite{Landesman-Ruhm-Zhang-Spin-canonical-rings} and especially in \cite{VZB};
+		\item the best-approximation technique we use here is laborious but straightforward to use, though for many examples it does not give aesthetic results (\cite{VZB} covers all of the nice cases).  
+	\end{enumerate}
+\end{remark}
 
 To conclude, we present some new examples of computations of algebras of Drinfeld modular forms. The idea is to illustrate the role of our theory in this calculation, and the limited scope of our results now indicates a clear direction for future work.\\     
 
@@ -1093,19 +1127,20 @@ for $\Gamma_0(T)$ (from \cite[Equation $(4.1)$]{Dalal-Kumar-Gamma_0(T)-structure
 $R[U,V,Z]\to M(\Gamma_0(T))_R$ defined by $U\to \Delta_W,$ $V\to \Delta_T$ and $Z\to E_T$ induces an isomorphism 
 \[R[U,V,Z]/(UV-Z^{q-1})\cong M(\Gamma_0(T))_R.\] Note that from \cite[Proposition $4.3(3)$]{Dalal-Kumar-Gamma_0(T)-structure} we know that $M_{k,l}(\Gamma_0(T))$ has an integral basis, i.e.\ a basis consisting of modular forms with coefficients in $A.$\\
 
-To apply Theorem \ref{thm: forms to differentials} we need the following geometric invariants of $\sX(\Gamma_1(\alpha T+\beta))$ and $\sX(\Gamma_0(\alpha T+\beta))$:
+To apply Theorem \ref{thm: forms to differentials} we need the following geometric invariants of %$\sX(\Gamma_1(\alpha T+\beta))$ and 
+$\sX(\Gamma_0(\alpha T+\beta))$:
 \[\begin{array}{c|c|c}
 \text{Genera}&\text{Elliptic points}&\text{Cusps}\\
 \hline
-\begin{array}{c}g(\sX(\Gamma_1(\alpha T+\beta)))=0\\\text{(by \cite[Thm $8.1.(\mathrm{ii})$]{Gekeler-Invariants})}\end{array}&
-\begin{array}{c}\#\operatorname{Ell}(\Gamma_1(\alpha T+\beta))\geq1\\
-	\text{ramified with index }q+1\text{ over }X(1)\\
-	\text{(\cite[Proposition $7.2$]{Gekeler-Invariants})}\end{array}&
-\begin{array}{c}\#\cC_{\Gamma_1(\alpha T+\beta)}=2\\\text{(\cite[Proposition $6.6.(\mathrm{i})$]{Gekeler-Invariants})}\end{array}\\
+%\begin{array}{c}g(\sX(\Gamma_1(\alpha T+\beta)))=0\\\text{(by \cite[Thm $8.1.(\mathrm{ii})$]{Gekeler-Invariants})}\end{array}&
+%\begin{array}{c}\#\operatorname{Ell}(\Gamma_1(\alpha T+\beta))\geq1\\
+%	\text{ramified with index }q+1\text{ over }X(1)\\
+%	\text{(\cite[Proposition $7.2$]{Gekeler-Invariants})}\end{array}&
+%\begin{array}{c}\#\cC_{\Gamma_1(\alpha T+\beta)}=2\\\text{(\cite[Proposition $6.6.(\mathrm{i})$]{Gekeler-Invariants})}\end{array}\\
 \hline
 \begin{array}{c}g(\sX(\Gamma_0(\alpha T+\beta)))=0\\\text{(by \cite[Thm $8.1.(\mathrm{iii})$]{Gekeler-Invariants})}\end{array}&\begin{array}{c}\#\operatorname{Ell}(\Gamma_0(\alpha T+\beta))\geq1\\	\text{ramified with index }q+1\text{ over }X(1)\\\text{(\cite[Proposition $7.3$]{Gekeler-Invariants})}\end{array}&\begin{array}{c}\#\cC_{\Gamma_0(\alpha T+\beta)}=2\\\text{(\cite[Proposition $6.7.(\mathrm{i})$]{Gekeler-Invariants})}\end{array}\\
 \hline
-g(\sX(\Gamma_1(\alpha T+\beta)_2)) &\begin{array}{c}\#\operatorname{Ell}(\Gamma_1(\alpha T+\beta)_2)=\#\operatorname{Ell}(\Gamma_1(\alpha T+\beta))\\\text{(by Proposition \ref{p: elliptic points and cusps})}\end{array}&\#\cC_{\Gamma_1(\alpha T+\beta)_2}\\
+%g(\sX(\Gamma_1(\alpha T+\beta)_2)) &\begin{array}{c}\#\operatorname{Ell}(\Gamma_1(\alpha T+\beta)_2)=\#\operatorname{Ell}(\Gamma_1(\alpha T+\beta))\\\text{(by Proposition \ref{p: elliptic points and cusps})}\end{array}&\#\cC_{\Gamma_1(\alpha T+\beta)_2}\\
 \hline
 g(\sX(\Gamma_0(\alpha T+\beta)_2)) &\begin{array}{c}\#\operatorname{Ell}(\Gamma_0(\alpha T+\beta)_2)=\#\operatorname{Ell}(\Gamma_0(\alpha T+\beta))\\\text{(by Proposition \ref{p: elliptic points and cusps})}\end{array}&\#\cC_{\Gamma_0(\alpha T+\beta)_2}\\
 \hline
@@ -1114,25 +1149,32 @@ g(\sX(\Gamma_0(\alpha T+\beta)_2)) &\begin{array}{c}\#\operatorname{Ell}(\Gamma_
 Recall that from \cite[Section $4$]{Dalal-Kumar-Gamma_0(T)-structure} we know the only two cusps of $\Gamma_0(T),$ which we write $0$ and $\infty,$ are exchanged by the matrix 
 \[W_T\overset{def}{=}\left(\begin{array}{cc}0&-1\\T&0\end{array}\right).\]
 
-While \cite[Proposition $7.2$]{Gekeler-Invariants} and \cite[Proposition $7.3$]{Gekeler-Invariants} give us some way to compute the number of elliptic points, in particular Gekeler's definition of an elliptic point (\cite[$(3.2)$]{Gekeler-Invariants} - the class of an elliptic point on $\Omega$ in $Y_{\Gamma}$) is slightly different from ours (recall Definition \ref{d: elliptic pt}). For our calculation to work, we must consider all points from $\Omega$ on $X_{\Gamma_1(\alpha T+\beta)}$ and $X_{\Gamma_0(\alpha T+\beta)}$ whose stabilizers under $\Gamma_1(\alpha T+\beta)$ and $\Gamma_0(\alpha T+\beta)$ respectively strictly contain $\bbF_q^{\times}.$ Furthermore, we need to know the order of the stabilizers of each elliptic point for $\Gamma_1(\alpha T+\beta)_2$ and $\Gamma_0(\alpha T+\beta)_2,$ which depends on whether the congruence subgroups $\Gamma_1(\alpha T+\beta)$ and $\Gamma_0(\alpha T+\beta)$ are ``square'' by Proposition \ref{p: elliptic points and cusps}.\\
+While \cite[Proposition $7.2$]{Gekeler-Invariants} and \cite[Proposition $7.3$]{Gekeler-Invariants} give us some way to compute the number of elliptic points, in particular Gekeler's definition of an elliptic point (\cite[$(3.2)$]{Gekeler-Invariants} - the class of an elliptic point on $\Omega$ in $Y_{\Gamma}$) is slightly different from ours (recall Definition \ref{d: elliptic pt}). For our calculation to work, we must consider all points from $\Omega$ on %$X_{\Gamma_1(\alpha T+\beta)}$ and 
+$X_{\Gamma_0(\alpha T+\beta)}$ whose stabilizers under 
+%$\Gamma_1(\alpha T+\beta)$ and 
+$\Gamma_0(\alpha T+\beta)$ 
+%respectively 
+strictly contain $\bbF_q^{\times}.$ Furthermore, we need to know the order of the stabilizers of each elliptic point for %$\Gamma_1(\alpha T+\beta)_2$ and 
+$\Gamma_0(\alpha T+\beta)_2,$ which depends on whether the congruence subgroup %$\Gamma_1(\alpha T+\beta)$ and 
+$\Gamma_0(\alpha T+\beta)$ is ``square,'' by Proposition \ref{p: elliptic points and cusps}.\\
 
 \begin{conjecture}	
-		Both $\Gamma_1(\alpha T+\beta)$ and $\Gamma_0(\alpha T+\beta)$ may be ``non-square'' congruence subgroups according to the specific choice of level.
+		Both $\Gamma_1(\alpha T+\beta)$ and $\Gamma_0(\alpha T+\beta)$ may be ``non-square'' congruence subgroups for any choice of $\alpha$ and $\beta.$ 
 \end{conjecture}
 \begin{remark}
 	We see this explictly for sufficiently small $q$ by means of the following algorithm:
 	\begin{enumerate}
 		\item Fix a level $N=\alpha T+\beta$ for $\alpha\in \bbF_q^{\times}$ and $\beta\in \bbF_q.$
 		\item For all $a,b,c,d\in \bbF_q,$ compute the polynomial $(aN+1)d-bcN.$ If this is an element of $\bbF_q^{\times},$ then $\displaystyle{\gamma\overset{def}{=}\left(\begin{array}{cc} aN+1&b\\cN&d\end{array}\right)\in \Gamma_1(\alpha T+\beta)}$ (so $\gamma\in \Gamma_0(\alpha T+\beta)$ as well).
-		\item If $c\neq 0$ and the polynomial $\displaystyle{z^2+\frac{d-(aN+1)}{cN}z-\frac{b}{cN}}$ is irreducible over $K,$ then we know $\gamma\in \Gamma_i(\alpha T+\beta)_e\setminus \bbF_q^{\times}$ is a non-trivial stabilizer of the elliptic point. 
+		\item If $c\neq 0$ and the polynomial $\displaystyle{z^2+\frac{d-(aN+1)}{cN}z-\frac{b}{cN}}$ is irreducible over $K_{\infty},$ then we know $\gamma\in \Gamma_i(\alpha T+\beta)_e\setminus \bbF_q^{\times}$ is a non-trivial stabilizer of the elliptic point. 
 	\end{enumerate}
-	This irreducibility condition follows from the fact that for $z\in \Omega = C-K_{\infty},$ and we have 
+	This irreducibility condition follows from the fact that there exists some $z\in \Omega = C-K_{\infty}$ such that we have 
 	\[\frac{az+b}{cz+d}=z \iff \begin{cases}
 	a=d \text{ and } b=0=c, &\text{ or }\\
-	cz^2+(d-a)z-b=0 & \text{ irreducible,}
-	\end{cases}\] since if this polynomial in $A[z]$ had a solution it would be an element of $K,$ which is a contradiction to our definition of $z.$\\
+	cz^2+(d-a)z-b=0 & \text{ is irreducible over }K_{\infty},
+	\end{cases}\] since if this polynomial in $A[z]$ had a solution, it would be an element of $K,$ which is a contradiction to our definition of $z.$\\
 	
-	We see that by brute-force consideration of only the constants in $A,$ as long as $q\leq 25,$ that we can not only find such irreducibles, but we can do so in such a way that every element of $\bbF_q^{\times}$ is the determinant of some matrix in the stabilizer $\Gamma_1(\alpha T+\beta)_e,$ and hence also $\Gamma_0(\alpha T+\beta)_e.$ Therefore, it seems reasonable to believe that by enumerating all polynomials in $A,$ and for larger characteristic, that these conclusions will remain the same.
+	As long as $q\leq 25,$ it suffices to check only the constants in $A$ by brute force to see that we can not only find such irreducible polynomials, but we can do so in such a way that every element of $\bbF_q^{\times}$ is the determinant of some matrix in the stabilizer $\Gamma_1(\alpha T+\beta)_e$ and hence also $\Gamma_0(\alpha T+\beta)_e.$ Therefore, it seems plausible that we will be able to find stabilizing matrices with non-square determinants for any odd $q.$  
 \end{remark}
 \begin{example}
 	For completeness, we illustrate a non-trivial, non-square matrix in $\Gamma_1(4T+3)_e$ in the case $q=7.$ We have $\displaystyle{\gamma=\left(\begin{array}{cc}4T+4&1\\5T+2&3\end{array}\right)}$ since $4T+4\equiv 1\pmod{4T+3}$ and $5T+2\equiv 0\pmod{4T+3}$ (since $5T+2=3(4T+3)$) and Sage tells us the corresponding polynomial $\displaystyle{z^2+\frac{2T+4}{T+6}z+\frac{4}{T+6}}$ is irreducible. Note that $\det\gamma = 3,$ which is not a square in $\bbF_7.$
@@ -1149,7 +1191,7 @@ While \cite[Proposition $7.2$]{Gekeler-Invariants} and \cite[Proposition $7.3$]{
 
 Gekeler explains multiple techniques for computing the genus of a Drinfeld modular curve in \cite[Section $8$]{Gekeler-Invariants}, but to avoid repeating too much of his notation, we describe just two:
 \begin{enumerate}
-	\item Compute fibers of the ramified graph coverings $\Gamma\setminus \sT\to GL_2(A)\setminus \sT,$ where $\sT$ is the Bruhat-Tits tree
+	\item Compute fibers of the ramified graph coverings $\Gamma\setminus \sT\to GL_2(A)\setminus \sT,$ where $\sT$ is the Bruhat-Tits tree as in \cite{Gekeler-Nonnengardt-BruhatTitsTrees} and \cite{Franklin-Ho-Papikian-DrinfeldCurves-SL}
 	
 	\item Riemann-Hurwitz formula and \cite[Proposition $8.3$]{Gekeler-Invariants}.
 \end{enumerate}
@@ -1160,16 +1202,16 @@ This theory applies to the covers \[\sX(\Gamma_1(\alpha T+\beta)_2))\to \sX(\Gam
 \sX(\Gamma_i(\alpha T+\beta))\times_{\sX(\GL_2(A))}\sX(\GL_2(A)_2),\]
 for $i=0, 1$ and if we compose $\psi_i$ with the canonical projection from the fiber-product onto $\sX(\Gamma_i(\alpha T+\beta)),$ we have a cover. Finally, all of the cusps of $X(N)$ are $\Gal(X(N)/\GL_2(A))$-conjugate, so if we consider $x=\infty$ in particular, and denote its stabilizer \[G_{\infty}=\Gamma_i(\alpha T+\beta)_{\infty}/\bbF_q^{\times},\] the first ramification group $G_{\infty, 1}$ is its $p$-Sylow subgroup $U_i(\alpha T+\beta)\cdot \bbF_q^{\times}/\bbF_q^{\times},$ where \[U_i(\alpha T+\beta)=\left\{\left(\begin{array}{cc}1&b\\0&1\end{array}\right)\in \Gamma_i(\alpha T+\beta)\right\}.\]
 
-\begin{example}
-	We use the Riemann-Hurwitz formula to provide formulas for the genera of the square-determinant Drinfeld modular curves $\sX(\Gamma_1(\alpha T+\beta)_2)$ and $\sX(\Gamma_0(\alpha T+\beta)_2):$
-	
-	\[g(\sX(\Gamma_i(\alpha T+\beta)_2))=-1+\frac{1}{2}\left(\sum_{P_e\in \operatorname{Ell}(\Gamma_i(\alpha T+\beta)_2)} (e_{P_e}-1)\right)+\frac{1}{2}\left(\sum_{P\in \cC_{\Gamma_i(\alpha T+\beta)_2}}(e_P-1)\right), \]
-	where $e_P$ is the ramification index of the point $P$ on $\Gamma_i(\alpha T+\beta)_2\setminus(\Omega\cup\bbP^1(K))$ over the corresponding point on $\Gamma_i(\alpha T+\beta)\setminus(\Omega\cup\bbP^1(K)),$ and $i=0$ or $1.$\\ 
-\end{example}
+%\begin{example}
+%	We use the Riemann-Hurwitz formula to provide formulas for the genera of the square-determinant Drinfeld modular curves $\sX(\Gamma_1(\alpha T+\beta)_2)$ and $\sX(\Gamma_0(\alpha T+\beta)_2):$
+%	
+%	\[g(\sX(\Gamma_i(\alpha T+\beta)_2))=-1+\frac{1}{2}\left(\sum_{P_e\in \operatorname{Ell}(\Gamma_i(\alpha T+\beta)_2)} (e_{P_e}-1)\right)+\frac{1}{2}\left(\sum_{P\in \cC_{\Gamma_i(\alpha T+\beta)_2}}(e_P-1)\right), \]
+%	where $e_P$ is the ramification index of the point $P$ on $\Gamma_i(\alpha T+\beta)_2\setminus(\Omega\cup\bbP^1(K))$ over the corresponding point on $\Gamma_i(\alpha T+\beta)\setminus(\Omega\cup\bbP^1(K)),$ and $i=0$ or $1.$\\ 
+%\end{example}
+%
+%To finish these calculations, which let us to decide an appropriate technique for computing the log canonical ring $R(\sX(\Gamma_1(\alpha T+\beta)_2), K_{\sX(\Gamma_1(\alpha T+\beta)_2)}(2\Delta_1))$ we need a stronger comparison between the cusps of the pairs $\Gamma_1(\alpha T+\beta)$ and $\Gamma_1(\alpha T+\beta)_2$ than Proposition \ref{p: elliptic points and cusps}.\\
 
-To finish these calculations, which let us to decide an appropriate technique for computing the log canonical ring $R(\sX(\Gamma_1(\alpha T+\beta)_2), K_{\sX(\Gamma_1(\alpha T+\beta)_2)}(2\Delta_1))$ we need a stronger comparison between the cusps of the pairs $\Gamma_1(\alpha T+\beta)$ and $\Gamma_1(\alpha T+\beta)_2$ than Proposition \ref{p: elliptic points and cusps}.\\
-
-We conclude with one final example, where we will use $M(\Gamma_0(T))=C[U,V,Z]/(UV-Z^2)$ from \cite[Theorem $4.4$]{Dalal-Kumar-Gamma_0(T)-structure} to make sure that the log stacky canonical ring of the corresponding Drinfeld modular curve $\sX_{\Gamma_0(T)_2}$ does in fact compute this algebra of Drinfeld modular forms for $\Gamma_0(T)_2.$
+We conclude with one final example, where we will use $M(\Gamma_0(T))=C[U,V,Z]/(UV-Z^2)$ from \cite[Theorem $4.4$]{Dalal-Kumar-Gamma_0(T)-structure} to make sure that the log stacky canonical ring of the corresponding Drinfeld modular curve $\sX_{\Gamma_0(T)_2}$ does in fact compute this algebra of Drinfeld modular forms for $\Gamma_0(T)_2.$ We explicitly use \cite[Theorem $6$]{ODorney-canonical-rings-Q-divisors-on-P1}, demonstrating the best approximation technique discuseed in Remark \ref{r: how we compute canonical rings in our examples}.
 \begin{example}
 	Since $UV-Z^2$ describes a conic, we know that the curve $C[U,V,Z]/(UV-Z^2)\subset\bbP^2_C$ is rational, and all rational curves have genus $0.$ There are $2$ cusps, say $0$ and $\infty$ for $\sX_{\Gamma_0(T)}$ so there are at least the same cusps on $\sX_{\Gamma_0(T)_2}$ and hence there are $2$ elliptic points.\\ 
 	

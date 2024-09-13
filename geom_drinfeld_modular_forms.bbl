@@ -27,6 +27,10 @@ C{\'e}cile Armana, \emph{{Torsion rationnelle des modules de {D}rinfeld}},
 Michael Artin, \emph{Versal deformations and algebraic stacks}, Invent. Math.
   \textbf{27} (1974), 165--189.
 
+\bibitem[B\"04]{Bockle-EichlerShimura}
+Gebhard B\"ockle, \emph{An eichler-shimura isomorphism over function fields
+  between drinfeld modular forms and cohomology classes of crystals}, 2004.
+
 \bibitem[BBP18]{Basson-Breuer-Pink-part2}
 Dirk Basson, Florian Breuer, and Richard Pink, \emph{{D}rinfeld modular forms
   of arbitrary rank, part ii: Comparison with algebraic theory}, 2018.
@@ -75,6 +79,10 @@ V~G Drinfel'd, \emph{Elliptic modules}, Mathematics of the USSR-Sbornik
 Matthew Emerton, Toby Gee, and Eugen Hellmann, \emph{An introduction to the
   categorical p-adic {L}anglands program}, 2023.
 
+\bibitem[FHP24]{Franklin-Ho-Papikian-DrinfeldCurves-SL}
+Jesse Franklin, Sheng-Yang~Kevin Ho, and Mihran Papikian, \emph{On drinfeld
+  modular curves for sl(2)}, 2024.
+
 \bibitem[FvdP04]{Frensel-vanderPut-Rigid-Analytic_Geom}
 Jean Fresnel and Marius van~der Put, \emph{Rigid analytic geometry and its
   applications}, Progress in Mathematics, vol. 218, Birkh\"{a}user Boston,
@@ -96,6 +104,11 @@ Ernst-Ulrich Gekeler, \emph{{D}rinfeld modular curves}, Lecture Notes in
 \bysame, \emph{Invariants of some algebraic curves related to {D}rinfeld
   modular curves}, J. Number Theory \textbf{90} (2001), no.~1, 166--183.
   \MR{1850880}
+
+\bibitem[GN95]{Gekeler-Nonnengardt-BruhatTitsTrees}
+Ernst-Ulrich Gekeler and Udo Nonnengardt, \emph{Fundamental domains of some
+  arithmetic groups over function fields}, Internat. J. Math. \textbf{6}
+  (1995), no.~5, 689--708. \MR{1351161}
 
 \bibitem[Gos80]{Goss-upper-halfplane}
 David Goss, \emph{The algebraist's upper half-plane}, Bull. Amer. Math. Soc.

@@ -10,45 +10,45 @@ You're missing a field name---line 1031 of file bibliography.bib
 I'm skipping whatever remains of this entry
 Warning--I'm ignoring Artin-versal-deformations-algebraic-stacks's extra "year" field
 --line 1847 of file bibliography.bib
-You've used 34 entries,
+You've used 37 entries,
             2624 wiz_defined-function locations,
-            819 strings with 10500 characters,
-and the built_in function-call counts, 11874 in all, are:
-= -- 1093
-> -- 432
-< -- 27
-+ -- 140
-- -- 132
-* -- 995
-:= -- 1845
-add.period$ -- 34
-call.type$ -- 34
-change.case$ -- 191
-chr.to.int$ -- 33
-cite$ -- 34
-duplicate$ -- 534
-empty$ -- 1009
-format.name$ -- 187
-if$ -- 2418
+            836 strings with 11061 characters,
+and the built_in function-call counts, 12916 in all, are:
+= -- 1187
+> -- 484
+< -- 28
++ -- 158
+- -- 149
+* -- 1075
+:= -- 2009
+add.period$ -- 37
+call.type$ -- 37
+change.case$ -- 209
+chr.to.int$ -- 36
+cite$ -- 37
+duplicate$ -- 577
+empty$ -- 1094
+format.name$ -- 208
+if$ -- 2629
 int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 63
-newline$ -- 112
-num.names$ -- 98
-pop$ -- 226
+missing$ -- 67
+newline$ -- 121
+num.names$ -- 107
+pop$ -- 254
 preamble$ -- 1
-purify$ -- 223
+purify$ -- 244
 quote$ -- 0
-skip$ -- 380
+skip$ -- 415
 stack$ -- 0
-substring$ -- 712
-swap$ -- 79
-text.length$ -- 27
-text.prefix$ -- 21
+substring$ -- 759
+swap$ -- 83
+text.length$ -- 28
+text.prefix$ -- 22
 top$ -- 0
-type$ -- 252
+type$ -- 276
 warning$ -- 0
-while$ -- 113
-width$ -- 38
-write$ -- 389
+while$ -- 123
+width$ -- 41
+write$ -- 419
 (There was 1 error message)
