@@ -1,0 +1,229 @@
+\documentclass[11pt]{amsart}
+
+\usepackage[margin=0.25in]{geometry}
+
+\usepackage{color}
+\usepackage{geometry}
+\usepackage{latexsym}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amscd}
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+\usepackage{tikz}
+\usepackage{tikz-cd}
+\usepackage{tkz-fct} 
+\usepackage{mathabx}
+\usepackage{stmaryrd}
+\usepackage{listings}
+\usepackage{youngtab}
+\usepackage{pgfplots}
+\usepackage{rotating}
+\usetikzlibrary{shapes.geometric,positioning}
+\usepackage{hyperref}
+\usepackage{adjustbox}
+\usepackage{tikz-3dplot}
+\usepgflibrary{arrows}
+\usepackage{graphicx}
+\usetikzlibrary{calc}
+
+\usepackage{lineno}
+%\linenumbers
+
+
+\tdplotsetmaincoords{60}{115}
+\pgfplotsset{compat=newest}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{fact}[theorem]{Fact}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{hypothesis}[theorem]{Hypothesis}
+\newtheorem{example}[theorem]{Example}
+
+\theoremstyle{definition}
+\newtheorem{examples}{Examples}
+\newtheorem{remark}{Remark}
+\newtheorem{remarks}{Remarks}
+
+\numberwithin{equation}{section}
+
+\setlength{\evensidemargin}{1in}
+\addtolength{\evensidemargin}{-1in}
+\setlength{\oddsidemargin}{1in}
+\addtolength{\oddsidemargin}{-1in}
+\setlength{\topmargin}{1in}
+\addtolength{\topmargin}{-1.5in}
+
+\setlength{\textwidth}{16.5cm}
+\setlength{\textheight}{23cm}
+
+\makeatletter
+\renewcommand{\@makefnmark}{\mbox{\textsuperscript{}}}
+\makeatother
+
+\allowdisplaybreaks[1]
+
+% Macros
+\newcommand{\Ind}{\mathrm{Ind}} 	%Ind
+\newcommand{\Proj}{\operatorname{Proj}} 	%Proj
+\newcommand{\sProj}{\operatorname{sProj}} 	%sProj
+\newcommand{\res}{\mathrm{res}} 	%res
+\newcommand{\Hom}{\operatorname{Hom}} 	%Hom
+\newcommand{\GL}{\mathrm{GL}} 	%GL
+\newcommand{\PGL}{\mathrm{PGL}} 	%PGL
+\newcommand{\PSL}{\mathrm{PSL}} 	%SGL
+\newcommand{\SL}{\mathrm{SL}} 	%SL
+\newcommand{\Frob}{\mathrm{Frob}} 	%Frob
+\newcommand{\Isom}{\mathrm{Isom}} 	%Isom
+\newcommand{\Span}{\mathrm{Span}} 	%Span
+\newcommand{\Aut}{\mathrm{Aut}} 	%Aut
+\newcommand{\End}{\mathrm{End}} 	%End
+\newcommand{\Gal}{\mathrm{Gal}} 	%Gal
+\newcommand{\Ring}{\mathrm{Ring}} 	%Ring
+\newcommand{\AbGrp}{\mathrm{AbGrp}} 	%AbGrp
+\newcommand{\Cring}{\mathrm{CRing}} 	%CRing
+\newcommand{\Sym}{\operatorname{Sym}} 	%Sym
+\newcommand{\coker}{\mathrm{coker}} 	%coker
+\newcommand{\Spec}{\operatorname{Spec}} 	%Spec
+\newcommand{\Jac}{\operatorname{Jac}} 	%Jac
+\newcommand{\cA}{\mathcal{A}}		%curly a
+\newcommand{\cB}{\mathcal{B}}		%curly b
+\newcommand{\cC}{\mathcal{C}}		%curly c
+\newcommand{\cD}{\mathcal{D}}		%curly d
+\newcommand{\cE}{\mathcal{E}}		%curly e
+\newcommand{\cF}{\mathcal{F}}		%curly f
+\newcommand{\cG}{\mathcal{G}}		%curly g
+\newcommand{\cH}{\mathcal{H}}		%curly h
+\newcommand{\cI}{\mathcal{I}}		%curly i
+\newcommand{\cJ}{\mathcal{J}}		%curly j
+\newcommand{\cK}{\mathcal{K}}		%curly k
+\newcommand{\cL}{\mathcal{L}}		%curly l
+\newcommand{\cM}{\mathcal{M}}		%curly m
+\newcommand{\cN}{\mathcal{N}}		%curly n
+\newcommand{\cO}{\mathcal{O}}		%curly o
+\newcommand{\cP}{\mathcal{P}}		%curly p
+\newcommand{\cQ}{\mathcal{Q}}		%curly q
+\newcommand{\cR}{\mathcal{R}}		%curly r
+\newcommand{\cS}{\mathcal{S}}		%curly s
+\newcommand{\cT}{\mathcal{T}}		%curly t
+\newcommand{\cU}{\mathcal{U}}		%curly u
+\newcommand{\cV}{\mathcal{V}}		%curly v
+\newcommand{\cW}{\mathcal{W}}		%curly w
+\newcommand{\cX}{\mathcal{X}}		%curly x
+\newcommand{\cY}{\mathcal{Y}}		%curly y
+\newcommand{\cZ}{\mathcal{Z}}		%curly z
+
+\newcommand{\sA}{\mathscr{A}}		%script a
+\newcommand{\sB}{\mathscr{B}}		%script b
+\newcommand{\sC}{\mathscr{C}}		%script c
+\newcommand{\sD}{\mathscr{D}}		%script d
+\newcommand{\sE}{\mathscr{E}}		%script e
+\newcommand{\sF}{\mathscr{F}}		%script f
+\newcommand{\sG}{\mathscr{G}}		%script g
+\newcommand{\sH}{\mathscr{H}}		%script h
+\newcommand{\sI}{\mathscr{I}}		%script i
+\newcommand{\sJ}{\mathscr{J}}		%script j
+\newcommand{\sK}{\mathscr{K}}		%script k
+\newcommand{\sL}{\mathscr{L}}		%script l
+\newcommand{\sM}{\mathscr{M}}		%script m
+\newcommand{\sN}{\mathscr{N}}		%script n
+\newcommand{\sO}{\mathscr{O}}		%script o
+\newcommand{\sP}{\mathscr{P}}		%script p
+\newcommand{\sQ}{\mathscr{Q}}		%script q
+\newcommand{\sR}{\mathscr{R}}		%script r
+\newcommand{\sS}{\mathscr{S}}		%script s
+\newcommand{\sT}{\mathscr{T}}		%script t
+\newcommand{\sU}{\mathscr{U}}		%script u
+\newcommand{\sV}{\mathscr{V}}		%script v
+\newcommand{\sW}{\mathscr{W}}		%script w
+\newcommand{\sX}{\mathscr{X}}		%script x
+\newcommand{\sY}{\mathscr{Y}}		%script y
+\newcommand{\sZ}{\mathscr{Z}}		%script z
+
+\newcommand{\bbA}{\mathbb{A}}		%bold a
+\newcommand{\bbB}{\mathbb{B}}		%bold b
+\newcommand{\bbC}{\mathbb{C}}		%bold c
+\newcommand{\bbD}{\mathbb{D}}		%bold d
+\newcommand{\bbE}{\mathbb{E}}		%bold e
+\newcommand{\bbF}{\mathbb{F}}		%bold f
+\newcommand{\bbG}{\mathbb{G}}		%bold g
+\newcommand{\bbH}{\mathbb{H}}		%bold h
+\newcommand{\bbI}{\mathbb{I}}		%bold i
+\newcommand{\bbJ}{\mathbb{J}}		%bold j
+\newcommand{\bbK}{\mathbb{K}}		%bold k
+\newcommand{\bbL}{\mathbb{L}}		%bold l
+\newcommand{\bbM}{\mathbb{M}}		%bold m
+\newcommand{\bbN}{\mathbb{N}}		%bold n
+\newcommand{\bbO}{\mathbb{O}}		%bold o
+\newcommand{\bbP}{\mathbb{P}}		%bold p
+\newcommand{\bbQ}{\mathbb{Q}}		%bold q
+\newcommand{\bbR}{\mathbb{R}}		%bold r
+\newcommand{\bbS}{\mathbb{S}}		%bold s
+\newcommand{\bbT}{\mathbb{T}}		%bold t
+\newcommand{\bbU}{\mathbb{U}}		%bold u
+\newcommand{\bbV}{\mathbb{V}}		%bold v
+\newcommand{\bbW}{\mathbb{W}}		%bold w
+\newcommand{\bbX}{\mathbb{X}}		%bold x
+\newcommand{\bbY}{\mathbb{Y}}		%bold y
+\newcommand{\bbZ}{\mathbb{Z}}		%bold z
+\newcommand{\polygon}[2]{%
+	let \n{len} = {2*#2*tan(360/(2*#1))} in
+	++(0,-#2) ++(\n{len}/2,0) \foreach \x in {1,...,#1} { -- ++(\x*360/#1:\n{len})}}	 	%draw polygon
+\def\checkmark{\tikz\fill[scale=0.4](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) -- cycle;}
+\newcommand{\vep}{\varepsilon} %\varepsilon abbreviation
+\newcommand{\jesse}[1]{{\color{blue} \sf $\spadesuit\spadesuit\spadesuit$ Jesse: [#1]}} %editorial comments
+\newcommand{\taylor}[1]{{\color{red}\sf $\spadesuit\spadesuit\spadesuit$ Taylor: [#1]}} %editorial comments
+\newcommand{\todo}[1]{{\color{purple} \sf $\spadesuit\spadesuit\spadesuit$ TODO: [#1]}}
+
+
+\title{Teaching Statement}
+\author{Dr.\ Jesse Franklin}
+
+\begin{document}
+	\maketitle
+	
+	Instruction is one of the most delightful aspects of mathematics, and the highest honor. It is my intention to always include some form of teaching in my work as a mathematician. This teaching statement will explain my experience of teaching mathematics and how I am equipped to teach every level of math class for students at any stage in their journey with mathematics in the next phase of my career. Although my formal training is not in teaching math, my years of experience have informed a way to bring my values into the classroom and to create an effective and positive learning environment. As a graduate student and adjunct member of the faculty at Salt Lake Community College, even as instructor of record, I have never had complete autonomy with the policy of my classes. Therefore I have learned to integrate what I consider to be important into a variety of different teaching practices aimed at different kinds of students in a way that both the department and my students have given me consistent positive feedback on. I am eager to continue honing my craft.\\ 
+	
+	At the University of Vermont, I was instructor of record for one course per semester every semester during all five years of my program. I have taught ``Applications of Finite Math,'' a terminal combinatorics class for students who will not take calculus, ``Precalculus'' an algebra class to prepare for a first course in calculus, and ``Fundamentals of Calculus,'' a first calculus class for non-math majors, the last of these very frequently. I also worked as a teaching assistant for the Undergraduate Summer School of the Park City Mathematics Institute, a program of the Institute for Advanced Study in the summer of $2022.$ At Salt Lake Community College, as an adjunct faculty member during Fall $2024$ I taught ``Introduction to Statistics'' and ``College Algebra.''\\
+	
+	There are two major practices which I have learned achieve an effective class, regardless of the level. First, I love to interact with my students during the course of a class by asking lots of questions, to give them time to work on problems themselves and with their peers every day, and finally to offer longer collaborative exercises as much as possible. In a $2022$ teaching evaluation, Professor J. Michael Wilson described my ``Fundamentals of Calculus'' class by saying ``I am sure that Newton, Leibniz, and many of their colleagues would not have objected to it. Lots of activity, especially for a class so early in the morning. He spoke and wrote clearly, had everything well organized, and he had good rapport with the students.'' Everyone loves to learn, so the classroom should be a place where we can all share that pleasure. A student from my ``Applications of Finite Math'' class during the spring of $2021$ said the following. ``Despite math not being my focus of study I found that Jesse was so enthusiastic about what he was teaching that it made me more interested in the topic, as well as feeling more immersed in what was going on in class.''\\
+	
+	Importantly, I try to extend this theme of engagement with students during class periods to opening up a variety of ways for students to engage with math during a course. This means being able to explain topics a variety of ways, offering additional reasources and flexible support for students during class and in office hours. A student from my class in Fall $2022$ said, ``The instructor explained every subject thoroughly and was the most inviting teacher to students asking questions. Nothing was left unanswered and I really appreciate his thoroughness.'' Some other student comments include: ``The office hours were well set up and very helpful,'' ``Things were explained in a clear and easy to understand way,'' and ``[I] did a very good job explaining complex topics in understandable and relatable ways.''\\
+	
+	My next practice is informed by my belief that there are no math emergencies, so we need not create a stressful, performance-based experience of the subject and instead can emphasize growth. In particular, a math teacher is not a police officer for the classroom, nor a cloistered priest guarding some arcane secret, but rather a humble guide on the long road of learning to learn. In some of my ``Applications of Finite Math'' classes, instead of giving exams, the course was based on several long projects such as mock financial planning around mortgage payments on students' dream homes. Integrating projects into math classes is also an essential part of my courses at Salt Lake Community College. This practice is my favorite way to emphasize a student's improvement over the course of a long interaction with a problem. One student remarked of my ``Applications of Finite Math'' class course,\\
+	
+	``I found that the course was organized in a way that made sense and facilitated conceptualization of each new chapter. I really appreciated the way that homework assignments and projects carried the most weight in our grade, as we had ample time to complete them and reach out for help during office hours if necessary. Professor Franklin was delightful to learn from, as he expressed a passion for the work and exhibited skillful delivery of concepts such that students were capable of learning and understanding the material. He encouraged student feedback and collaboration in a way that fostered a uniquely empowering and enriching learning environment. I personally entered the course generally averse to mathematics, but I left with a newfound appreciation for it both aesthetically and practically in large part due to his enthusiasm. On a more personal note, I struggled with attending most of my classes in the later half of the semester following a traumatic event, but this course was structured such that I was still capable of succeeding under these unfortunate circumstances as long as I put in the work outside of class, which I really appreciated.''\\
+	
+	A student from ``Fundamentals of Calculus'' in $2022$ said, ``Jesse is extremely organized and prepared for every lecture, he provides examples and answers questions promptly and thoroughly. A lot of content was covered, and with his emphasis on growth rather than grades it holds his students accountable.''	
+	This class had a more traditional structure around exams, but another student remarked, ``I liked the set up of the class. The homework, quizzes, and exam aspect were made to be doable but still challenging.'' The attitude of this review makes me feel that I encourage a mindset that enables students to rise to the challenges they face when learning, math or anything else. Furthermore, my own first ``Real Analysis'' course as an undergred involved difficult projects that we could work on and improve over time with our instructor, so I am confident this practice extends very naturally to classes at all levels of math.\\
+	
+	I have been fortunate enough to work with some of the finest students of mathematics in the world during the Undergraduate Summer School at the Park City Mathematics Institute, where I assisted Professor Christelle Vincent with her course on cryptography. Over the course of these few weeks I supervised students on a range of homework involving everything from elementary number theory problems to implementation of cyrptographic algorithms including programs students could execute on quantum computers. At Salt Lake Community College, I have been given the opportunity to engage with a large, highly diverse, and particularly motivated student body at an open access institution. This has given me experience with both open access course materials as well as the chance to work with students from a wide variety of academic and cultural backgrounds at many different ages from high schoolers to much older returning students with children of their own. With this experience I have a well-rounded understanding of how to engage with students at many different levels of engagement with math, from non-majors to prestigious summer-school attendees, from children to parents, and am prepared to teach everything from introductory algebra classes to cryptography.\\
+	
+	To conclude, I would like to elaborate briefly on why I take teaching so seriously. I believe that the true job of a mathematician is the promotion of peace, in the following sense. 
+	%Research of math for its own sake measurably increases the collective body of human knowledge and should always be conducted in a manner which does not cause harm. These pursuits mean that math may have the effect of contributing positively to the global community.  
+	A very crude metaphysical interpretation is that math is just thinking. We cannot create a perfect circle for example, so we are obliged to imagine such things, but this is actually a feature as opposed to a bug, since this means we can attain the perfect accuracy of math. The practice of thinking makes the practitioner a better thinker, and when the subject of thought is math we get better at understanding the ideas of others and at communicating precisely and effectively. We can share our love for learning math by contributing to our community with research and teaching that increases the body of human knowledge and by so doing we can promote the idea that pursuit of thought for its own sake, or doing math, builds a global community of better communicators who have no need for war and have the skills to work together and overcome problems.
+	
+	
+	%%old junk below
+	
+	%It is not novel to a mathematician that people are often agnostic about our subject, with feelings ranging from awe to outright distaste, no small part of which is informed by the classroom experience. No one needs to be convinced of the importance of math and so we are both obliged and presented with an opprotunity to be ambassadors as math teachers. As mathematicians, in particular researchers, this is an essential contribution to our global society because although advancing the limits of human knowledge is a noble pursuit, it is also a rather selfish art in being so inaccessible and specialized. The point of doing math is to promote peace! \\
+	%
+	%There are as many ways to learn math as there are people, \todo{let alone} how much math there is to learn, so the math teacher's mission of effective, pedagogical communication of the subject cannot be described algorithmically. We are professional students and have learned from the mistakes of our own teachers, so we can at least describe the job as the complement of those things which we will all be better-off without. We must create an environment where students do not feel they are differentiated and valued by the way we judge their abilities. like an exam. Worse still if the amount of pressure for a student makes them resort to something like cheating, which we are supposed to punish. In fact, the subject of math as we know it does not need to get done by a deadline decided by some authority. We have failed those who we were supposed to educate if we give them the impression that what matters is passing a class by any means. \\
+	%
+	%Math speaks for itself, but only so much. Though there are many metaphors and analogies for mathematical ideas, at bottom a math teacher has to talk about the facts, there is nothing to say except what, and how, those facts are. We know how much beauty and wonder those ideas promote, no one needed to convince us of that, they simply had to show us. So that students are not drinking from the fire-hose, a teacher needs to present the subject a little at a time, but being honest about how much more there is to learn when dealing with something you need to simplify to explain is a great way to invite further thought and conversation. In this way, we help students appreciate the multifarious aspects of the subject in an inviting manner that allows the math to be its own reward, to speak for itself. Teaching math is like explaining a joke, no jazz musician or ballerina analyzes their performance to the audience while it is ongoing, but we have a chance to invite even more learning just by our presentation of material if we communicate openly with the intention of sharing our passion.\\
+	%
+	%My experience teaching began in high school. From my first year, I volunteered some hundreds of hours in tutoring centers with a particular emphasis on helping students with special education needs towards my later years. Getting to work one-on-one, which now happens during office hours, has been a consistent source of positive feedback from my students, which has taught me how important it is for the instructor to encourage questions, to be able to present material with a variety of techniques suited to the student, and especially, to help sudents make use of whatever educational reasources they find most helpful or need.\\
+	%
+	%During my later undergrad years I worked as a yoga teacher, with the intention of practicing my teaching skills in front of a larger audience to prepare for grad school. This has helped me create a positive atmosphere in my classrooms and to organize my classes themselves, by opening class in a way that immediately opens the discussion between the students and myself and gives students a chance to warm up for the day's math, for example.\\
+	%
+	% 
+	%
+	%
+	%Grading is hugely important to undergrads but has nothing to do with learning math itself, so I try to make my classes as easy as possible and emphasize improvement over the course rather than only seeking perfect execution of problems. When students feel that math class is about having big ideas and solving easy problems, they are empowered to try and to learn. Even the most reticent student of math may benefit from the simple practice of memorizing formulae, solutions and techniques as the skill of memorization itself is another way to develop the brain and to learn. But being open with students that they can just memorize their way through a class, though counter-intuitive, actually lets every student feel even if they do not care for math, that the study itself is a worthy end. I am eager to refine my teaching to better help students enjoy the wonders of math, the joy of learning, and to bring world peace.  
+	
+\end{document}

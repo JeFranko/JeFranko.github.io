@@ -1,0 +1,96 @@
+\documentclass[12pt]{amsart}
+
+\input{settings}
+\input{JF_macros}
+
+\begin{document}
+	\title{Research Statement}
+	\author{Jesse Franklin}
+	\maketitle
+	
+	\section{Research Areas}
+	
+	My primary research areas are Number Theory, and Algebraic Geometry, AMS Subject Classification numbers \textbf{[11]} (primary interest) and \textbf{[14]} (secondary interest). A new interest of mine is Differential Algebra, AMS classification \textbf{[16]}.
+	
+	\section{Recent Achievements}
+	
+	A summary of my thesis problem and its solution is an easy way to give context for my other papers. My thesis was concerned with a question in E.\ U.\ Gekeler's $1986$ monograph \cite[Page $\mathrm{XIII}$]{Gekeler-Curves}, where the author asks for a description of algebras of Drinfeld modular forms in terms of generators and relations. The ``Drinfeld setting'' where my thesis work takes place means working over the function field of a smooth, projective curve such as $\bb{F}_q(T),$ where $\bb{F}_q$ is the finite field with $q$ elements and $T$ is an indeterminant, rather than over a number field as in the ``classical'' theory. Drinfeld introduced the study of what he called ``elliptic modules,'' which we now call ``Drinfeld modules,'' in \cite{Drinfeld-elliptic-modules} in order to address problems in the Langlands program over function fields. Many objects from classical number theory such as modular curves and modular forms have analogs over function fields, and we refer to the function-field side of this analogy as the ``Drinfeld setting.''\\
+	
+	My paper \cite{Franklin-geometry-Drinfeld-modular-forms} and my thesis \cite{Franklin-thesis} resolve this question by showing the desired generators and relations may be determined by computing a presentation for the canonical ring of a certain stacky curve in the style of \cite{VZB}. That is, the content of my main results \cite[Theorems $6.1$ and $6.11$]{Franklin-geometry-Drinfeld-modular-forms} is that we can answer Gekeler's question by computing a canonical ring, this by using only geometric invariants. Just as in the case of `classical' modular forms over number fields, which are known to be sections of a line bundle on some stacky curve, \cite[Theorem $6.1$]{Franklin-geometry-Drinfeld-modular-forms} shows that Drinfeld modular forms are sections of a particular line bundle on a specified stacky curve.\\
+	
+	The theory of computing these canonical rings of stacky curves is best covered in the very comprehensive results of \cite{VZB}. However, in joint work with Evan O'Dorney and Michael Cerchia, suggested to us by Voight and Zurieck-Brown, we have generalized some of their results, and some of O'Dorney's results from his \cite{ODorney-canonical-rings-Q-divisors-on-P1}. Our paper \cite{Cerchia-Franklin-ODorney-Qdiv-Ell-curves} computes the section ring of any $\bb{Q}$-divisor (a divisor with $\bb{Q}$-coefficients) on an elliptic curve. There are other papers which deal with similar ring presentations for stacky curves such as \cite{Landesman-Ruhm-Zhang-Spin-canonical-rings}. But, as Voight put it, \cite{VZB} sets a very high bar for such a theory and the results of \cite{Cerchia-Franklin-ODorney-Qdiv-Ell-curves} are so complicated that it is not necessarily worthwhile to pursue the matter of section rings of $\bb{Q}$-divisors on stacky curves further. It seems unlikely that aesthetic results will follow as the geometry of the curve in question gets more complicated, but it is worth noting that computing the section ring of any particular $\bb{Q}$-divisor on a specified curve is not hard compared with describing these results in general. This to say, there is a wealth of information which makes solving Gekeler's problem in the manner suggested by \cite{Franklin-geometry-Drinfeld-modular-forms} quite practical.\\
+	
+	 The other aspect of my solution to Gekeler's problem is the input for this program of computing a canonical ring: some geometric invariants of a particular stacky curve - a Drinfeld modular curve. In joint work with Mihran Papikian and Sheng-Yang Kevin Ho, \cite{Franklin-Ho-Papikian-DrinfeldCurves-SL}, we compute several such invariants for a special class of Drinfeld modular curves, generalizing Gekeler and Nonnengardt's \cite{Gekeler-Nonnengardt-BruhatTitsTrees} to subgroups of $\SL_2$ from the original $\GL_2$-subgroups. The results of this paper are genus formulas for certain Drinfeld modular curves (see \cite[Section $3$]{Franklin-Ho-Papikian-DrinfeldCurves-SL}) and Weierstrass equations for such Drinfeld modular curves in the only cases when those curves are elliptic curves (\cite[Section $4$]{Franklin-Ho-Papikian-DrinfeldCurves-SL}). Thanks to the combinatorial nature of our theory we also describe the cusps of the corresponding modular curves, another essential input required to solve Gekeler's problem explicitly following \cite{Franklin-geometry-Drinfeld-modular-forms}:
+	 \begin{figure}[h]
+	 	\scalebox{0.7}
+	 	{
+	 		\begin{tikzpicture}[thick, node distance=1.5cm, inner sep=.6mm, vertex/.style={circle, fill=black}]
+	 			\node (a) at (0,0) 
+	 			{
+	 				\begin{tikzpicture}[thick, node distance=1.5cm, inner sep=.6mm, vertex/.style={circle, fill=black}]
+	 					
+	 					% First picture
+	 					\node[vertex] (1) [label=left:$v_{+}$] {};
+	 					\node[vertex] (v0) [right of=1, node distance=2cm, label=right:$v_{0}$] {};
+	 					\draw (1) edge[bend right=70]  (v0)  (1) edge[bend left=70] (v0); 
+	 					
+	 					% Second picture
+	 					\node[vertex] (0) [below right of=v0, node distance=0cm] {};
+	 					\node[vertex] (1a) [above right of=0, label=above:$v_1$] {};
+	 					\node[vertex] (2) [right of=1a, label=above:$v_2$] {};
+	 					\node[vertex] (3) [right of=2, label=above:$v_3$] {};
+	 					\node[] (4) [right of=3, label=right:${[\infty]}$] {};
+	 					\node[vertex] (-1) [below right of=0, label=below:$v_{-1}$] {};
+	 					\node[vertex] (-2) [right of=-1, label=below:$v_{-2}$] {};
+	 					\node[vertex] (-3) [right of=-2, label=below:$v_{-3}$] {};
+	 					\node[] (-4) [right of=-3, label=right:${[0]}$] {};
+	 					
+	 					\path[]
+	 					(-3) edge (-2) (-2) edge (-1) (-1) edge (0) (0) edge (1a) (1a) edge (2) (2) edge (3);
+	 					
+	 					\draw [thick, ->, dashed, line width=0.5mm] (3) -- (4);
+	 					\draw [thick, ->, dashed, line width=0.5mm] (-3) -- (-4);
+	 					
+	 				\end{tikzpicture}
+	 			};
+	 			
+	 			\node (b) at (a.south) [anchor=north,yshift=-1cm]
+	 			{
+	 				\begin{tikzpicture}[thick, node distance=1.5cm, inner sep=.6mm, vertex/.style={circle, fill=black}]
+	 					
+	 					% First picture
+	 					\node[vertex] (1) [label=left:$v_{+}$] {};
+	 					\node[vertex] (v0) [right of=1, node distance=2cm, label=right:$v_{0}$] {};
+	 					\draw (1) edge  (v0);
+	 					
+	 					% Second picture
+	 					\node[vertex] (0) [below right of=v0, node distance=0cm] {};
+	 					\node[vertex] (1a) [above right of=0, label=above:$v_1$] {};
+	 					\node[vertex] (2) [right of=1a, label=above:$v_2$] {};
+	 					\node[vertex] (3) [right of=2, label=above:$v_3$] {};
+	 					\node[] (4) [right of=3, label=right:${[\infty]}$] {};
+	 					\node[vertex] (-1) [below right of=0, label=below:$v_{-1}$] {};
+	 					\node[vertex] (-2) [right of=-1, label=below:$v_{-2}$] {};
+	 					\node[vertex] (-3) [right of=-2, label=below:$v_{-3}$] {};
+	 					\node[] (-4) [right of=-3, label=right:${[0]}$] {};
+	 					
+	 					\path[]
+	 					(-3) edge (-2) (-2) edge (-1) (-1) edge (0) (0) edge (1a) (1a) edge (2) (2) edge (3);
+	 					
+	 					\draw [thick, ->, dashed, line width=0.5mm] (3) -- (4);
+	 					\draw [thick, ->, dashed, line width=0.5mm] (-3) -- (-4);
+	 					
+	 				\end{tikzpicture}
+	 			};
+	 			\draw [->] (a)--(b);
+	 		\end{tikzpicture}
+	 	}
+	 	\caption{(\cite[Figure $3$]{Franklin-Ho-Papikian-DrinfeldCurves-SL}) - Sketch of a graph cover where arrows correspond to cusps of Drinfeld modular curves.}\label{Fig1}
+	 \end{figure}
+	
+	\section{Current and Future Research Projects}
+	
+\newpage
+\bibliographystyle{amsalpha} 								
+\bibliography{bibliography} 						
+\end{document}
