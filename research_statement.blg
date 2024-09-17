@@ -9,45 +9,46 @@ You're missing a field name---line 1031 of file bibliography.bib
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Warning--missing school in Franklin-thesis
-You've used 10 entries,
+Warning--missing booktitle in Mumford-Toda-lattice
+You've used 13 entries,
             2624 wiz_defined-function locations,
-            637 strings with 6299 characters,
-and the built_in function-call counts, 3584 in all, are:
-= -- 324
-> -- 153
-< -- 6
-+ -- 51
-- -- 49
-* -- 298
-:= -- 578
-add.period$ -- 10
-call.type$ -- 10
-change.case$ -- 58
-chr.to.int$ -- 10
-cite$ -- 11
-duplicate$ -- 154
-empty$ -- 286
-format.name$ -- 64
-if$ -- 719
+            657 strings with 6873 characters,
+and the built_in function-call counts, 4641 in all, are:
+= -- 423
+> -- 177
+< -- 9
++ -- 58
+- -- 55
+* -- 372
+:= -- 726
+add.period$ -- 13
+call.type$ -- 13
+change.case$ -- 73
+chr.to.int$ -- 13
+cite$ -- 15
+duplicate$ -- 210
+empty$ -- 385
+format.name$ -- 76
+if$ -- 948
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 17
-newline$ -- 40
-num.names$ -- 30
-pop$ -- 71
+missing$ -- 22
+newline$ -- 49
+num.names$ -- 39
+pop$ -- 98
 preamble$ -- 1
-purify$ -- 68
+purify$ -- 86
 quote$ -- 0
-skip$ -- 114
+skip$ -- 159
 stack$ -- 0
-substring$ -- 183
-swap$ -- 23
-text.length$ -- 6
-text.prefix$ -- 5
+substring$ -- 258
+swap$ -- 35
+text.length$ -- 9
+text.prefix$ -- 8
 top$ -- 0
-type$ -- 76
-warning$ -- 1
-while$ -- 34
-width$ -- 13
-write$ -- 120
+type$ -- 100
+warning$ -- 2
+while$ -- 44
+width$ -- 15
+write$ -- 149
 (There was 1 error message)

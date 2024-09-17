@@ -5,7 +5,7 @@
   \href{http://www.ams.org/mathscinet-getitem?mr=#1}{#2}
 }
 \providecommand{\href}[2]{#2}
-\begin{thebibliography}{CFO24}
+\begin{thebibliography}{Mum78}
 
 \bibitem[CFO24]{Cerchia-Franklin-ODorney-Qdiv-Ell-curves}
 Michael Cerchia, Jesse Franklin, and Evan O'Dorney, \emph{Section rings of
@@ -39,10 +39,23 @@ Ernst-Ulrich Gekeler and Udo Nonnengardt, \emph{Fundamental domains of some
   arithmetic groups over function fields}, Internat. J. Math. \textbf{6}
   (1995), no.~5, 689--708. \MR{1351161}
 
+\bibitem[Kri83]{Krichever}
+I.~M. Krichever, \emph{Rational solutions of the zakharov-shabat equations and
+  completely integrable systems of n particles on a line}, Journal of Soviet
+  Mathematics \textbf{21} (1983), no.~3, 335--345.
+
+\bibitem[Lau]{Laumon-Krichever-modules}
+G\'{e}rard Laumon, \emph{Sur les modules de {K}richever}.
+
 \bibitem[LRZ16]{Landesman-Ruhm-Zhang-Spin-canonical-rings}
 Aaron Landesman, Peter Ruhm, and Robin Zhang, \emph{Spin canonical rings of log
   stacky curves}, Ann. Inst. Fourier (Grenoble) \textbf{66} (2016), no.~6,
   2339--2383. \MR{3580174}
+
+\bibitem[Mum78]{Mumford-Toda-lattice}
+David Mumford, \emph{An algebro-geometric construction of commuting operators
+  and of solutions to the toda lattice equation, korteweg devries equation and
+  related nonlinear equation}, 01 1978, pp.~115--153.
 
 \bibitem[O'D15]{ODorney-canonical-rings-Q-divisors-on-P1}
 Evan O'Dorney, \emph{Canonical rings of $\mathbb{Q}$-divisors on
