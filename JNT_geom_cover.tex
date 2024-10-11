@@ -1,0 +1,286 @@
+\documentclass[12pt]{article}
+
+% Prevents aux files from being created
+\nofiles
+
+% Gives me tildes
+\usepackage{color}
+\usepackage{geometry}
+\usepackage{latexsym}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amscd}
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+\usepackage{tikz}
+\usepackage{tikz-cd}
+\usepackage{tkz-fct} 
+\usepackage{mathabx}
+\usepackage{stmaryrd}
+\usepackage{listings}
+\usepackage{youngtab}
+\usepackage{pgfplots}
+\usepackage{rotating}
+\usetikzlibrary{shapes.geometric,positioning}
+\usepackage{hyperref}
+\usepackage{adjustbox}
+\usepackage{tikz-3dplot}
+\usepgflibrary{arrows}
+\usepackage{graphicx}
+\usetikzlibrary{calc}
+\usepackage{url, fullpage}
+
+% Prevents the pages from being numbered
+\pagestyle{empty}
+
+\setlength{\topmargin}{1in}
+
+\newcommand{\todo}[1]{{\color{purple} \sf $\spadesuit\spadesuit\spadesuit$ TODO: [#1]}}
+
+\begin{document}
+	
+	\noindent
+	\today
+	
+	\vspace{12pt}
+	\noindent
+	Dr.\ Dorian Goldfeld\\
+	Editor-in-Chief\\
+	Journal of Number Theory\\
+	Columbia University Department of Mathematics,\\
+	$2990$ Broadway, New York, $10027-6940$\\
+	\vspace{24pt}
+	
+	\noindent
+	Dear Dr.\ Goldfeld,\\
+	
+	Please consider my manuscript, ``The Geometry of Drinfeld Modular Forms'' for re-submission to the \textit{Journal of Number Theory}. I am grateful for the thorough and thoughtful feedback provided by your editors as this has greatly improved the writing and clarity of the paper and polished the statement of one of its main results. In summary, based on your feedback I have updated many points in the exposition, improved notation throughout the document and bibliography, and clarified the assumptions, mechanics and proofs of the main results, addressing every single comment. Please see that we have responded to each suggestion line-by-line, below. Taken together, these changes strongly improved my
+	manuscript, and I thank the reviewers very much for their efforts here.\\
+	
+	Lastly, thank you once again for the opportunity to publish this manuscript in your journal.
+	Please do not hesitate to reach out to me if you need additional details.\\
+	
+	\noindent
+	Sincerely,
+	
+	\vspace{12pt}
+	\noindent
+	Jesse Franklin, PhD\\
+	Salt Lake Community College
+	Department of Mathematics\\
+	$4600$ S.\ Redwood Road\\
+	Salt Lake City, UT $84123$
+	
+	\newpage
+	
+	Sorry that the original comments from the editors are not present in this list, I was not able to copy the necessary notation from the .pdf report. My revisions are enumerated below, each corresponding to its respective item in the editor's report. 
+	
+	\begin{enumerate}
+		\item For Theorem $1.1$ ($6.1$) the assumption that $\Gamma$ contains all diagonal matrices is not necessary. This condition is only useful for simplifying the proof of Theorem $1.2,$ whereas for $1.1$ we only need $\operatorname{det}(\Gamma)=(\mathbb{F}_q^{\times})^2.$ This greatly improves the generality of the result and clarifies it as well. 
+		
+		\item The `standard argument' (as Voight and Zurieck-Brown put it) for an isomorphism between modular forms of weight $k$ and type $l$ and global sections of a line bundle involves simply associating a modular form to a differential form. The only $\Gamma$-invariant differential forms are in one-to-one correspondence with modular forms. Also, the kernel of the isomorphism described in the proof of Theorem $6.1$ is trivial, so by the first isomorphism theorem the map we describe is an isomorphism. These important points are now part of the proof so that it is clear that the proof is complete. 
+		 
+		\item This proof has been revised accordingly. Thank you for this very neat simplification. 
+		
+		\item It is non-trivial that defining $f_1$ and $f_2$ by their $u$-series means they are modular forms, but it is also not hard to show this and we have now done so in the proof. 
+		
+		\item 
+		\begin{enumerate}
+			\item Evan O'Dorney might say it is obvious that his Theorems provide the presentations of canonical rings we have claimed as they apply to all $\mathbb{Q}$-divisors supported at two points, but it is by no means easy to obtain the results of our examples even if we only follow his directions. The process of actually working out the degrees of generators for a canonical ring using Evan's theory is straightforward but laborious, the kind of activity best done in the privacy of one's home. We have added some further commments about how his technique works, but still omit the calculations as these are tedious and do not illuminate anything about the theory or examples. 
+			
+			\item As the editor has suggested, we have added the comment that using geometric invariants is not the only, or even the most straightforward way to compute rings of modular forms. 
+		\end{enumerate}
+		
+		\item This example now omits $\Gamma_1.$
+		
+		\item These Theorems has been clarified with an explicit relationship between $l$ and $l'.$ 
+		
+		\item The indices have been corrected and the assumption has been noted.
+		
+		\item Yes, we are referring to some matrix $\gamma$ in the stabilzer which has non-square determinant.
+		
+		\item
+		\begin{enumerate}
+			\item No, a stacky curve may be defined over any field without any assumptions about characteristic, for example.  
+			\item Thanks for pointing this out, yes, a coarse space morphism is only unique up to (unique) isomorphism. 
+			\item This point has been clarified to agree with Voight/Zurieck-Brown. 
+		\end{enumerate}	
+		
+		\item Correct, my definition of log divisor is a slight, but very important generalization of Voight/Zurieck-Brown's. This is essential for my results, and only makes it slightly worse to compute (log) canonical rings. In particular, it obliges us to use e.g.\ O'Dorney's theory rather than reading our presentation of a canonical ring out of Voight/Zurieck-Brown in many examples. 
+		
+		\item This has been changed to look like Voight/Zurieck-Brown now. 
+		
+		\item This proof has been simplified and only uses the definition of an $\mathbb{F}_q$-linear function now. 
+		
+		\item This notation has been changed according to the editor's suggestion. 
+		
+		\item Yes, and this has been added to the statement of the Theorem.
+		
+		\item This Remark has been removed.
+		
+		\item Yes, thank you for clarifying this. The statement has been adjusted.
+		
+		\item Many details including solutions have been added to this proof. Originally I was told to hide these calculations by my advisors. 
+		
+		\item 
+		\begin{enumerate}
+			\item The implicit assumption about $k$ being even for $q$ odd has been stated for these results.
+			\item This point has been noted in the proof.
+			\item The proof is shortened following this suggestion. Thanks! This is an elegant simplification.
+		\end{enumerate}
+		
+		\item	
+		\begin{enumerate}
+			\item A note about normality of $\Gamma'$ has been added to the remark before this proof.
+			\item We have specified that the slash operator is weakly modular for $\Gamma.$
+			\item We have specified that these groups act on a neighborhood of the cusp. 
+			\item Some notes about the importance of the assumption $\Gamma_1\subset \Gamma'$ and the equivalence between $\Gamma/\Gamma'$ and $\operatorname{det}(\Gamma)/\operatorname{det}(\Gamma')$ have been added to the proof. 
+		\end{enumerate}
+		
+		\item This point has been noted.
+		
+		\item Yes, and this statement has been clarified accordingly. 
+		
+		\item This remark has been clarified according to these excellent suggestions, including cleaning up the irreducibility condition and revising the `consideration of constants' remark.
+		
+		\item The conclusion of this example is that by using geometric invariants and O'Dorney's theorem we are able to come up with the same presentation for the algebra of modular forms as Dalal-Kumar. There was a line at the end after the image, but both the sketch and remark have been removed as the sketch was not very helpful and the comment seems to have been confusing and did not add anything.
+		
+		\item ``Weight $k$'' has been added.
+		
+		\item This has been noted.
+		
+		\item The unconventional presentation has been revised to agree with the earlier definition. 
+		
+		\item We now introduce $\mathscr{X}_{\text{\'et}}.$
+		
+		\item This definition now makes clear how a gerbe and stacky curve are related.
+		
+		\item We now introduce this particular gerbe.	
+		
+		\item The precision of this comment has been improved according to the editor's suggestion.
+		
+		\item The remark has been rearranged.
+		
+		\item These definitions have been put in the order suggested by the editor.
+		
+		\item The proof is omitted.
+		
+		\item Added.
+		
+		\item Affinoid spaces are now introduced and in the right order with respect to the definition of affinoid algebras.
+		
+		\item The notation has been fixed, and the matter of stable moduli or not stable uniformized so that our moduli problems do include the cusps needed for our argument.
+		
+		\item The definition has been added.
+		
+		\item This notation has been fixed and the correct language is now in use.
+		
+		\item We now clarify $n$ is any integer at least one.
+		
+		\item We now clearly define log canonical divisors.
+		
+		\item The unnecessary assumption has been removed and the proof simplified. Thanks!
+		
+		\item We have been more clear about the use of the previous Lemma and the conclusions of the proof.
+		
+		\item Yes, this has been fixed. Thanks.
+		
+		\item This corollary has been integrated into the proposition with an appropriate line added to the proof.
+		
+		\item The Lemma has been clearly referenced.
+		
+		\item This has been corrected, thanks!
+		
+		\item The notation has been changed.
+		
+		\item Done.
+		
+		\item No, we never abbreviate to only $R$ for a canonical or section ring in this article. There are too many other $R$'s. Since we do not use line bundle notation for section/canonical rings, we now introduce them the first time in terms of divisors to not have extra notation. 
+		
+		\item This phrasing has been fixed to agree with the more conventional and pleasant sounding ``every $\gamma$ has  a square determinant...''
+		
+		\item This notation has been updated to agree with the suggestion.
+		
+		\item These phrases have been corrected. 
+		
+		\item The notation and placement have been fixed.
+		
+		\item This has been added.
+		
+		\item Typo corrected, thanks for catching that.
+		
+		\item Done. 
+		
+		\item `$\&$' has been replaced anywhere it appears in the document.
+		
+		\item These have been revised.
+		
+		\item Fixed.
+		
+		\item Added.
+		
+		\item Fixed.
+		
+		\item This phrasing has been cleaned up.
+		
+		\item Yes, thanks. Fixed.
+		
+		\item This has been revised according to the suggestion.
+		
+		\item Done!
+		
+		\item Agreed, it is a shame but also tricky to avoid somehow.
+		
+		\item Fixed.
+		
+		\item Fixed.
+		
+		\item Fixed. Done.
+		
+		\item Fixed.
+		
+		\item The redundancy has been removed.
+		
+		\item Fixed.
+		
+		\item Fixed. Thanks!
+		
+		\item Fixed. 
+		
+		\item Since I give an example with a non-monic level I have just clarified everyhere that $\alpha\neq 0$ and not gone to far as to insist that $\alpha=1,$ though this is a good point by the editor.
+		
+		\item Noted.
+		
+		\item Fixed.
+		
+		\item Fixed.
+		
+		\item Fixed. Thanks for catching all of these typos!
+		
+		\item This has been updated.
+		
+		\item The earlier work has been cited and the difference in difficulty noted.
+		
+		\item These references are updated.
+		
+		\item Fixed.
+		
+		\item Fixed.
+		
+		\item Fixed.
+		
+		\item Corrected, thanks! 
+		
+		\item Fixed.
+		
+		\item This referencing is now done more clearly.
+		
+		\item Fixed.
+		
+		\item Where possible I have added details to the bibliography. 
+		
+	\end{enumerate}
+	
+	
+	
+\end{document}
