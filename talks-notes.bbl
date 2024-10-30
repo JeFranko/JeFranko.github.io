@@ -1,0 +1,59 @@
+\providecommand{\bysame}{\leavevmode\hbox to3em{\hrulefill}\thinspace}
+\providecommand{\MR}{\relax\ifhmode\unskip\space\fi MR }
+% \MRhref is called by the amsart/book/proc definition of \MR.
+\providecommand{\MRhref}[2]{%
+  \href{http://www.ams.org/mathscinet-getitem?mr=#1}{#2}
+}
+\providecommand{\href}[2]{#2}
+\begin{thebibliography}{CFO24}
+
+\bibitem[CFO24]{Cerchia-Franklin-ODorney-Qdiv-Ell-curves}
+Michael Cerchia, Jesse Franklin, and Evan O'Dorney, \emph{Section rings of
+  $\mathbb{Q}$-divisors on genus $1$ curves}, 2024,
+  \url{https://arxiv.org/abs/2312.15128}.
+
+\bibitem[DS05]{Diamond-Shurman-first-course-modular-forms}
+Fred Diamond and Jerry Shurman, \emph{A first course in modular forms},
+  Graduate Texts in Mathematics, vol. 228, Springer-Verlag, New York, 2005.
+  \MR{2112196}
+
+\bibitem[FHP24]{Franklin-Ho-Papikian-DrinfeldCurves-SL}
+Jesse Franklin, Sheng-Yang~Kevin Ho, and Mihran Papikian, \emph{On {D}rinfeld
+  modular curves for sl(2)}, 2024.
+
+\bibitem[Fra24]{Franklin-geometry-Drinfeld-modular-forms}
+Jesse Franklin, \emph{The geometry of {D}rinfeld modular forms}, 2024,
+  \url{https://arxiv.org/abs/2310.19623}.
+
+\bibitem[Gek99]{Gekeler-survey-Drinfeld-modular-forms}
+Ernst-Ulrich Gekeler, \emph{A survey on {D}rinfeld modular forms}, Turkish J.
+  Math. \textbf{23} (1999), no.~4, 485--518. \MR{1780937}
+
+\bibitem[GN95]{Gekeler-Nonnengardt-BruhatTitsTrees}
+Ernst-Ulrich Gekeler and Udo Nonnengardt, \emph{Fundamental domains of some
+  arithmetic groups over function fields}, Internat. J. Math. \textbf{6}
+  (1995), no.~5, 689--708. \MR{1351161}
+
+\bibitem[LRZ16]{Landesman-Ruhm-Zhang-Spin-canonical-rings}
+Aaron Landesman, Peter Ruhm, and Robin Zhang, \emph{Spin canonical rings of log
+  stacky curves}, Ann. Inst. Fourier (Grenoble) \textbf{66} (2016), no.~6,
+  2339--2383. \MR{3580174}
+
+\bibitem[O'D15]{ODorney-canonical-rings-Q-divisors-on-P1}
+Evan O'Dorney, \emph{Canonical rings of $\mathbb{Q}$-divisors on
+  $\mathbb{P}^1$}, Annals of Combinatorics \textbf{19} (2015), no.~4, 765--784.
+
+\bibitem[PW16]{Papikian-Wei-Eisenstein-ideal}
+Mihran Papikian and Fu-Tsun Wei, \emph{On the eisenstein ideal over function
+  fields}, Journal of Number Theory \textbf{161} (2016), 384--434.
+
+\bibitem[PY16]{Porta-Yu-Higher-analytic-stacks-GAGA}
+Mauro Porta and Tony~Yue Yu, \emph{Higher analytic stacks and {GAGA} theorems},
+  Adv. Math. \textbf{302} (2016), 351--409. \MR{3545934}
+
+\bibitem[VZB22]{VZB}
+John Voight and David Zureick-Brown, \emph{The canonical ring of a stacky
+  curve}, Mem. Amer. Math. Soc. \textbf{277} (2022), no.~1362, v+144.
+  \MR{4403928}
+
+\end{thebibliography}

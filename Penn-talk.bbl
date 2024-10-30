@@ -1,0 +1,46 @@
+\providecommand{\bysame}{\leavevmode\hbox to3em{\hrulefill}\thinspace}
+\providecommand{\MR}{\relax\ifhmode\unskip\space\fi MR }
+% \MRhref is called by the amsart/book/proc definition of \MR.
+\providecommand{\MRhref}[2]{%
+  \href{http://www.ams.org/mathscinet-getitem?mr=#1}{#2}
+}
+\providecommand{\href}[2]{#2}
+\begin{thebibliography}{VZB22}
+
+\bibitem[Bre16]{Breuer-Gekeler-h-function}
+Florian Breuer, \emph{A note on {G}ekeler's {$h$}-function}, Arch. Math.
+  (Basel) \textbf{107} (2016), no.~4, 305--313. \MR{3552209}
+
+\bibitem[Fra23]{Franklin-geometry-Drinfeld-modular-forms}
+Jesse Franklin, \emph{The geometry of {D}rinfeld modular forms}, 2023,
+  \url{https://arxiv.org/abs/2310.19623}.
+
+\bibitem[Gek86]{Gekeler-Curves}
+Ernst-Ulrich Gekeler, \emph{{D}rinfeld modular curves}, Lecture Notes in
+  Mathematics, vol. 1231, Springer-Verlag, Berlin, 1986. \MR{874338}
+
+\bibitem[Gek88]{Gekeler-Coeff}
+\bysame, \emph{On the coefficients of {D}rinfeld modular forms}, Invent. Math.
+  \textbf{93} (1988), no.~3, 667--700. \MR{952287}
+
+\bibitem[Gek01]{Gekeler-Invariants}
+\bysame, \emph{Invariants of some algebraic curves related to {D}rinfeld
+  modular curves}, J. Number Theory \textbf{90} (2001), no.~1, 166--183.
+  \MR{1850880}
+
+\bibitem[Lau96]{Laumon-cohomology-Drinfeld-modular-varieties}
+G\'{e}rard Laumon, \emph{Cohomology of {D}rinfeld modular varieties. {P}art
+  {I}}, Cambridge Studies in Advanced Mathematics, vol.~41, Cambridge
+  University Press, Cambridge, 1996, Geometry, counting of points and local
+  harmonic analysis. \MR{1381898}
+
+\bibitem[PY16]{Porta-Yu-Higher-analytic-stacks-GAGA}
+Mauro Porta and Tony~Yue Yu, \emph{Higher analytic stacks and {GAGA} theorems},
+  Adv. Math. \textbf{302} (2016), 351--409. \MR{3545934}
+
+\bibitem[VZB22]{VZB}
+John Voight and David Zureick-Brown, \emph{The canonical ring of a stacky
+  curve}, Mem. Amer. Math. Soc. \textbf{277} (2022), no.~1362, v+144.
+  \MR{4403928}
+
+\end{thebibliography}

@@ -1,0 +1,38 @@
+\providecommand{\bysame}{\leavevmode\hbox to3em{\hrulefill}\thinspace}
+\providecommand{\MR}{\relax\ifhmode\unskip\space\fi MR }
+% \MRhref is called by the amsart/book/proc definition of \MR.
+\providecommand{\MRhref}[2]{%
+  \href{http://www.ams.org/mathscinet-getitem?mr=#1}{#2}
+}
+\providecommand{\href}[2]{#2}
+\begin{thebibliography}{VZB22}
+
+\bibitem[DS05]{Diamond-Shurman-first-course-modular-forms}
+Fred Diamond and Jerry Shurman, \emph{A first course in modular forms},
+  Graduate Texts in Mathematics, vol. 228, Springer-Verlag, New York, 2005.
+  \MR{2112196}
+
+\bibitem[Fra23]{Franklin-geometry-Drinfeld-modular-forms}
+Jesse Franklin, \emph{The geometry of {D}rinfeld modular forms}, 2023,
+  \url{https://arxiv.org/abs/2310.19623}.
+
+\bibitem[Gek86]{Gekeler-Curves}
+Ernst-Ulrich Gekeler, \emph{Drinfeld modular curves}, Lecture Notes in
+  Mathematics, vol. 1231, Springer-Verlag, Berlin, 1986. \MR{874338}
+
+\bibitem[LRZ16]{Landesman-Ruhm-Zhang-Spin-canonical-rings}
+Aaron Landesman, Peter Ruhm, and Robin Zhang, \emph{Spin canonical rings of log
+  stacky curves}, Ann. Inst. Fourier (Grenoble) \textbf{66} (2016), no.~6,
+  2339--2383. \MR{3580174}
+
+\bibitem[Sil09]{Silverman-arithmetic-elliptic-curves}
+Joseph~H. Silverman, \emph{The arithmetic of elliptic curves}, second ed.,
+  Graduate Texts in Mathematics, vol. 106, Springer, Dordrecht, 2009.
+  \MR{2514094}
+
+\bibitem[VZB22]{VZB}
+John Voight and David Zureick-Brown, \emph{The canonical ring of a stacky
+  curve}, Mem. Amer. Math. Soc. \textbf{277} (2022), no.~1362, v+144.
+  \MR{4403928}
+
+\end{thebibliography}

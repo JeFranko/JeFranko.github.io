@@ -1,0 +1,52 @@
+This is BibTeX, Version 0.99d (TeX Live 2017)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: U_seminar1113.aux
+The style file: amsalpha.bst
+Database file #1: bibliography.bib
+You're missing a field name---line 1032 of file bibliography.bib
+ : 
+ : % AUTHOR = {Gekeler, Ernst-Ulrich},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You've used 14 entries,
+            2624 wiz_defined-function locations,
+            674 strings with 6968 characters,
+and the built_in function-call counts, 4942 in all, are:
+= -- 449
+> -- 190
+< -- 11
++ -- 63
+- -- 59
+* -- 439
+:= -- 779
+add.period$ -- 14
+call.type$ -- 14
+change.case$ -- 80
+chr.to.int$ -- 14
+cite$ -- 14
+duplicate$ -- 210
+empty$ -- 411
+format.name$ -- 81
+if$ -- 988
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 28
+newline$ -- 52
+num.names$ -- 40
+pop$ -- 82
+preamble$ -- 1
+purify$ -- 93
+quote$ -- 0
+skip$ -- 148
+stack$ -- 0
+substring$ -- 298
+swap$ -- 30
+text.length$ -- 11
+text.prefix$ -- 8
+top$ -- 0
+type$ -- 100
+warning$ -- 0
+while$ -- 47
+width$ -- 17
+write$ -- 170
+(There was 1 error message)

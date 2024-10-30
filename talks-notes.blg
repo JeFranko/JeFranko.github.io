@@ -1,0 +1,56 @@
+This is BibTeX, Version 0.99d (TeX Live 2017)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: talks-notes.aux
+The style file: amsalpha.bst
+Database file #1: bibliography.bib
+You're missing a field name---line 1032 of file bibliography.bib
+ : 
+ : % AUTHOR = {Gekeler, Ernst-Ulrich},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Repeated entry---line 1361 of file bibliography.bib
+ : @book {Diamond-Shurman-first-course-modular-forms
+ :                                                  ,
+I'm skipping whatever remains of this entry
+You've used 11 entries,
+            2624 wiz_defined-function locations,
+            644 strings with 6473 characters,
+and the built_in function-call counts, 4156 in all, are:
+= -- 381
+> -- 194
+< -- 4
++ -- 67
+- -- 63
+* -- 363
+:= -- 673
+add.period$ -- 11
+call.type$ -- 11
+change.case$ -- 66
+chr.to.int$ -- 11
+cite$ -- 11
+duplicate$ -- 159
+empty$ -- 326
+format.name$ -- 77
+if$ -- 827
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 20
+newline$ -- 43
+num.names$ -- 33
+pop$ -- 72
+preamble$ -- 1
+purify$ -- 77
+quote$ -- 0
+skip$ -- 121
+stack$ -- 0
+substring$ -- 248
+swap$ -- 19
+text.length$ -- 4
+text.prefix$ -- 3
+top$ -- 0
+type$ -- 84
+warning$ -- 0
+while$ -- 42
+width$ -- 14
+write$ -- 130
+(There were 2 error messages)

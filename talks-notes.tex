@@ -1,0 +1,1163 @@
+\documentclass[11pt]{amsart}
+
+\pdfoutput=1
+
+\usepackage[margin=0.25in]{geometry}
+
+\usepackage{color}
+\usepackage{geometry}
+\usepackage{latexsym}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amscd}
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+\usepackage{tikz}
+\usepackage{tikz-cd}
+\usepackage{tkz-fct} 
+\usepackage{mathabx}
+\usepackage{stmaryrd}
+\usepackage{listings}
+\usepackage{youngtab}
+\usepackage{pgfplots}
+\usepackage{rotating}
+\usetikzlibrary{shapes.geometric,positioning}
+\usepackage{hyperref}
+\usepackage{adjustbox}
+\usepackage{tikz-3dplot}
+\usepgflibrary{arrows}
+\usepackage{graphicx}
+\usetikzlibrary{calc}
+\usepackage{amsaddr}
+
+%\usepackage{lineno}
+%\linenumbers
+
+
+\tdplotsetmaincoords{60}{115}
+\pgfplotsset{compat=newest}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{fact}[theorem]{Fact}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{hypothesis}[theorem]{Hypothesis}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{remark}[theorem]{Remark}
+
+\theoremstyle{definition}
+\newtheorem{examples}{Examples}
+\newtheorem{remarks}{Remarks}
+
+\newenvironment{psmallmatrix}
+{\left(\begin{smallmatrix}}
+	{\end{smallmatrix}\right)}
+
+\numberwithin{equation}{section}
+
+\setlength{\evensidemargin}{1in}
+\addtolength{\evensidemargin}{-1in}
+\setlength{\oddsidemargin}{1in}
+\addtolength{\oddsidemargin}{-1in}
+\setlength{\topmargin}{1in}
+\addtolength{\topmargin}{-1.5in}
+
+\setlength{\textwidth}{16.5cm}
+\setlength{\textheight}{23cm}
+
+\makeatletter
+\renewcommand{\@makefnmark}{\mbox{\textsuperscript{}}}
+\makeatother
+
+\allowdisplaybreaks[1]
+
+% Macros
+\newcommand{\Ind}{\operatorname{Ind}} 	%Ind
+\newcommand{\Proj}{\operatorname{Proj}} 	%Proj
+\newcommand{\sProj}{\operatorname{sProj}} 	%sProj
+\newcommand{\res}{\mathrm{res}} 	%res
+\newcommand{\Hom}{\operatorname{Hom}} 	%Hom
+\newcommand{\GL}{\mathrm{GL}} 	%GL
+\newcommand{\PGL}{\mathrm{PGL}} 	%PGL
+\newcommand{\PSL}{\mathrm{PSL}} 	%SGL
+\newcommand{\SL}{\mathrm{SL}} 	%SL
+\newcommand{\Frob}{\mathrm{Frob}} 	%Frob
+\newcommand{\Isom}{\mathrm{Isom}} 	%Isom
+\newcommand{\Span}{\mathrm{Span}} 	%Span
+\newcommand{\Aut}{\mathrm{Aut}} 	%Aut
+\newcommand{\End}{\mathrm{End}} 	%End
+\newcommand{\Gal}{\mathrm{Gal}} 	%Gal
+\newcommand{\Ring}{\mathrm{Ring}} 	%Ring
+\newcommand{\AbGrp}{\mathrm{AbGrp}} 	%AbGrp
+\newcommand{\Cring}{\mathrm{CRing}} 	%CRing
+\newcommand{\Sym}{\operatorname{Sym}} 	%Sym
+\newcommand{\coker}{\mathrm{coker}} 	%coker
+\newcommand{\Spec}{\operatorname{Spec}} 	%Spec
+\newcommand{\Jac}{\operatorname{Jac}} 	%Jac
+\newcommand{\cA}{\mathcal{A}}		%curly a
+\newcommand{\cB}{\mathcal{B}}		%curly b
+\newcommand{\cC}{\mathcal{C}}		%curly c
+\newcommand{\cD}{\mathcal{D}}		%curly d
+\newcommand{\cE}{\mathcal{E}}		%curly e
+\newcommand{\cF}{\mathcal{F}}		%curly f
+\newcommand{\cG}{\mathcal{G}}		%curly g
+\newcommand{\cH}{\mathcal{H}}		%curly h
+\newcommand{\cI}{\mathcal{I}}		%curly i
+\newcommand{\cJ}{\mathcal{J}}		%curly j
+\newcommand{\cK}{\mathcal{K}}		%curly k
+\newcommand{\cL}{\mathcal{L}}		%curly l
+\newcommand{\cM}{\mathcal{M}}		%curly m
+\newcommand{\cN}{\mathcal{N}}		%curly n
+\newcommand{\cO}{\mathcal{O}}		%curly o
+\newcommand{\cP}{\mathcal{P}}		%curly p
+\newcommand{\cQ}{\mathcal{Q}}		%curly q
+\newcommand{\cR}{\mathcal{R}}		%curly r
+\newcommand{\cS}{\mathcal{S}}		%curly s
+\newcommand{\cT}{\mathcal{T}}		%curly t
+\newcommand{\cU}{\mathcal{U}}		%curly u
+\newcommand{\cV}{\mathcal{V}}		%curly v
+\newcommand{\cW}{\mathcal{W}}		%curly w
+\newcommand{\cX}{\mathcal{X}}		%curly x
+\newcommand{\cY}{\mathcal{Y}}		%curly y
+\newcommand{\cZ}{\mathcal{Z}}		%curly z
+
+\newcommand{\sA}{\mathscr{A}}		%script a
+\newcommand{\sB}{\mathscr{B}}		%script b
+\newcommand{\sC}{\mathscr{C}}		%script c
+\newcommand{\sD}{\mathscr{D}}		%script d
+\newcommand{\sE}{\mathscr{E}}		%script e
+\newcommand{\sF}{\mathscr{F}}		%script f
+\newcommand{\sG}{\mathscr{G}}		%script g
+\newcommand{\sH}{\mathscr{H}}		%script h
+\newcommand{\sI}{\mathscr{I}}		%script i
+\newcommand{\sJ}{\mathscr{J}}		%script j
+\newcommand{\sK}{\mathscr{K}}		%script k
+\newcommand{\sL}{\mathscr{L}}		%script l
+\newcommand{\sM}{\mathscr{M}}		%script m
+\newcommand{\sN}{\mathscr{N}}		%script n
+\newcommand{\sO}{\mathscr{O}}		%script o
+\newcommand{\sP}{\mathscr{P}}		%script p
+\newcommand{\sQ}{\mathscr{Q}}		%script q
+\newcommand{\sR}{\mathscr{R}}		%script r
+\newcommand{\sS}{\mathscr{S}}		%script s
+\newcommand{\sT}{\mathscr{T}}		%script t
+\newcommand{\sU}{\mathscr{U}}		%script u
+\newcommand{\sV}{\mathscr{V}}		%script v
+\newcommand{\sW}{\mathscr{W}}		%script w
+\newcommand{\sX}{\mathscr{X}}		%script x
+\newcommand{\sY}{\mathscr{Y}}		%script y
+\newcommand{\sZ}{\mathscr{Z}}		%script z
+
+\newcommand{\bbA}{\mathbb{A}}		%bold a
+\newcommand{\bbB}{\mathbb{B}}		%bold b
+\newcommand{\bbC}{\mathbb{C}}		%bold c
+\newcommand{\bbD}{\mathbb{D}}		%bold d
+\newcommand{\bbE}{\mathbb{E}}		%bold e
+\newcommand{\bbF}{\mathbb{F}}		%bold f
+\newcommand{\bbG}{\mathbb{G}}		%bold g
+\newcommand{\bbH}{\mathbb{H}}		%bold h
+\newcommand{\bbI}{\mathbb{I}}		%bold i
+\newcommand{\bbJ}{\mathbb{J}}		%bold j
+\newcommand{\bbK}{\mathbb{K}}		%bold k
+\newcommand{\bbL}{\mathbb{L}}		%bold l
+\newcommand{\bbM}{\mathbb{M}}		%bold m
+\newcommand{\bbN}{\mathbb{N}}		%bold n
+\newcommand{\bbO}{\mathbb{O}}		%bold o
+\newcommand{\bbP}{\mathbb{P}}		%bold p
+\newcommand{\bbQ}{\mathbb{Q}}		%bold q
+\newcommand{\bbR}{\mathbb{R}}		%bold r
+\newcommand{\bbS}{\mathbb{S}}		%bold s
+\newcommand{\bbT}{\mathbb{T}}		%bold t
+\newcommand{\bbU}{\mathbb{U}}		%bold u
+\newcommand{\bbV}{\mathbb{V}}		%bold v
+\newcommand{\bbW}{\mathbb{W}}		%bold w
+\newcommand{\bbX}{\mathbb{X}}		%bold x
+\newcommand{\bbY}{\mathbb{Y}}		%bold y
+\newcommand{\bbZ}{\mathbb{Z}}		%bold z
+\newcommand{\polygon}[2]{%
+	let \n{len} = {2*#2*tan(360/(2*#1))} in
+	++(0,-#2) ++(\n{len}/2,0) \foreach \x in {1,...,#1} { -- ++(\x*360/#1:\n{len})}}	 	%draw polygon
+\def\checkmark{\tikz\fill[scale=0.4](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) -- cycle;}
+\newcommand{\vep}{\varepsilon} %\varepsilon abbreviation
+\newcommand{\jesse}[1]{{\color{blue} \sf $\spadesuit\spadesuit\spadesuit$ Jesse: [#1]}} %editorial comments
+\newcommand{\taylor}[1]{{\color{red}\sf $\spadesuit\spadesuit\spadesuit$ Taylor: [#1]}} %editorial comments
+\newcommand{\todo}[1]{{\color{purple} \sf $\spadesuit\spadesuit\spadesuit$ TODO: [#1]}}
+\newcommand{\Mod}[1]{\ (\mathrm{mod}\ #1)}
+
+
+\newcommand{\union}{\cup}
+\newcommand{\intsec}{\cap}
+\newcommand{\cross}{\times}
+\newcommand{\tensor}{\otimes}
+\newcommand{\floor}[1]{\lfloor #1 \rfloor}
+\newcommand{\ceil}[1]{\lceil #1 \rceil}
+\newcommand{\Floor}[1]{\left\lfloor #1 \right\rfloor}
+\newcommand{\Ceil}[1]{\left\lceil #1 \right\rceil}
+\newcommand{\textand}{\quad \text{and} \quad}
+\newcommand{\textor}{\quad \text{or} \quad}
+\newcommand{\ignore}[1]{}
+
+
+\begin{document}
+	
+	\title{Notes for Spring $2024$ Talks}
+	%\author{Jesse Franklin}
+	%\address{Department of Mathematics and Statistics, University of Vermont, Burlington VT 05405}
+	%\email{jesse.franklin@uvm.edu; jfranklin1185@gmail.com}
+
+	\tableofcontents
+	\maketitle
+	
+	\section*{Format of the Document}
+	\textbf{Slide Title}\\
+	\framebox[\linewidth]{Slide Contents}
+	
+	\section{Workshop on Number Theory in Function Fields @ Penn State $3/13/2024$}
+	
+	\begin{enumerate}
+		\item \textbf{Title}\\
+		\noindent\fbox{
+			\parbox{\textwidth}{
+				\begin{itemize}
+					\item Thank organizers!
+					\item \emph{The plan:} since everyone I sent this to said they didn't do stacks, we will focus on stacks
+					\item \emph{Intention:} invite $\&$ challenge everyone to start using the language of stacks
+					\item \emph{Warning:} You're welcome to interrupt with questions, but this is my first feature-length talk and first talk to experts in my field, and I am not great at doing math ``live'' so I may say something stupid
+				\end{itemize}
+			}
+		}\\
+		
+		\item \textbf{Notation}\\
+		\noindent\fbox{
+			\parbox{\textwidth}{
+				\begin{itemize}
+					\item We focus on the function field of $\bbP^1/{\bbF_q}$ for ease of notation
+					\item We discuss the relevance of the hypothesis that $q$ is odd later; this is \emph{not essential}, merely \emph{convenient} 
+				\end{itemize}
+			}
+		}\\
+		
+		\item \textbf{The classical thing we want to analogize}\\
+		\noindent\fbox{
+			\parbox{\textwidth}{
+				\begin{itemize}
+					\item \emph{Well-known} classical $(\text{modular forms} = \text{sections of a line bundle})$
+					\item Note: $M(\Gamma)\neq R(\sX_{\Gamma})$; \emph{need log divisor} $M(\Gamma)=R(\sX_{\Gamma};\Delta)$
+					\item Gekeler asks for a description of $M(\Gamma)$ for Drinfeld modular forms, in particular with generators/relations
+				\end{itemize}
+			}
+		}\\
+		
+		\item \textbf{Why Stacks? What are Stacks?}\\
+		\noindent\fbox{
+			\parbox{\textwidth}{
+				\begin{itemize}
+					\item Stacks are \emph{uniquely suited} to *all* modular forms\\
+					e.g.\ (stacky RR) - ``jumpiness'' in $\dim M_k(\Gamma)$ corresponds to floors in stacky RR
+					\item Analogy: 
+					$\displaystyle{\begin{array}{ccc}
+					(schemes) = \left(\begin{array}{c}\text{locally}\\\text{ringed spaces}\end{array}\right) &\leftrightsquigarrow& 
+					(stacks) = \left(\begin{array}{c}\text{categories}\\\text{fibered in}\\\text{groupoids}\end{array}\right)
+					\end{array}}$
+					\item Yoneda's Functor of Points perspective means ``sheaves = stacks''
+				\end{itemize}
+			}
+		}\\
+		
+		\item \textbf{So, what are stacks?}\\
+		\noindent\fbox{
+			\parbox{\textwidth}{
+				\begin{itemize}
+					\item \emph{Main focus} is on stacky curves, but we also discuss closely related \emph{gerbes} over stacky curves
+					
+					\item Note: Every smooth, projective curve $X$ may be treated as a stacky curve with nothing stacky about it. The stack quotient $[X/G]$ for a finite group $G\leq \Aut(X)$ is a stacky curve, (as in Definition \cite[$2.1$]{Landesman-Ruhm-Zhang-Spin-canonical-rings})
+					
+					\item \cite[Remark $5.2.8$]{VZB} - \emph{most} stacky curves are quotients like above
+					
+					\item \textbf{gerbe} - smooth, proper, geometrically connected Deligne-Mumford stack of dimension $1,$ i.e.\ stacky curve \emph{without} dense open subscheme.\\ 
+					\textbf{gerbe} - stack $\approx$ stacky curve, where every single point has a generic/uniform stabilizer   
+				\end{itemize}
+			}
+		}\\
+		
+		\item \textbf{Stacky Curves $101$}\\
+		\noindent\fbox{
+			\parbox{\textwidth}{
+				\begin{itemize}
+					\item 
+					\textbf{signature of $\sX$} - $(\text{genus; orders of stabilizers of stacky points})$\\
+					\textbf{signature of $(\sX,\Delta)$} - $(\text{genus; orders of stabilizers of stacky points; degree of }\Delta)$ where $\Delta$ is a finite formal sum of distinct points of $\sX$ called \textbf{log divisor}
+					\item Just read the rest of the slide
+					\item \emph{Note:} $\sX\cong \sProj(R(\sX))$
+				\end{itemize}
+			}
+		}\\
+		
+		\item \textbf{Computing the Canonical Ring of a Stacky Curve}\\
+		\noindent\fbox{
+			\parbox{\textwidth}{
+				\begin{itemize}
+					\item \cite{VZB}'s inductive result is based on considering covers of stacky curves formed by removing stacky points or changing the orders of stacky points
+					\item \cite{Landesman-Ruhm-Zhang-Spin-canonical-rings} also has such inductive results 
+					\item In \cite{VZB}, \cite{Landesman-Ruhm-Zhang-Spin-canonical-rings}, \cite{ODorney-canonical-rings-Q-divisors-on-P1}, \cite{Cerchia-Franklin-ODorney-Qdiv-Ell-curves} computing canonical rings of stacky curves is a lot about the combinatorics of the floors showing up in stacky RR and giving a \emph{ground-up} description 
+				\end{itemize}
+			}
+		}\\
+		
+		\item \textbf{Old Friends}\\
+		\noindent\fbox{
+			\parbox{\textwidth}{
+				\begin{itemize}
+					\item Example (the $j$-line v$1.0$) - recall our favorite algebras of Drinfeld modular forms (without and with type resp.); the stacky $j$-line is a projective line with $2$ stacky points corresponding to e.g.\ the denominators in the valence formula: \cite[Equation $(3.10)$]{Gekeler-survey-Drinfeld-modular-forms}: 
+					\[\sideset{}{^*}\sum_{z\in GL_2(A)\setminus \Omega}v_z(f)+\frac{v_e(f)}{q+1}+\frac{v_{\infty}(f)}{q-1}=\frac{k}{q^2-1},\]
+					where $\sum^*$ denotes a sum over non-elliptic classes of $\GL_2(A)\setminus \Omega.$  
+					 
+					\item \emph{Note:} we return to the matter of stabilizers carefully later, the point of this example is below  
+					 
+					\item The problem is: the canonical ring of this stacky $j$-line \emph{isn't} the algebra of modular forms for $\GL_2(A).$ \emph{Need a log canonical ring instead}, but this is \emph{not the main focus}.
+				\end{itemize}
+			}
+		}\\
+		
+		\item \textbf{What goes ``Wrong'' in Function Fields}\\
+		\noindent\fbox{
+			\parbox{\textwidth}{
+				\begin{itemize}
+					\item Read the slide.
+					\item The idea is that the proofs have too may Lemmas, so we'll discuss features in the proof instead. 
+					\item A big part of this is just phrasing familiar Drinfeld things in stacks terminology. 
+				\end{itemize}
+			}
+		}\\
+		
+		\item \textbf{Drinfeld Modular Forms}\\
+		\noindent\fbox{
+			\parbox{\textwidth}{
+				\begin{itemize}
+					\item Whip through definition of Drinfeld modular form.
+					\item (Every talk needs one joke $\&$ one proof ($\&$ you should be able to tell the difference)) - The emphasis is that weight and type are \emph{not} independent.
+				\end{itemize}
+			}
+		}\\
+		
+		\item \textbf{``Fourier series'' for Drinfeld Modular Forms}\\
+		\noindent\fbox{
+			\parbox{\textwidth}{
+				\begin{itemize}
+					\item Read Lemma from ``right to left''
+					\item $u$-series tell us about the \emph{log} part of the log canonical ring (pole orders @ cusps)
+					\item $u$-series help us decompose modular forms into differently \emph{typed} parts
+				\end{itemize}
+			}
+		}\\
+		
+		\item \textbf{From Florian and Gebhard with Love}\\
+		\noindent\fbox{
+			\parbox{\textwidth}{
+				\begin{itemize}
+					\item \emph{sensitivity} of modular forms to determinants: weight-type dependence $\&$ $u$-series coefficients
+					\item Breuer's $\Gamma_2$-modular forms are \emph{easier} to recognize as sections of a log canonical divisor on a log stacky Drinfeld modular curve. In particular Breuer was the inspiration for the comparison of algebras Theorem \cite[$6.2$]{Franklin-geometry-Drinfeld-modular-forms}
+					\item Bruer's forms are a \emph{special case} of B\"ockle's $\Gamma'$-forms since we're taking inverse image under $\det$ of subgroups of $\bbF_q^{\times}.$ Theorem  \cite[$6.12$]{Franklin-geometry-Drinfeld-modular-forms} was suggested, including a proof technique, by B\"ockle
+				\end{itemize}
+			}
+		}\\
+		
+		\item \textbf{Cusps and Elliptic Points}\\
+		\noindent\fbox{
+			\parbox{\textwidth}{
+				\begin{itemize}
+					\item Quickly recall cusps. 
+					\item Note: my elliptic points are \emph{not just $(j=0)$-classes on $X_{\Gamma}^{\text{an}}$}. 
+					\item Cusps correspond to ``tails'' of the graph quotient $\Gamma\setminus \sT$ for $\sT$ the Bruhat-Tits tree of $\PGL_2(K_{\infty}).$ 
+					\item We illustrate with Mihran's example how to form a ``ramified cover'' of $\GL_2(A)\setminus \sT$ by $\Gamma\setminus \sT$ and the graph of $\Gamma\setminus \sT$ 
+					\item \emph{Advert:} in joint works with Mihran $\&$ Kevin Ho, we aim to generalize \cite{Gekeler-Nonnengardt-BruhatTitsTrees} and \cite{Papikian-Wei-Eisenstein-ideal}
+				\end{itemize}
+			}
+		}\\
+		
+		\item \textbf{Cusps are Elliptic Points}\\
+		\noindent\fbox{
+			\parbox{\textwidth}{
+				\begin{itemize}
+					\item For us elliptic points are no more than stacky points - the essential thing is having nontrivial stabilizers, i.e.\ \emph{extra automorphisms}
+					\item Therefore, cusps of Drinfeld modular curves are elliptic points (under this definition)
+					\item \emph{Example} - extra automorphisms of the Carlitz module $\rho = TX+X^q$ vs.\ no exta automorphisms of singular elliptic curves. \emph{This is a purely Drinfeld-setting problem.}
+					\item We know $M(\SL_2(\bbZ))\cong \bbC[E_4,E_6]$ so why are stabilizers not orders $4$ and $6$? - everything in the moduli has generic $\mu_2$-stabilizer. Likewise, every Drinfeld module has a generic $\mu_{q-1}$-stabilizer coming from $\begin{psmallmatrix}a&0\\0&a\end{psmallmatrix}$ for $a\in \bbF_q^{\times}.$
+					\item \emph{Caution:} we're hiding something tricky here. The cusps of a Drinfeld modular curve $X_{\Gamma}^{\text{an}}$ have isotropy groups $\{\begin{psmallmatrix}a&b\\0&d\end{psmallmatrix}=\begin{psmallmatrix}\alpha&0\\0&\beta\end{psmallmatrix}\begin{psmallmatrix}1&m\\0&1\end{psmallmatrix}\},$ but if we think of compactifying $\Gamma\setminus \sF,$ for $\sF$ the fundamental domain for $\Omega,$ we can use $u^{h_s},$ where $h_s$ is the width of the cusp, as our chart at the point $\infty$ that we're adding in the compactification. Since we're compactifying a quotient of the fundamental domain rather than compactifying $\Omega$ and then taking a quotient, we've already removed the translations from the isotropy groups of the cusps, leaving a finite cyclic isotropy group. We \emph{don't have a moduli interpretation} for the required $(q-1)^2$-automorphisms of the Carlitz module yet though... 
+				\end{itemize}
+			}
+		}\\
+		
+		\item \textbf{Elliptic Points on Stacky Curves}\\
+		\noindent\fbox{
+			\parbox{\textwidth}{
+				\begin{itemize}
+					\item \emph{Claim:} cusps are elliptic points under my definition. This is \emph{essential} for computing algebras of Drinfeld modular forms via log canonical rings
+					\item \emph{Question:} how stacky of stacky points are cusps? i.e.\ how elliptic are the elliptic points?
+					\item We need to discuss \emph{gerbes} in order to be sure we're talking about the right space with the right stabilizers. 
+					\item \emph{Example} - $j$-lines
+				\end{itemize}
+			}
+		}\\
+		
+		\item \textbf{Rigid Stacky GAGA}\\
+		\noindent\fbox{
+			\parbox{\textwidth}{
+				\begin{itemize}
+					\item \emph{Recall intention:} become able to work with stacks in Drinfeld setting, i.e.\ our aim is to introduce the key tools
+					\item We need to generalize rigid analytic GAGA to stacky rigid analytic GAGA via \cite{Porta-Yu-Higher-analytic-stacks-GAGA} to compare Drinfeld modular forms on $\sX_{\Gamma}$ and $X_{\Gamma}^{\text{an}}$
+				\end{itemize}
+			}
+		}\\
+		
+		\item \textbf{Geometry of Drinfeld Modular Forms $(1/3)$}\\
+		\noindent\fbox{
+			\parbox{\textwidth}{
+				\begin{itemize}
+					\item \emph{Theorem} - the algebra of Drinfeld modular forms of $\Gamma_2$ is the log canonical ring of $(\sX_{\Gamma_2};2\Delta)$
+					\item \emph{Formally} - 
+					\begin{theorem}[{\cite[Theorem $6.1$]{Franklin-geometry-Drinfeld-modular-forms}}]
+						\label{thm: forms to differentials}
+						Let $q$ be an odd prime and let $\Gamma\leq \GL_2(A)$ be a congruence subgroup containing the diagonal matrices of $\GL_2(A)$ and such that $\det(\gamma)\in (\bbF_q^{\times})^2$ for every $\gamma\in \Gamma.$ Let $\Delta$ be the divisor supported at the cusps of the modular curve $\sX_{\Gamma}$ with the rigid analytic coarse space $X_{\Gamma}^{\text{an}}=\Gamma\setminus(\Omega\cup \bbP^1(K)).$ 
+						There is an isomorphism of graded rings \[M(\Gamma)\cong R(\sX_{\Gamma},\Omega^1_{\sX_{\Gamma}}(2\Delta)),\] where $\Omega^1_{\sX_{\Gamma}}$ is the sheaf of differentials on $\sX_{\Gamma}.$ The isomorphism of algebras is given by the isomorphisms of components $M_{k,l}(\Gamma)\to H^0(\sX_{\Gamma},\Omega^1_{\sX_{\Gamma}}(2\Delta)^{\otimes k/2})$ given by $f\mapsto f(dz)^{\otimes k/2}.$ 
+					\end{theorem}
+					
+					\item \emph{Success} of the Theorem is we can answer Gekeler for $\Gamma_2$ using \cite{VZB}, \cite{ODorney-canonical-rings-Q-divisors-on-P1}, \cite{Cerchia-Franklin-ODorney-Qdiv-Ell-curves}, \cite{Landesman-Ruhm-Zhang-Spin-canonical-rings}
+					\item \emph{Failure} of the Theorem is if we can show $(\text{cusps of }\Gamma_2)\leftrightarrow(\text{cusps of }\Gamma)$ then $R(\sX_{\Gamma_2};2\Delta)$ is the spin log canonical ring of $(\sX_{\Gamma};\Delta)$ in the sense of \cite{Landesman-Ruhm-Zhang-Spin-canonical-rings}
+					\item \emph{Key Ingredients} - $dz$ double pole at $\infty$ $\&$ rigid stacky GAGA
+				\end{itemize}
+			}
+		}\\
+		
+		\item \textbf{Geometry of Drinfeld Modular Forms $(2/3)$}\\
+		\noindent\fbox{
+			\parbox{\textwidth}{
+				\begin{itemize}
+					\item \emph{Theorem} - $M(\Gamma)\cong M(\Gamma_2),$ i.e.\ we can recover $M(\Gamma)$ from a log canonical ring, fully answering Gekeler
+					\item \emph{Formally} - 
+					\begin{theorem}[{\cite[Theorem $6.2$]{Franklin-geometry-Drinfeld-modular-forms}}]
+						\label{thm: decomp of mod forms}
+						Let $q$ be a power of an odd prime. Let $\Gamma\leq \GL_2(A)$ be a congruence subgroup containing the diagonal matrices in $\GL_2(A).$ Let $\Gamma_2=\{\gamma\in \Gamma: \det(\gamma)\in (\bbF_q^{\times})^2\}.$ Then
+						$M(\Gamma)\cong M(\Gamma_2),$
+						with \[M_{k,l}(\Gamma_2)=M_{k,l_1}(\Gamma)\oplus M_{k,l_2}(\Gamma)\] on each graded piece, where $l_1,l_2$ are the two solutions to $k\equiv 2l\pmod{q-1}.$ 
+					\end{theorem}
+				\end{itemize}
+			}
+		}\\
+		
+		\item \textbf{Geometry of Drinfeld Modular Forms $(3/3)$}\\
+		\noindent\fbox{
+			\parbox{\textwidth}{
+				\begin{itemize}
+					\item \emph{Theorem} - $M(\Gamma)\cong M(\Gamma'),$ i.e.\ \cite[Theorem $6.2$]{Franklin-geometry-Drinfeld-modular-forms} is a special case of \cite[Theorem $6.12$]{Franklin-geometry-Drinfeld-modular-forms}. 
+					\item \emph{Formally} - 
+					\begin{theorem}[{\cite[Theorem $6.12$]{Franklin-geometry-Drinfeld-modular-forms}}]
+						\label{thm: generalized decomp}
+						Let $q$ be a power of an odd prime. Let $\Gamma\leq \GL_2(A)$ be a congruence subgroup. Let $\Gamma_1=\{\gamma\in \Gamma: \det(\gamma)=1\}.$ Suppose that $\Gamma'$ is such that $\Gamma_1\leq \Gamma'\leq \Gamma.$ Then as algebras
+						\[M(\Gamma)=M(\Gamma'),\] and each component $M_{k,l}(\Gamma')$ is some direct sum of components $M_{k,l'}(\Gamma)$ for some nontrivial $l'.$
+					\end{theorem}
+					\item This was suggested by B\"ockle as was the proof technique. 
+					\item Both \cite[Theorem $6.2$]{Franklin-geometry-Drinfeld-modular-forms} and \cite[Theorem $6.12$]{Franklin-geometry-Drinfeld-modular-forms} have classical analogs which come up in discussion of \emph{nebentypes} for classical modular forms e.g.\
+				\end{itemize}
+			}
+		}
+	\end{enumerate}
+	
+	\newpage
+	
+	\section{Thesis Defense}
+	
+	\begin{enumerate}
+		\item \textbf{Title}\\
+		\noindent\fbox{
+			\parbox{\textwidth}{
+				\begin{itemize}
+					\item \emph{The plan:} Penn state talk with a few more details
+					\item \emph{Intention:} invite $\&$ challenge everyone to start using the language of stacks
+				\end{itemize}
+			}
+		}\\
+		
+		\item \textbf{Notation}\\
+		\noindent\fbox{
+			\parbox{\textwidth}{
+				\begin{itemize}
+					\item We focus on the function field of $\bbP^1/{\bbF_q}$ for ease of notation
+					\item We discuss the relevance of the hypothesis that $q$ is odd later; this is \emph{not essential}, merely \emph{convenient} 
+				\end{itemize}
+			}
+		}\\
+		
+		\item \textbf{Elliptic Curves and Drinfeld Modules}\\
+		\noindent\fbox{
+			\parbox{\textwidth}{
+				\begin{itemize}
+					\item Both elliptic curves and Drinfeld modules have a lattice-quotient (analytic) construction \emph{and} a ``Weierstrass'' (algebraic) model
+					\item Let $C\{X^q\}\overset{def}{=}\{\sum_{i=0}^n a_iX^{q^i}: a_0,\cdots, a_n\in C, ~n\geq 0 \}$ denote the non-commutative polynomial ring of $\bbF_q$-linear polynomials/$C$ (i.e.\ $f(\alpha x)=\alpha f(x)$ for all $\alpha \in \bbF_q$); multiplication given by composition
+					\item Let $\omega\in \bbC$ be $\bbR$-linearly independent from $1.$ Let $\Lambda=\bbZ\omega+\bbZ\subset \bbC$ be a lattice. Then the \textbf{Weierstrass $p$-function} is 
+					\[p(z,\omega,1)=p(z,\Lambda)\overset{def}{=}\frac{1}{z^2}+\sum_{z\in \Lambda-\{0\}}\left(\frac{1}{z-\lambda}-\frac{1}{\lambda^2}\right).\] The $p$-function satisfies a differential equation 
+					\[(p')^2(z)=4p^3(z)-g_2p(z)-g_3,\]
+					where $g_2$ and $g_3$ are values of certain Eisenstein series,\\
+					i.e.\ the $p$-function gives a Weierstrass model associated to the lattice $\Lambda.$
+				\end{itemize}
+			}
+		}\\
+		
+		\item \textbf{The classical thing we want to analogize}\\
+		\noindent\fbox{
+			\parbox{\textwidth}{
+				\begin{itemize}
+					\item \emph{Well-known} classical $(\text{modular forms} = \text{sections of a line bundle})$
+					\item Note: $M(\Gamma)\neq R(\sX_{\Gamma})$; \emph{need log divisor} $M(\Gamma)=R(\sX_{\Gamma};\Delta)$
+					\item Gekeler asks for a description of $M(\Gamma)$ for Drinfeld modular forms, in particular with generators/relations
+				\end{itemize}
+			}
+		}\\
+		
+		\item \textbf{Why Stacks? What are Stacks?}\\
+		\noindent\fbox{
+			\parbox{\textwidth}{
+				\begin{itemize}
+					\item Stacks are \emph{uniquely suited} to *all* modular forms\\
+					e.g.\ (stacky RR) - ``jumpiness'' in $\dim M_k(\Gamma)$ corresponds to floors in stacky RR
+					\item Analogy: 
+					$\displaystyle{\begin{array}{ccc}
+							(schemes) = \left(\begin{array}{c}\text{locally}\\\text{ringed spaces}\end{array}\right) &\leftrightsquigarrow& 
+							(stacks) = \left(\begin{array}{c}\text{categories}\\\text{fibered in}\\\text{groupoids}\end{array}\right)
+					\end{array}}$
+					\item Yoneda's Functor of Points perspective means ``sheaves = stacks''
+				\end{itemize}
+			}
+		}\\
+		
+		\item \textbf{So, what are stacks?}\\
+		\noindent\fbox{
+			\parbox{\textwidth}{
+				\begin{itemize}
+					\item \emph{Main focus} is on stacky curves, but we also discuss closely related \emph{gerbes} over stacky curves
+					
+					\item Note: Every smooth, projective curve $X$ may be treated as a stacky curve with nothing stacky about it. The stack quotient $[X/G]$ for a finite group $G\leq \Aut(X)$ is a stacky curve, (as in Definition \cite[$2.1$]{Landesman-Ruhm-Zhang-Spin-canonical-rings})
+					
+					\item \cite[Remark $5.2.8$]{VZB} - \emph{most} stacky curves are quotients like above
+					
+					\item \textbf{gerbe} - smooth, proper, geometrically connected Deligne-Mumford stack of dimension $1,$ i.e.\ stacky curve \emph{without} dense open subscheme.\\ 
+					\textbf{gerbe} - stack $\approx$ stacky curve, where every single point has a generic/uniform stabilizer   
+				\end{itemize}
+			}
+		}\\
+		
+		\item \textbf{Stacky Curves $101$}\\
+		\noindent\fbox{
+			\parbox{\textwidth}{
+				\begin{itemize}
+					\item 
+					\textbf{signature of $\sX$} - $(\text{genus; orders of stabilizers of stacky points})$\\
+					\textbf{signature of $(\sX,\Delta)$} - $(\text{genus; orders of stabilizers of stacky points; degree of }\Delta)$ where $\Delta$ is a finite formal sum of distinct points of $\sX$ called \textbf{log divisor}
+					\item Just read the rest of the slide
+					\item \emph{Note:} $\sX\cong \sProj(R(\sX))$
+				\end{itemize}
+			}
+		}\\
+		
+		\item \textbf{Computing the Canonical Ring of a Stacky Curve}\\
+		\noindent\fbox{
+			\parbox{\textwidth}{
+				\begin{itemize}
+					\item \cite{VZB}'s inductive result is based on considering covers of stacky curves formed by removing stacky points or changing the orders of stacky points
+					\item \cite{Landesman-Ruhm-Zhang-Spin-canonical-rings} also has such inductive results 
+					\item In \cite{VZB}, \cite{Landesman-Ruhm-Zhang-Spin-canonical-rings}, \cite{ODorney-canonical-rings-Q-divisors-on-P1}, \cite{Cerchia-Franklin-ODorney-Qdiv-Ell-curves} computing canonical rings of stacky curves is a lot about the combinatorics of the floors showing up in stacky RR and giving a \emph{ground-up} description 
+				\end{itemize}
+			}
+		}\\
+		
+		\item \textbf{Example of Section Rings}\\
+		\noindent\fbox{
+			\parbox{\textwidth}{
+				\begin{itemize}
+					\item $S_{D'}$ generated in degrees $1,2,4$; $I_{D'}$ has $\operatorname{gin}_{\prec}(I_{D'})=\langle y^2\rangle\subset \Bbbk[u,x_1,x_2^2]$
+					\item $S_D$ generated in degrees $1,2,2$; $I_D$ has $\operatorname{gin}_{\prec}(I_{D})=\langle x_1^3\rangle\subset \Bbbk[u,x_1,x_2]$
+				\end{itemize}
+			}
+		}\\
+		
+		\item \textbf{Old Friends}\\
+		\noindent\fbox{
+			\parbox{\textwidth}{
+				\begin{itemize}
+					\item Example (the $j$-line v$1.0$) - recall our favorite algebras of Drinfeld modular forms (without and with type resp.); the stacky $j$-line is a projective line with $2$ stacky points corresponding to e.g.\ the denominators in the valence formula: \cite[Equation $(3.10)$]{Gekeler-survey-Drinfeld-modular-forms}: 
+					\[\sideset{}{^*}\sum_{z\in GL_2(A)\setminus \Omega}v_z(f)+\frac{v_e(f)}{q+1}+\frac{v_{\infty}(f)}{q-1}=\frac{k}{q^2-1},\]
+					where $\sum^*$ denotes a sum over non-elliptic classes of $\GL_2(A)\setminus \Omega.$  
+					
+					\item \emph{Note:} we return to the matter of stabilizers carefully later, the point of this example is below  
+					
+					\item The problem is: the canonical ring of this stacky $j$-line \emph{isn't} the algebra of modular forms for $\GL_2(A).$ \emph{Need a log canonical ring instead}, but this is \emph{not the main focus}.
+				\end{itemize}
+			}
+		}\\
+		
+		\item \textbf{What goes ``Wrong'' in Function Fields}\\
+		\noindent\fbox{
+			\parbox{\textwidth}{
+				\begin{itemize}
+					\item Read the slide.
+					\item The idea is that the proofs have too may Lemmas, so we'll discuss features in the proof instead. 
+					\item A big part of this is just phrasing familiar Drinfeld things in stacks terminology. 
+				\end{itemize}
+			}
+		}\\
+		
+		\item \textbf{Drinfeld Modular Forms}\\
+		\noindent\fbox{
+			\parbox{\textwidth}{
+				\begin{itemize}
+					\item Whip through definition of Drinfeld modular form.
+					\item (Every talk needs one joke $\&$ one proof ($\&$ you should be able to tell the difference)) - The emphasis is that weight and type are \emph{not} independent.
+				\end{itemize}
+			}
+		}\\
+		
+		\item \textbf{``Fourier series'' for Drinfeld Modular Forms}\\
+		\noindent\fbox{
+			\parbox{\textwidth}{
+				\begin{itemize}
+					\item Read Lemma from ``right to left''
+					\item $u$-series tell us about the \emph{log} part of the log canonical ring (pole orders @ cusps)
+					\item $u$-series help us decompose modular forms into differently \emph{typed} parts
+				\end{itemize}
+			}
+		}\\
+		
+		\item \textbf{From Florian and Gebhard with Love}\\
+		\noindent\fbox{
+			\parbox{\textwidth}{
+				\begin{itemize}
+					\item \emph{sensitivity} of modular forms to determinants: weight-type dependence $\&$ $u$-series coefficients
+					\item Breuer's $\Gamma_2$-modular forms are \emph{easier} to recognize as sections of a log canonical divisor on a log stacky Drinfeld modular curve. In particular Breuer was the inspiration for the comparison of algebras Theorem \cite[$6.2$]{Franklin-geometry-Drinfeld-modular-forms}
+					\item Bruer's forms are a \emph{special case} of B\"ockle's $\Gamma'$-forms since we're taking inverse image under $\det$ of subgroups of $\bbF_q^{\times}.$ Theorem  \cite[$6.12$]{Franklin-geometry-Drinfeld-modular-forms} was suggested, including a proof technique, by B\"ockle
+				\end{itemize}
+			}
+		}\\
+		
+		\item \textbf{Cusps and Elliptic Points}\\
+		\noindent\fbox{
+			\parbox{\textwidth}{
+				\begin{itemize}
+					\item Quickly recall cusps. 
+					\item Note: my elliptic points are \emph{not just $(j=0)$-classes on $X_{\Gamma}^{\text{an}}$}. 
+					\item Cusps correspond to ``tails'' of the graph quotient $\Gamma\setminus \sT$ for $\sT$ the Bruhat-Tits tree of $\PGL_2(K_{\infty}).$ 
+					\item We illustrate with Mihran's example how to form a ``ramified cover'' of $\GL_2(A)\setminus \sT$ by $\Gamma\setminus \sT$ and the graph of $\Gamma\setminus \sT$ 
+					\item \emph{Advert:} in joint works with Mihran $\&$ Kevin Ho, we aim to generalize \cite{Gekeler-Nonnengardt-BruhatTitsTrees} and \cite{Papikian-Wei-Eisenstein-ideal}
+				\end{itemize}
+			}
+		}\\
+		
+		\item \textbf{Cusps are Elliptic Points}\\
+		\noindent\fbox{
+			\parbox{\textwidth}{
+				\begin{itemize}
+					\item For us elliptic points are no more than stacky points - the essential thing is having nontrivial stabilizers, i.e.\ \emph{extra automorphisms}
+					\item Therefore, cusps of Drinfeld modular curves are elliptic points (under this definition)
+					\item \emph{Example} - extra automorphisms of the Carlitz module $\rho = TX+X^q$ vs.\ no exta automorphisms of singular elliptic curves. \emph{This is a purely Drinfeld-setting problem.}
+					\item We know $M(\SL_2(\bbZ))\cong \bbC[E_4,E_6]$ so why are stabilizers not orders $4$ and $6$? - everything in the moduli has generic $\mu_2$-stabilizer. Likewise, every Drinfeld module has a generic $\mu_{q-1}$-stabilizer coming from $\begin{psmallmatrix}a&0\\0&a\end{psmallmatrix}$ for $a\in \bbF_q^{\times}.$
+					\item \emph{Caution:} we're hiding something tricky here!
+				\end{itemize}
+			}
+		}\\
+		
+		\item \textbf{Isotropy $(1/2)$}\\
+		\noindent\fbox{
+			\parbox{\textwidth}{
+				\begin{itemize}
+					\item The ``degenerate'' Drinfeld modules of rank $2$ which are cusps of a Drinfeld modular curve are Drinfeld modules of rank $1.$ 
+					\item Up to homothety there is only one rank $1$ Drinfeld module: the \textbf{Carlitz module}: \[\rho(T)=TX+X^q \leftrightsquigarrow \overline{\pi}A\subset \Omega,\]
+					where $\overline{\pi}\in K_{\infty}(\sqrt[q-1]{-T})$ is the \textbf{Carlitz period}, defined up to a $(q-1)$st root of unity.
+					\item $\Aut(\rho)\cong \bbF_q^{\times}$ since $\overline{\pi}A\sim \alpha \overline{\pi}A$ for any $\alpha\in \bbF_q^{\times}.$ 
+					\item ``Extra'' automorphisms come from specifying a Carlitz period.
+					\item \emph{Just read} the isotropy groups of cusps side.
+				\end{itemize}
+			}
+		}\\
+		
+		\item \textbf{Isotropy $(2/2)$}\\
+		\noindent\fbox{
+			\parbox{\textwidth}{
+				\begin{itemize}
+					\item Classical pictures \cite[Figures $2.3$ and $2.4$]{Diamond-Shurman-first-course-modular-forms}
+					\item Drinfeld fundmental domain from Tristan Phillips
+					\item The point here is that the notation $X_{\Gamma}^{\text{an}}=\Gamma\setminus(\Omega\cup \bbP^1(K))$ is misleading! 
+					\item We are \emph{really} taking 
+					\begin{enumerate}
+						\item[$1.$] a quotient $\Gamma\setminus \sF$ for $\sF$ the fundamental domain (i.e.\ building of $\sT(\bbR)$) of $\Omega$
+						\item[$2.$] a quotient $\Gamma\setminus \bbP^1(K)$ separately
+						\item[$3.$] \emph{then} glueing the chart(s) at $\infty$ (resp.\ cusps) to the (open/affine) quotient $\Gamma\setminus \sF$
+					\end{enumerate}
+					\item We can use $u^{h_s},$ where $h_s$ is the width of the cusp $s$, as our chart at the point $\infty$ that we're adding in the compactification
+				\end{itemize}
+			}
+		}\\
+		
+		\item \textbf{Elliptic Points on Stacky Curves}\\
+		\noindent\fbox{
+			\parbox{\textwidth}{
+				\begin{itemize}
+					\item \emph{Claim:} cusps are elliptic points under my definition. This is \emph{essential} for computing algebras of Drinfeld modular forms via log canonical rings
+					\item \emph{Question:} how stacky of stacky points are cusps? i.e.\ how elliptic are the elliptic points?
+					\item We need to discuss \emph{gerbes} in order to be sure we're talking about the right space with the right stabilizers. 
+					\item \emph{Example} - $j$-lines
+				\end{itemize}
+			}
+		}\\
+		
+		\item \textbf{Rigid Stacky GAGA}\\
+		\noindent\fbox{
+			\parbox{\textwidth}{
+				\begin{itemize}
+					\item \emph{Recall intention:} become able to work with stacks in Drinfeld setting, i.e.\ our aim is to introduce the key tools
+					\item We need to generalize rigid analytic GAGA to stacky rigid analytic GAGA via \cite{Porta-Yu-Higher-analytic-stacks-GAGA} to compare Drinfeld modular forms on $\sX_{\Gamma}$ and $X_{\Gamma}^{\text{an}}$
+				\end{itemize}
+			}
+		}\\
+		
+		\item \textbf{Geometry of Drinfeld Modular Forms $(1/3)$}\\
+		\noindent\fbox{
+			\parbox{\textwidth}{
+				\begin{itemize}
+					\item \emph{Theorem} - the algebra of Drinfeld modular forms of $\Gamma_2$ is the log canonical ring of $(\sX_{\Gamma_2};2\Delta)$
+					\item \emph{Formally} - 
+					\begin{theorem}[{\cite[Theorem $6.1$]{Franklin-geometry-Drinfeld-modular-forms}}]
+						Let $q$ be an odd prime and let $\Gamma\leq \GL_2(A)$ be a congruence subgroup containing the diagonal matrices of $\GL_2(A)$ and such that $\det(\gamma)\in (\bbF_q^{\times})^2$ for every $\gamma\in \Gamma.$ Let $\Delta$ be the divisor supported at the cusps of the modular curve $\sX_{\Gamma}$ with the rigid analytic coarse space $X_{\Gamma}^{\text{an}}=\Gamma\setminus(\Omega\cup \bbP^1(K)).$ 
+						There is an isomorphism of graded rings \[M(\Gamma)\cong R(\sX_{\Gamma},\Omega^1_{\sX_{\Gamma}}(2\Delta)),\] where $\Omega^1_{\sX_{\Gamma}}$ is the sheaf of differentials on $\sX_{\Gamma}.$ The isomorphism of algebras is given by the isomorphisms of components $M_{k,l}(\Gamma)\to H^0(\sX_{\Gamma},\Omega^1_{\sX_{\Gamma}}(2\Delta)^{\otimes k/2})$ given by $f\mapsto f(dz)^{\otimes k/2}.$ 
+					\end{theorem}
+					
+					\item \emph{Success} of the Theorem is we can answer Gekeler for $\Gamma_2$ using \cite{VZB}, \cite{ODorney-canonical-rings-Q-divisors-on-P1}, \cite{Cerchia-Franklin-ODorney-Qdiv-Ell-curves}, \cite{Landesman-Ruhm-Zhang-Spin-canonical-rings}
+					\item \emph{Failure} of the Theorem is if we can show $(\text{cusps of }\Gamma_2)\leftrightarrow(\text{cusps of }\Gamma)$ then $R(\sX_{\Gamma_2};2\Delta)$ is the spin log canonical ring of $(\sX_{\Gamma};\Delta)$ in the sense of \cite{Landesman-Ruhm-Zhang-Spin-canonical-rings}
+					\item \emph{Key Ingredients} - $dz$ double pole at $\infty$ $\&$ rigid stacky GAGA
+				\end{itemize}
+			}
+		}\\
+		
+		\item \textbf{Geometry of Drinfeld Modular Forms $(2/3)$}\\
+		\noindent\fbox{
+			\parbox{\textwidth}{
+				\begin{itemize}
+					\item \emph{Theorem} - $M(\Gamma)\cong M(\Gamma_2),$ i.e.\ we can recover $M(\Gamma)$ from a log canonical ring, fully answering Gekeler
+					\item \emph{Formally} - 
+					\begin{theorem}[{\cite[Theorem $6.2$]{Franklin-geometry-Drinfeld-modular-forms}}]
+						Let $q$ be a power of an odd prime. Let $\Gamma\leq \GL_2(A)$ be a congruence subgroup containing the diagonal matrices in $\GL_2(A).$ Let $\Gamma_2=\{\gamma\in \Gamma: \det(\gamma)\in (\bbF_q^{\times})^2\}.$ Then
+						$M(\Gamma)\cong M(\Gamma_2),$
+						with \[M_{k,l}(\Gamma_2)=M_{k,l_1}(\Gamma)\oplus M_{k,l_2}(\Gamma)\] on each graded piece, where $l_1,l_2$ are the two solutions to $k\equiv 2l\pmod{q-1}.$ 
+					\end{theorem}
+				\end{itemize}
+			}
+		}\\
+		
+		\item \textbf{Geometry of Drinfeld Modular Forms $(3/3)$}\\
+		\noindent\fbox{
+			\parbox{\textwidth}{
+				\begin{itemize}
+					\item \emph{Theorem} - $M(\Gamma)\cong M(\Gamma'),$ i.e.\ \cite[Theorem $6.2$]{Franklin-geometry-Drinfeld-modular-forms} is a special case of \cite[Theorem $6.12$]{Franklin-geometry-Drinfeld-modular-forms}. 
+					\item \emph{Formally} - 
+					\begin{theorem}[{\cite[Theorem $6.12$]{Franklin-geometry-Drinfeld-modular-forms}}]
+						Let $q$ be a power of an odd prime. Let $\Gamma\leq \GL_2(A)$ be a congruence subgroup. Let $\Gamma_1=\{\gamma\in \Gamma: \det(\gamma)=1\}.$ Suppose that $\Gamma'$ is such that $\Gamma_1\leq \Gamma'\leq \Gamma.$ Then as algebras
+						\[M(\Gamma)=M(\Gamma'),\] and each component $M_{k,l}(\Gamma')$ is some direct sum of components $M_{k,l'}(\Gamma)$ for some nontrivial $l'.$
+					\end{theorem}
+					\item This was suggested by B\"ockle as was the proof technique. 
+					\item Both \cite[Theorem $6.2$]{Franklin-geometry-Drinfeld-modular-forms} and \cite[Theorem $6.12$]{Franklin-geometry-Drinfeld-modular-forms} have classical analogs which come up in discussion of \emph{nebentypes} for classical modular forms e.g.\
+				\end{itemize}
+			}
+		}
+	\end{enumerate}
+	
+	\newpage
+	\section{University of Utah Number Theory and Representation Theory Seminar Nov $13$ $2024$}
+	
+	\begin{enumerate}
+		\item \textbf{Title}\\
+		\noindent\fbox{
+			\parbox{\textwidth}{
+				\begin{itemize}
+					\item \emph{The plan:} Thesis defense with a few more examples
+					\item \emph{Intention:} invite $\&$ challenge everyone to start using the language of stacks
+				\end{itemize}
+			}
+		}\\
+		
+		\item \textbf{Notation}\\
+		\noindent\fbox{
+			\parbox{\textwidth}{
+				\begin{itemize}
+					\item We focus on the function field of $\bbP^1/{\bbF_q}$ for ease of notation
+					\item We discuss the relevance of the hypothesis that $q$ is odd later; this is \emph{not essential}, merely \emph{convenient} 
+				\end{itemize}
+			}
+		}\\
+		
+		\item \textbf{Elliptic Curves and Drinfeld Modules}\\
+		\noindent\fbox{
+			\parbox{\textwidth}{
+				\begin{itemize}
+					\item Both elliptic curves and Drinfeld modules have a lattice-quotient (analytic) construction \emph{and} a ``Weierstrass'' (algebraic) model
+					\item Let $C\{X^q\}\overset{def}{=}\{\sum_{i=0}^n a_iX^{q^i}: a_0,\cdots, a_n\in C, ~n\geq 0 \}$ denote the non-commutative polynomial ring of $\bbF_q$-linear polynomials/$C$ (i.e.\ $f(\alpha x)=\alpha f(x)$ for all $\alpha \in \bbF_q$); multiplication given by composition
+					\item Let $\omega\in \bbC$ be $\bbR$-linearly independent from $1.$ Let $\Lambda=\bbZ\omega+\bbZ\subset \bbC$ be a lattice. Then the \textbf{Weierstrass $p$-function} is 
+					\[p(z,\omega,1)=p(z,\Lambda)\overset{def}{=}\frac{1}{z^2}+\sum_{z\in \Lambda-\{0\}}\left(\frac{1}{z-\lambda}-\frac{1}{\lambda^2}\right).\] The $p$-function satisfies a differential equation 
+					\[(p')^2(z)=4p^3(z)-g_2p(z)-g_3,\]
+					where $g_2$ and $g_3$ are values of certain Eisenstein series,\\
+					i.e.\ the $p$-function gives a Weierstrass model associated to the lattice $\Lambda.$
+				\end{itemize}
+			}
+		}\\
+		
+		\item \textbf{The classical thing we want to analogize}\\
+		\noindent\fbox{
+			\parbox{\textwidth}{
+				\begin{itemize}
+					\item \emph{Well-known} classical $(\text{modular forms} = \text{sections of a line bundle})$
+					\item Note: $M(\Gamma)\neq R(\sX_{\Gamma})$; \emph{need log divisor} $M(\Gamma)=R(\sX_{\Gamma};\Delta)$
+					\item Gekeler asks for a description of $M(\Gamma)$ for Drinfeld modular forms, in particular with generators/relations
+				\end{itemize}
+			}
+		}\\
+		
+		\item \textbf{Why Stacks? What are Stacks?}\\
+		\noindent\fbox{
+			\parbox{\textwidth}{
+				\begin{itemize}
+					\item Stacks are \emph{uniquely suited} to *all* modular forms\\
+					e.g.\ (stacky RR) - ``jumpiness'' in $\dim M_k(\Gamma)$ corresponds to floors in stacky RR
+					\item Analogy: 
+					$\displaystyle{\begin{array}{ccc}
+							(schemes) = \left(\begin{array}{c}\text{locally}\\\text{ringed spaces}\end{array}\right) &\leftrightsquigarrow& 
+							(stacks) = \left(\begin{array}{c}\text{categories}\\\text{fibered in}\\\text{groupoids}\end{array}\right)
+					\end{array}}$
+					\item Yoneda's Functor of Points perspective means ``sheaves = stacks''
+				\end{itemize}
+			}
+		}\\
+		
+		\item \textbf{So, what are stacks?}\\
+		\noindent\fbox{
+			\parbox{\textwidth}{
+				\begin{itemize}
+					\item \emph{Main focus} is on stacky curves, but we also discuss closely related \emph{gerbes} over stacky curves
+					
+					\item Note: Every smooth, projective curve $X$ may be treated as a stacky curve with nothing stacky about it. The stack quotient $[X/G]$ for a finite group $G\leq \Aut(X)$ is a stacky curve, (as in Definition \cite[$2.1$]{Landesman-Ruhm-Zhang-Spin-canonical-rings})
+					
+					\item \cite[Remark $5.2.8$]{VZB} - \emph{most} stacky curves are quotients like above
+					
+					\item \textbf{gerbe} - smooth, proper, geometrically connected Deligne-Mumford stack of dimension $1,$ i.e.\ stacky curve \emph{without} dense open subscheme.\\ 
+					\textbf{gerbe} - stack $\approx$ stacky curve, where every single point has a generic/uniform stabilizer   
+				\end{itemize}
+			}
+		}\\
+		
+		\item \textbf{Stacky Curves $101$}\\
+		\noindent\fbox{
+			\parbox{\textwidth}{
+				\begin{itemize}
+					\item 
+					\textbf{signature of $\sX$} - $(\text{genus; orders of stabilizers of stacky points})$\\
+					\textbf{signature of $(\sX,\Delta)$} - $(\text{genus; orders of stabilizers of stacky points; degree of }\Delta)$ where $\Delta$ is a finite formal sum of distinct points of $\sX$ called \textbf{log divisor}
+					\item Just read the rest of the slide
+					\item \emph{Note:} $\sX\cong \sProj(R(\sX))$
+				\end{itemize}
+			}
+		}\\
+		
+		\item \textbf{Computing the Canonical Ring of a Stacky Curve}\\
+		\noindent\fbox{
+			\parbox{\textwidth}{
+				\begin{itemize}
+					\item \cite{VZB}'s inductive result is based on considering covers of stacky curves formed by removing stacky points or changing the orders of stacky points
+					\item \cite{Landesman-Ruhm-Zhang-Spin-canonical-rings} also has such inductive results 
+					\item In \cite{VZB}, \cite{Landesman-Ruhm-Zhang-Spin-canonical-rings}, \cite{ODorney-canonical-rings-Q-divisors-on-P1}, \cite{Cerchia-Franklin-ODorney-Qdiv-Ell-curves} computing canonical rings of stacky curves is a lot about the combinatorics of the floors showing up in stacky RR and giving a \emph{ground-up} description 
+				\end{itemize}
+			}
+		}\\
+		
+		\item \textbf{Examples of Section Rings}\\
+		\noindent\fbox{
+			\parbox{\textwidth}{
+				\begin{itemize}
+					\item $S_{D'}$ generated in degrees $1,2,4$; $I_{D'}$ has $\operatorname{gin}_{\prec}(I_{D'})=\langle y^2\rangle\subset \Bbbk[u,x_1,x_2^2]$
+					\item $S_D$ generated in degrees $1,2,2$; $I_D$ has $\operatorname{gin}_{\prec}(I_{D})=\langle x_1^3\rangle\subset \Bbbk[u,x_1,x_2]$
+				\end{itemize}
+			}
+		}\\
+		
+		\item \textbf{Section Rings of $\bbQ$-divisors (On Elliptic Curves)}\\
+		\noindent\fbox{
+			\parbox{\textwidth}{
+				\begin{itemize}
+					\item Suppose $C$ is given by a Weierstrass equation $y^2 + a_1xy + a_3y = x^3 + a_2x^2 + a_4x + a_6,$ and let $t_i$ be a function on $C$ whose polar divisor is $i(\infty):$ 
+					\[
+					t_i = \begin{cases}
+						x^{i/2}, & \text{$i$ even} \\
+						x^{(i-3)/2}y, & \text{$i$ odd,}
+					\end{cases}\] 
+					Let $D = (\infty).$
+					$R_D$ has generators $u$, $x = u^2 t_2$, $y = u^3 t_3$ in degrees $1$, $2$, and $3$, respectively, and a single degree $6$ relation
+					\[
+					y^2 + a_1 u x y + a_3 u^3 y = x^3 + a_2 u^2 x^2 + a_4 u^4 x + a_6 u^6,
+					\]
+					a homogenization of the usual Weierstrass equation of the elliptic curve $C$.
+					\item These generators are shown diagrammatically in Figure, where we plot degree on the horizontal axis and pole order on the vertical axis. We use bullets for generators, open dots for other elements of $S_D$, and $+$'s to emphasize the nonexistence of elements in $S_D$ having a simple pole at $\infty$.
+					\item We transform the problem to finding generators for a certain semigroup. Observe that a $\Bbbk$-basis for $S_D$ is given by
+					\begin{equation} \label{eq:M_basis}
+						\{t_c u^d : (d,c) \in M\}
+					\end{equation}
+					where $M$ is the monoid
+					\[
+					M = \{(d,c) \in \bbZ^2 : 0 \leq c \leq \alpha d, c \neq 1\}.
+					\]
+					For $v = (d,c) \in M$ a vector, let $f_v = t_c u^d$ be the corresponding element of $S_D$. We cannot construct an isomorphism of $S_D$ with the monoid ring $\Bbbk[M]$ in this way, but the objects are closely related, and we will use the combinatorial structure of $M$ to probe the algebraic structure of $S_D$.
+					
+					Note that, owing to the grading by $d$, $M$ is an \textbf{atomic} monoid, that is, every element is a (not necessarily unique) sum of irreducibles. Consequently, $M$ has a unique minimal generating set, namely the irreducibles.
+				\end{itemize}
+			}
+		}\\
+		
+		\item \textbf{Example - The ``Right'' Stack for the Job}\\
+		\noindent\fbox{
+			\parbox{\textwidth}{
+				\begin{itemize}
+					\item Example (the $j$-line v$1.0$) - recall our favorite algebras of Drinfeld modular forms (without and with type resp.); the stacky $j$-line is a projective line with $2$ stacky points corresponding to e.g.\ the denominators in the valence formula: \cite[Equation $(3.10)$]{Gekeler-survey-Drinfeld-modular-forms}: 
+					\[\sideset{}{^*}\sum_{z\in GL_2(A)\setminus \Omega}v_z(f)+\frac{v_e(f)}{q+1}+\frac{v_{\infty}(f)}{q-1}=\frac{k}{q^2-1},\]
+					where $\sum^*$ denotes a sum over non-elliptic classes of $\GL_2(A)\setminus \Omega.$  
+					
+					\item \emph{Note:} we return to the matter of stabilizers carefully later, the point of this example is below  
+					
+					\item The problem is: the canonical ring of this stacky $j$-line \emph{isn't} the algebra of modular forms for $\GL_2(A).$ \emph{Need a log canonical ring instead}, but this is \emph{not the main focus}.
+				\end{itemize}
+			}
+		}\\
+		
+		\item \textbf{What goes ``Wrong'' in Function Fields}\\
+		\noindent\fbox{
+			\parbox{\textwidth}{
+				\begin{itemize}
+					\item Read the slide.
+					\item The idea is that the proofs have too may Lemmas, so we'll discuss features in the proof instead. 
+					\item A big part of this is just phrasing familiar Drinfeld things in stacks terminology. 
+				\end{itemize}
+			}
+		}\\
+		
+		\item \textbf{Drinfeld Modular Forms}\\
+		\noindent\fbox{
+			\parbox{\textwidth}{
+				\begin{itemize}
+					\item Whip through definition of Drinfeld modular form.
+					\item (Every talk needs one joke $\&$ one proof ($\&$ you should be able to tell the difference)) - The emphasis is that weight and type are \emph{not} independent.
+				\end{itemize}
+			}
+		}\\
+		
+		\item \textbf{``Fourier series'' for Drinfeld Modular Forms}\\
+		\noindent\fbox{
+			\parbox{\textwidth}{
+				\begin{itemize}
+					\item Read Lemma from ``right to left''
+					\item $u$-series tell us about the \emph{log} part of the log canonical ring (pole orders @ cusps)
+					\item $u$-series help us decompose modular forms into differently \emph{typed} parts
+				\end{itemize}
+			}
+		}\\
+		
+		\item \textbf{Special Congruence Subgroups}\\
+		\noindent\fbox{
+			\parbox{\textwidth}{
+				\begin{itemize}
+					\item \emph{sensitivity} of modular forms to determinants: weight-type dependence $\&$ $u$-series coefficients
+					\item Breuer's $\Gamma_2$-modular forms are \emph{easier} to recognize as sections of a log canonical divisor on a log stacky Drinfeld modular curve. In particular Breuer was the inspiration for the comparison of algebras Theorem \cite[$6.2$]{Franklin-geometry-Drinfeld-modular-forms}
+					\item Bruer's forms are a \emph{special case} of B\"ockle's $\Gamma'$-forms since we're taking inverse image under $\det$ of subgroups of $\bbF_q^{\times}.$ Theorem  \cite[$6.12$]{Franklin-geometry-Drinfeld-modular-forms} was suggested, including a proof technique, by B\"ockle
+				\end{itemize}
+			}
+		}\\
+		
+		\item \textbf{Cusps and Elliptic Points}\\
+		\noindent\fbox{
+			\parbox{\textwidth}{
+				\begin{itemize}
+					\item Quickly recall cusps. 
+					\item Note: my elliptic points are \emph{not just $(j=0)$-classes on $X_{\Gamma}^{\text{an}}$}. 
+					\item Cusps correspond to ``tails'' of the graph quotient $\Gamma\setminus \sT$ for $\sT$ the Bruhat-Tits tree of $\PGL_2(K_{\infty}).$ 
+					\item We illustrate with Mihran's example how to form a ``ramified cover'' of $\GL_2(A)\setminus \sT$ by $\Gamma\setminus \sT$ and the graph of $\Gamma\setminus \sT$ 
+					\item \emph{Advert:} in joint work \cite{Franklin-Ho-Papikian-DrinfeldCurves-SL} with Mihran $\&$ Kevin Ho, we generalize \cite{Gekeler-Nonnengardt-BruhatTitsTrees} and \cite{Papikian-Wei-Eisenstein-ideal}
+				\end{itemize}
+			}
+		}\\
+		
+		
+		\item \textbf{More Examples of Cusps}\\
+		\noindent\fbox{
+			\parbox{\textwidth}{
+				\begin{itemize}
+					\item The Bruhat-Tits tree of $\PGL_2(\bbF_{\infty})$ is a $(q+1)$-regular tree whose vertices and edges 
+					are given by 
+					\begin{align*}
+						X(\cT) &=\GL_2(\bbF_{\infty})/\GL_2(\cO_\infty) \cdot Z(\bbF_{\infty}) \\ 
+						Y(\cT) &=\GL_2(\bbF_{\infty})/\cI \cdot Z(\bbF_{\infty}), 
+					\end{align*}
+					where $\cI$ is the Iwahori subgroup consisting of matrices $\begin{pmatrix} a& b\\ c & d\end{pmatrix}\in \GL_2(\cO_\infty)$ 
+					with $c\in T^{-1}\cO_\infty$, and $Z$ is the center of $GL_2$. Equivalently, the vertices of $\cT$ are the homothety classes $[L]$ of rank-$2$ 
+					$\cO_\infty$-lattices $L$ in $\bbF_{\infty}^2$, 
+					with two vertices being adjacent if one can choose representative lattices $L\subset L'$ such that $L'/L\cong \bbF_q$
+					
+					\item The Gekeler--Nonnegard algorithm applied to our situation recovers the quotient $\Gamma_0^1(\mathfrak{n})\setminus \cT$ by examining the covering 
+					$\displaystyle{\pi\colon  \Gamma_0^1(\mathfrak{n})\setminus \cT \to \SL_2(A)\setminus \cT. }$
+										
+					\item One can compute $\Gamma_0^1(\mathfrak{n})\setminus \cT$ in ``layers", where each layer is in bijection with the orbits of $G_i$ acting on $\bbP^1(A/\mathfrak{n})$. 
+					Since $G_i$ acts on $\bbP^1(A/\mathfrak{n})$ through its quotient modulo $\mathfrak{n}$, the orbits of $G_i$ acting on $\bbP^1(A/\mathfrak{n})$ do not change once $i\geq d-1$, where $d\overset{def}{=} \deg(\mathfrak{n})$. This implies that the subgraph of $\Gamma_0^1(\mathfrak{n})\setminus \cT$ consisting of edges of type $\geq d-1$ is a disjoint union of half-lines (as in Figure), 
+					called \textit{cusps} (see the appendix for some explicit examples). The number of cusps is the number of orbits of $G_{d-1}$ acting on $\bbP^1(A/\mathfrak{n})$.\\
+					
+					\emph{Notation}:
+					\begin{align*}
+						G_0 &=\SL_2(\bbF_q)\hookrightarrow \SL_2(A)\\ 
+						G_i & = \left\{\begin{pmatrix} a & b \\ 0 & a^{-1} \end{pmatrix}\mid a\in \bbF_q^\times, \deg(b)\leq i \right\}, \quad i\geq 1.  
+					\end{align*}For each $i\geq 0$, $G_i$ is the stabilizer of $v_i$ in $\SL_2(A)$ and $G_i\cap G_{i+1}$ is the stabilizer of the 
+					edge $e_i$ with origin $v_i$ and terminus $v_{i+1}$. Note that $G_i\cap G_{i+1}=G_i$ if $i\geq 1$. Let 
+					$$
+					\bbP^1(A/\mathfrak{n})\overset{def}{=} \{(u:v)\mid u, v\in A/\mathfrak{n}, (A/\mathfrak{n})u +(A/\mathfrak{n})v=A/\mathfrak{n}\},
+					$$
+					where $(u: v)$ is the equivalence class of $(u, v)$ modulo $(A/\mathfrak{n})^\times$. There is an isomorphism 
+					\begin{align*}
+						\SL_2(A)/\Gamma_0^1(\mathfrak{n}) &\overset{\sim}{\to} \bbP^1(A/\mathfrak{n})\\ 
+						\begin{pmatrix} a & b \\ c & d\end{pmatrix} &\longmapsto (a:c)\mod \mathfrak{n}
+					\end{align*}
+					as $\SL_2(A)$-sets, where the action of $\SL_2(A)$ on $\bbP^1(A/\mathfrak{n})$ is 
+					$$
+					\begin{pmatrix} a & b \\ c & d\end{pmatrix}  (u:v) =(au+bv : cu+dv). 
+					$$
+				\end{itemize}			
+			}
+		}\\
+		
+		
+		\item \textbf{Cusps are Elliptic Points}\\
+		\noindent\fbox{
+			\parbox{\textwidth}{
+				\begin{itemize}
+					\item For us elliptic points are no more than stacky points - the essential thing is having nontrivial stabilizers, i.e.\ \emph{extra automorphisms}
+					\item Therefore, cusps of Drinfeld modular curves are elliptic points (under this definition)
+					\item \emph{Example} - extra automorphisms of the Carlitz module $\rho = TX+X^q$ vs.\ no exta automorphisms of singular elliptic curves. \emph{This is a purely Drinfeld-setting problem.}
+					\item We know $M(\SL_2(\bbZ))\cong \bbC[E_4,E_6]$ so why are stabilizers not orders $4$ and $6$? - everything in the moduli has generic $\mu_2$-stabilizer. Likewise, every Drinfeld module has a generic $\mu_{q-1}$-stabilizer coming from $\begin{psmallmatrix}a&0\\0&a\end{psmallmatrix}$ for $a\in \bbF_q^{\times}.$
+					\item \emph{Caution:} we're hiding something tricky here!
+				\end{itemize}
+			}
+		}\\
+		
+		\item \textbf{Isotropy $(1/2)$}\\
+		\noindent\fbox{
+			\parbox{\textwidth}{
+				\begin{itemize}
+					\item The ``degenerate'' Drinfeld modules of rank $2$ which are cusps of a Drinfeld modular curve are Drinfeld modules of rank $1.$ 
+					\item Up to homothety there is only one rank $1$ Drinfeld module: the \textbf{Carlitz module}: \[\rho(T)=TX+X^q \leftrightsquigarrow \overline{\pi}A\subset \Omega,\]
+					where $\overline{\pi}\in K_{\infty}(\sqrt[q-1]{-T})$ is the \textbf{Carlitz period}, defined up to a $(q-1)$st root of unity.
+					\item $\Aut(\rho)\cong \bbF_q^{\times}$ since $\overline{\pi}A\sim \alpha \overline{\pi}A$ for any $\alpha\in \bbF_q^{\times}.$ 
+					\item ``Extra'' automorphisms come from specifying a Carlitz period.
+					\item \emph{Just read} the isotropy groups of cusps side.
+				\end{itemize}
+			}
+		}\\
+		
+		\item \textbf{Isotropy $(2/2)$}\\
+		\noindent\fbox{
+			\parbox{\textwidth}{
+				\begin{itemize}
+					\item Classical pictures \cite[Figures $2.3$ and $2.4$]{Diamond-Shurman-first-course-modular-forms}
+					\item Drinfeld fundmental domain from Tristan Phillips
+					\item The point here is that the notation $X_{\Gamma}^{\text{an}}=\Gamma\setminus(\Omega\cup \bbP^1(K))$ is misleading! 
+					\item We are \emph{really} taking 
+					\begin{enumerate}
+						\item[$1.$] a quotient $\Gamma\setminus \sF$ for $\sF$ the fundamental domain (i.e.\ building of $\sT(\bbR)$) of $\Omega$
+						\item[$2.$] a quotient $\Gamma\setminus \bbP^1(K)$ separately
+						\item[$3.$] \emph{then} glueing the chart(s) at $\infty$ (resp.\ cusps) to the (open/affine) quotient $\Gamma\setminus \sF$
+					\end{enumerate}
+					\item We can use $u^{h_s},$ where $h_s$ is the width of the cusp $s$, as our chart at the point $\infty$ that we're adding in the compactification
+				\end{itemize}
+			}
+		}\\
+		
+		\item \textbf{Elliptic Points on Stacky Curves}\\
+		\noindent\fbox{
+			\parbox{\textwidth}{
+				\begin{itemize}
+					\item \emph{Claim:} cusps are elliptic points under my definition. This is \emph{essential} for computing algebras of Drinfeld modular forms via log canonical rings
+					\item \emph{Question:} how stacky of stacky points are cusps? i.e.\ how elliptic are the elliptic points?
+					\item We need to discuss \emph{gerbes} in order to be sure we're talking about the right space with the right stabilizers. 
+					\item \emph{Example} - $j$-lines
+				\end{itemize}
+			}
+		}\\
+		
+		\item \textbf{Rigid Stacky GAGA}\\
+		\noindent\fbox{
+			\parbox{\textwidth}{
+				\begin{itemize}
+					\item \emph{Recall intention:} become able to work with stacks in Drinfeld setting, i.e.\ our aim is to introduce the key tools
+					\item We need to generalize rigid analytic GAGA to stacky rigid analytic GAGA via \cite{Porta-Yu-Higher-analytic-stacks-GAGA} to compare Drinfeld modular forms on $\sX_{\Gamma}$ and $X_{\Gamma}^{\text{an}}$
+				\end{itemize}
+			}
+		}\\
+		
+		\item \textbf{Geometry of Drinfeld Modular Forms $(1/3)$}\\
+		\noindent\fbox{
+			\parbox{\textwidth}{
+				\begin{itemize}
+					\item \emph{Theorem} - the algebra of Drinfeld modular forms of $\Gamma_2$ is the log canonical ring of $(\sX_{\Gamma_2};2\Delta)$
+					\item \emph{Formally} - 
+					\begin{theorem}[{\cite[Theorem $6.1$]{Franklin-geometry-Drinfeld-modular-forms}}]
+						Let $q$ be an odd prime and let $\Gamma\leq \GL_2(A)$ be a congruence subgroup of $\GL_2(A)$ such that $\det(\Gamma)= (\bbF_q^{\times})^2.$ Let $\Delta$ be the divisor of cusps of the modular curve $\sX_{\Gamma}$ with the rigid analytic coarse space $X_{\Gamma}^{\text{an}}=\Gamma\setminus(\Omega\cup \bbP^1(K)).$ 
+						There is an isomorphism of graded rings $M(\Gamma)\cong R(\sX_{\Gamma},\Omega^1_{\sX_{\Gamma}}(2\Delta)),$ where $\Omega^1_{\sX_{\Gamma}}$ is the sheaf of differentials on $\sX_{\Gamma}.$ The isomorphism of algebras is given by the isomorphisms of components $M_{k,l}(\Gamma)\to H^0(\sX_{\Gamma},\Omega^1_{\sX_{\Gamma}}(2\Delta)^{\otimes k/2})$ given by $f\mapsto f(z)(dz)^{\otimes k/2}$ for each $k\geq 2$ an even integer. 
+					\end{theorem}
+					
+					\item \emph{Success} of the Theorem is we can answer Gekeler for $\Gamma_2$ using \cite{VZB}, \cite{ODorney-canonical-rings-Q-divisors-on-P1}, \cite{Cerchia-Franklin-ODorney-Qdiv-Ell-curves}, \cite{Landesman-Ruhm-Zhang-Spin-canonical-rings}
+					\item \emph{Failure} of the Theorem is if we can show $(\text{cusps of }\Gamma_2)\leftrightarrow(\text{cusps of }\Gamma)$ then $R(\sX_{\Gamma_2};2\Delta)$ is the spin log canonical ring of $(\sX_{\Gamma};\Delta)$ in the sense of \cite{Landesman-Ruhm-Zhang-Spin-canonical-rings}
+					\item \emph{Key Ingredients} - $dz$ double pole at $\infty$ $\&$ rigid stacky GAGA
+				\end{itemize}
+			}
+		}\\
+		
+		\item \textbf{Geometry of Drinfeld Modular Forms $(2/3)$}\\
+		\noindent\fbox{
+			\parbox{\textwidth}{
+				\begin{itemize}
+					\item \emph{Theorem} - $M(\Gamma)\cong M(\Gamma_2),$ i.e.\ we can recover $M(\Gamma)$ from a log canonical ring, fully answering Gekeler
+					\item \emph{Formally} - 
+					\begin{theorem}[{\cite[Theorem $6.2$]{Franklin-geometry-Drinfeld-modular-forms}}]
+						Let $q$ be a power of an odd prime. Let $\Gamma\leq \GL_2(A)$ be a congruence subgroup containing the diagonal matrices in $\GL_2(A).$ Let $\Gamma_2=\{\gamma\in \Gamma: \det(\gamma)\in (\bbF_q^{\times})^2\}.$ We have an isomorphism
+						$M(\Gamma)\cong M(\Gamma_2)$
+						with \[M_{k,l}(\Gamma_2)=M_{k,l_1}(\Gamma)\oplus M_{k,l_2}(\Gamma)\] on each graded piece, where $l_1,l_2$ are the two solutions to $k\equiv 2l\pmod{q-1}.$ 
+					\end{theorem}
+				\end{itemize}
+			}
+		}\\
+		
+		\item \textbf{Geometry of Drinfeld Modular Forms $(3/3)$}\\
+		\noindent\fbox{
+			\parbox{\textwidth}{
+				\begin{itemize}
+					\item \emph{Theorem} - $M(\Gamma)\cong M(\Gamma'),$ i.e.\ \cite[Theorem $6.2$]{Franklin-geometry-Drinfeld-modular-forms} is a special case of \cite[Theorem $6.10$]{Franklin-geometry-Drinfeld-modular-forms}. 
+					\item \emph{Formally} - 
+					\begin{theorem}[{\cite[Theorem $6.12$]{Franklin-geometry-Drinfeld-modular-forms}}]
+						Let $q$ be a power of an odd prime. Let $\Gamma\leq \GL_2(A)$ be a congruence subgroup. Let $\Gamma_1=\{\gamma\in \Gamma: \det(\gamma)=1\}.$ Suppose that $\Gamma_1\leq \Gamma'\leq \Gamma$ for some congruence subgroup $\Gamma'.$ As algebras
+						\[M(\Gamma)=M(\Gamma'),\] and each component $M_{k,l}(\Gamma')$ is some direct sum of components $M_{k,l'}(\Gamma)$ for some nontrivial $l',$ the distinct solutions to $k\equiv [\Gamma:\Gamma']l'\pmod{q-1},$ where $k/2$ is an integer.
+					\end{theorem}
+					\item This was suggested by B\"ockle as was the proof technique. 
+					\item Both \cite[Theorem $6.2$]{Franklin-geometry-Drinfeld-modular-forms} and \cite[Theorem $6.12$]{Franklin-geometry-Drinfeld-modular-forms} have classical analogs which come up in discussion of \emph{nebentypes} for classical modular forms e.g.\
+				\end{itemize}
+			}
+		}
+	
+		\end{enumerate}
+	
+	
+\newpage
+%\bibliographystyle{plain} 								% choose the "plain" reference style
+\bibliographystyle{amsalpha} 								% choose the "plain" reference style
+\bibliography{bibliography} 						% Entries are in the comp_exam_bibliography.bib file
+\end{document}

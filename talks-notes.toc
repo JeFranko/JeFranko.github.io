@@ -1,0 +1,5 @@
+\contentsline {section}{\tocsection {}{}{Format of the Document}}{1}{section*.2}
+\contentsline {section}{\tocsection {}{1}{Workshop on Number Theory in Function Fields @ Penn State $3/13/2024$}}{1}{section.1}
+\contentsline {section}{\tocsection {}{2}{Thesis Defense}}{5}{section.2}
+\contentsline {section}{\tocsection {}{3}{University of Utah Number Theory and Representation Theory Seminar Nov $13$ $2024$}}{10}{section.3}
+\contentsline {section}{\tocsection {}{}{References}}{17}{section*.3}
